@@ -1,5 +1,5 @@
 # custom-element-samples
-This repository contains samples of custom elements (add reference to documentation, when it is ready) used in [Kentico Cloud](https://kenticocloud.com/)
+This repository contains samples of custom elements (add reference to documentation, when it is ready) html pages which can be used in [Kentico Cloud](https://kenticocloud.com/) CustomElement content type.
 
 TODO - Add badges
 
@@ -14,4 +14,4 @@ TODO ([Flickr](https://www.flickr.com/about))
 TODO ([SimpleMDE](https://simplemde.com/))
 
 # How to create a custom element
-To create a custom element it's necessary to create new html page which should contain all required design and functionality. TODO
+To create a custom element you should create new html page which contains all required design and functionality. TODO
