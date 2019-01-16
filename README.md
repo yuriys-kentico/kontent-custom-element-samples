@@ -14,4 +14,4 @@ TODO ([Flickr](https://www.flickr.com/about))
 TODO ([SimpleMDE](https://simplemde.com/))
 
 # How to create a custom element
-To create a custom element you should create new html page which contains all required design and functionality. TODO
+To create new custom element you should create html page which contains all required design and functionality. TODO
