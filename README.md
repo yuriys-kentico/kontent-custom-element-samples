@@ -14,4 +14,10 @@ TODO ([Flickr](https://www.flickr.com/about))
 TODO ([SimpleMDE](https://simplemde.com/))
 
 # How to create a custom element
-To create new custom element you should create html page which contains all required design and functionality. TODO
+In documentation.
+
+# Feedback & Contributing
+
+Check out the [contributing](https://github.com/Kentico/delivery-sdk-net/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions, and begin contributing.
+
+TODO Add Analytics
