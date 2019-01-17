@@ -1,5 +1,6 @@
 # custom-element-samples
-This repository contains samples of custom elements (add reference to documentation, when it is ready) html pages which can be used in [Kentico Cloud](https://kenticocloud.com/) CustomElement content type.
+[Custom elements](https://developer.kenticocloud.com/v1/docs/extending-kentico-cloud-beta) are essentially a small HTML application that exists in a sandboxed <iframe> and interacts with the [Kentico Cloud](https://kenticocloud.com/) app through the Custom elements API.
+This repository contains samples of html web pages that can be used in Custom element content type.
 
 TODO - Add badges
 
@@ -14,7 +15,7 @@ TODO ([Flickr](https://www.flickr.com/about))
 TODO ([SimpleMDE](https://simplemde.com/))
 
 # How to create a custom element
-In documentation.
+Detailed user-guide you can find in [documentation](https://developer.kenticocloud.com/v1/docs/extending-kentico-cloud-beta)
 
 # Feedback & Contributing
 
