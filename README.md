@@ -4,11 +4,10 @@
 This repository contains samples of html web pages that can be used in Custom element content type.
 
 [![Forums](https://img.shields.io/badge/chat-on%20forums-orange.svg)](https://forums.kenticocloud.com)
-[![GitHub license](https://img.shields.io/github/license/Kentico/custom-element-samples.svg)](https://github.com/Kentico/custom-element-samples)
 
 # Custom elements' samples overview
 ## ColorPicker
-[ColorPicker](https://github.com/Kentico/custom-element-samples/blob/master/ColorPicker/color-picker.html) is an simple custom element, based on [color-picker](https://github.com/tovic/color-picker) JavaScript library. It allows user to choose a color from palette and sets it as a HEX string, e.g. 'ff0000' for red color, '00ff00' for green and so on. Selected color is being seen as custom element's background. When custom element is disabled, palette is still visible, nevertheless any changes will not be set to custom element's value. Also backgound color is not being changed in this case.
+[ColorPicker](https://github.com/Kentico/custom-element-samples/blob/master/ColorPicker/color-picker.html) is an simple custom element, based on [color-picker](https://github.com/tovic/color-picker) JavaScript library. It allows user to choose a color from palette and sets it as a HEX string, e.g. 'ff0000' for red color, '00ff00' for green and so on. Selected color is being seen as custom element's background. When custom element is disabled, palette is visible nevertheless does not react on mouse click.
 
 ## Images storage
 TODO ([Flickr](https://www.flickr.com/about))
@@ -25,4 +24,4 @@ Check out the [contributing](https://github.com/Kentico/delivery-sdk-net/blob/ma
 
 You can contribute by adding your custom element here. Create html web page with some functionality, describe in readme file what your element does and send us a pull request.
 
-TODO Add Analytics
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples?pixel)
