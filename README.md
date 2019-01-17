@@ -24,4 +24,4 @@ Check out the [contributing](https://github.com/Kentico/delivery-sdk-net/blob/ma
 
 You can contribute by adding your custom element here. Create html web page with some functionality, describe in readme file what your element does and send us a pull request.
 
-TODO Add Analytics
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples?pixel)
