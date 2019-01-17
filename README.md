@@ -1,5 +1,6 @@
 # custom-element-samples
 [Custom elements](https://developer.kenticocloud.com/v1/docs/extending-kentico-cloud-beta) are essentially a small HTML application that exists in a sandboxed <iframe> and interacts with the [Kentico Cloud](https://kenticocloud.com/) app through the Custom elements API.
+
 This repository contains samples of html web pages that can be used in Custom element content type.
 
 TODO - Add badges
