@@ -4,7 +4,6 @@
 This repository contains samples of html web pages that can be used in Custom element content type.
 
 [![Forums](https://img.shields.io/badge/chat-on%20forums-orange.svg)](https://forums.kenticocloud.com)
-[![GitHub license](https://img.shields.io/github/license/Kentico/custom-element-samples.svg)](https://github.com/Kentico/custom-element-samples)
 
 # Custom elements' samples overview
 ## ColorPicker
