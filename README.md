@@ -3,7 +3,8 @@
 
 This repository contains samples of html web pages that can be used in Custom element content type.
 
-TODO - Add badges
+[![Forums](https://img.shields.io/badge/chat-on%20forums-orange.svg)](https://forums.kenticocloud.com)
+[![GitHub license](https://img.shields.io/github/license/Kentico/custom-element-samples.svg)](https://github.com/Kentico/custom-element-samples)
 
 # Custom elements' samples overview
 ## ColorPicker
@@ -21,5 +22,7 @@ Detailed user-guide you can find in [documentation](https://developer.kenticoclo
 # Feedback & Contributing
 
 Check out the [contributing](https://github.com/Kentico/delivery-sdk-net/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions, and begin contributing.
+
+You can contribute by adding your custom element here. Create html web page with some functionality, describe in readme file what your element does and send us a pull request.
 
 TODO Add Analytics
