@@ -7,7 +7,7 @@ This repository contains samples of html web pages that can be used in Custom el
 
 # Custom elements' samples overview
 ## ColorPicker
-[ColorPicker](https://github.com/Kentico/custom-element-samples/blob/master/ColorPicker/color-picker.html) is an simple custom element, based on [color-picker](https://github.com/tovic/color-picker) JavaScript library. It allows user to choose a color from palette and sets it as a HEX string, e.g. 'ff0000' for red color, '00ff00' for green and so on. Selected color is being seen as custom element's background. When custom element is disabled, palette is visible nevertheless does not react on mouse click.
+[ColorPicker](https://github.com/Kentico/custom-element-samples/blob/master/ColorPicker/color-picker.html) is an simple custom element, based on [color-picker](https://github.com/tovic/color-picker) JavaScript library. It allows user to choose a color from palette and sets it as a HEX string, e.g. '#ff0000' for red color, '#00ff00' for green and so on. Selected color is being seen as custom element's background. When custom element is disabled, palette is visible nevertheless does not react on mouse click.
 
 ## Images storage
 TODO ([Flickr](https://www.flickr.com/about))
