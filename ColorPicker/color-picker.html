@@ -54,12 +54,12 @@
             const picker = new CP(container, false, container);
             picker.self.classList.add('static');
             if (!!hexColorValue) {
-                picker.set('rgb(' + CP.HEX2RGB(hexColorValue).join(', ') + ')');
-                container.parentNode.style.backgroundColor = '#' + hexColorValue;
+                picker.set(hexColorValue);
+                container.parentNode.style.backgroundColor = hexColorValue;
             }
 
             picker.on("change", function (color) {
-                CustomElement.setValue(color);
+                CustomElement.setValue('#' + color);
                 container.parentNode.style.backgroundColor = '#' + color;
             });
 
