@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title>Color Picker</title>
     <!-- libs -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
     <script src="color-picker.min.js"></script>
     <link rel="stylesheet" href="color-picker.min.css">
 
     <!-- Kentico Custom elements API-->
-    <script src="https://app.kenticocloud.com/js-api/custom-element.js"></script>
+    <script src="http://localhost:3000/js-api/custom-element.js"></script>
 
     <!-- Custom elements styles -->
     <style>
@@ -52,7 +52,10 @@
 
     <!-- Custom element code -->
     <script>
+        var isDisabled = false;
+
         function updateDisabled(disabled) {
+            isDisabled = disabled;
             if (disabled) {
                 $('.disabled_overlay').show();
             }
@@ -72,8 +75,10 @@
 
             picker.on("change", function (color) {
                 container.parentNode.style.backgroundColor = '#' + color;
-                // Send updated color to Kentico
-                CustomElement.setValue('#' + color);
+                if (!isDisabled) {
+                    // Send updated color to Kentico
+                    CustomElement.setValue('#' + color);
+                }
             });
 
             picker.enter();
@@ -89,8 +94,8 @@
             try {
                 CustomElement.init((element, _context) => {
                     // Setup with initial value and disabled state
-                    setupColorPicker(element.value);
                     updateDisabled(element.disabled);
+                    setupColorPicker(element.value);
                     updateSize();
                 });
 
