@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,6 +26,7 @@
         .disabled_overlay {
             position: fixed;
             z-index: 2;
+            cursor: not-allowed;
             top: 0;
             left: 0;
             width: 100%;
@@ -59,21 +60,33 @@
             }
 
             picker.on("change", function (color) {
-                CustomElement.setValue('#' + color);
                 container.parentNode.style.backgroundColor = '#' + color;
+                CustomElement.setValue('#' + color);
             });
 
             picker.enter();
         }
 
-        function initCustomElement() {
-            CustomElement.init((el, _ctx) => {
-                setupColorPicker(el.value);
-                updateDisabled(el.disabled);
-                CustomElement.setHeight($('body').height());
-            });
+        function updateSize() {
+            const height = $("html").height();
+            CustomElement.setHeight(height);
+        }
 
-            CustomElement.onDisabledChanged(updateDisabled);
+        function initCustomElement() {
+            try {
+                CustomElement.init((element, _context) => {
+                    setupColorPicker(element.value);
+                    updateDisabled(element.disabled);
+                    updateSize();
+                });
+
+                CustomElement.onDisabledChanged(updateDisabled);
+            } catch (err) {
+                // Initialization with Kentico Custom element API failed (page displayed outside of the Kentico UI)
+                console.error(err);
+                setupColorPicker();
+                updateDisabled(true);
+            }
         }
 
         initCustomElement();

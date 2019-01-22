@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+    <script src="http://localhost:3000/js-api/custom-element.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <textarea id="editor"></textarea>
+    <script>
+        var isDisabled = false;
+        var editorInstance = null;
+
+        function updateDisabled(disabled) {
+            const $elements = $('.editor-toolbar');
+            if (editorInstance && editorInstance.codemirror) {
+                editorInstance.codemirror.options.readOnly = disabled;
+
+                if (disabled) {
+                    $elements.hide();
+                }
+                else {
+                    $elements.show();
+                }
+            }
+            isDisabled = disabled;
+        }
+
+        function initializeEditor(initialValue, isDisabled) {
+            editorInstance = new SimpleMDE({
+                initialValue: initialValue || '',
+                element: document.getElementById('editor'),
+                hideIcons: ["fullscreen", "guide", "side-by-side"],
+                spellChecker: false,
+                status: ["lines", "words"],
+            });
+
+            updateDisabled(isDisabled);
+            window.addEventListener('resize', updateSize);
+            editorInstance.codemirror.on('changes', () => {
+                setValue(editorInstance.value());
+                updateSize();
+            });
+        }
+
+        function updateSize() {
+            const height = $("html").height();
+            CustomElement.setHeight(height);
+        }
+
+        function setValue(value) {
+            if (!isDisabled) {
+                CustomElement.setValue(value || null);
+            }
+        }
+
+        function initCustomElement() {
+            try {
+                CustomElement.init((element, _context) => {
+                    initializeEditor(element.value, element.disabled);
+                    updateSize();
+                });
+
+                CustomElement.onDisabledChanged(updateDisabled);
+            }
+            catch (err) {
+                // Initialization with Kentico Custom element API failed (page displayed outside of the Kentico UI)
+                console.error(err);
+                initializeEditor(err.toString());
+            }
+        }
+
+        initCustomElement();
+    </script>
+</body>
+</html>
