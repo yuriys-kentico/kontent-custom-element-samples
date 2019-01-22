@@ -1,7 +1,7 @@
 # custom-element-samples
 This repository contains two samples of the HTML web pages that can be used in a Custom element (BETA).
 
-[Custom elements](https://developer.kenticocloud.com/v1/docs/extending-kentico-cloud-beta) help you with extending the basic functionality of Kentico Cloud UI and thus improving the content editing experience. Custom element is essentially a small HTML application that exists in a sandboxed <iframe> and interacts with the [Kentico Cloud](https://kenticocloud.com/) app via the [Custom Elements API](https://developer.kenticocloud.com/v1/reference#custom-elements-api).
+[Custom elements](https://developer.kenticocloud.com/docs/integrating-content-editing-features) help you with extending the basic functionality of Kentico Cloud UI and thus improving the content editing experience. Custom element is essentially a small HTML application that exists in a sandboxed <iframe> and interacts with the [Kentico Cloud](https://kenticocloud.com/) app via the [Custom Elements API](https://developer.kenticocloud.com/reference#custom-elements-api).
 
 Note that Custom elements are only supported in the latest versions of our SDKs.
 
@@ -15,7 +15,7 @@ Note that Custom elements are only supported in the latest versions of our SDKs.
 [Mardown editor](https://github.com/Kentico/custom-element-samples/blob/master/Markdown/markdown.html) is a WYSIWYG Custom element which allows users to write formatted text using [SimpleMDE](https://github.com/sparksuite/simplemde-markdown-editor). In this sample element, you can find examples of setting dynamic height and reacting on the window 'resize' events. When the element is disabled, the editor is set to the readonly mode.
 
 # How to create a custom element
-You can find a detailed tutorial on how to create a Custom element in our [documentation](https://developer.kenticocloud.com/v1/docs/extending-kentico-cloud-beta).
+You can find a detailed tutorial on how to create a Custom element in our [documentation](https://developer.kenticocloud.com/docs/integrating-content-editing-features).
 
 # Demo 
 If you plan on using these demo examples in your own production project, we recommend you to clone this repository. This way, you will not be affected by the possible changes made to the Custom elements in the future.
