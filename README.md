@@ -17,6 +17,11 @@ Note that Custom elements are only supported in the latest versions of our SDKs.
 # How to create a custom element
 You can find a detailed tutorial on how to create a Custom element in our [documentation](https://developer.kenticocloud.com/v1/docs/extending-kentico-cloud-beta).
 
+# Demo 
+We don’t recommend you to use demo examples for your production project since the implementation may change and break your solution. Feel free to clone this repository and adjust custom elements to your needs.
+- [https://kentico.github.io/custom-element-samples/Markdown/markdown.html](https://kentico.github.io/custom-element-samples/Markdown/markdown.html)
+- [https://kentico.github.io/custom-element-samples/ColorPicker/color-picker.html](https://kentico.github.io/custom-element-samples/ColorPicker/color-picker.html)
+
 # Feedback & Contributing
 
 Check out the [Contributing](https://github.com/Kentico/delivery-sdk-net/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions, and begin contributing.
