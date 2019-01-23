@@ -69,7 +69,7 @@
 
         function updateSize() {
             // Update the custom element height in the Kentico UI.
-            const height = $("html").height();
+            const height = Math.ceil($("html").height());
             CustomElement.setHeight(height);
         }
 
