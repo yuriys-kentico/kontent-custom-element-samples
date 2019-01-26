@@ -1,13 +1,13 @@
 ﻿---
-name: Spike
-about: Suggest an analysis of a problem
+name: Question
+about: Ask a question
 
 ---
- 
- ### Question
- 
- What do you want to ask?
- 
- ### Reference
- 
- * URL
+
+### Question
+
+What do you want to ask?
+
+### Reference
+
+* URL
