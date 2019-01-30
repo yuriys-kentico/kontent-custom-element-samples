@@ -140,6 +140,67 @@ table{
 td,th{
   padding:0;
 }
+*{
+  outline:none;
+}
+*,:after,:before,body{
+  box-sizing:border-box;
+}
+body{
+  overflow:hidden;
+  font-family:Source Sans Pro,sans-serif;
+  font-size:16px;
+  font-weight:400;
+  line-height:1.5;
+  color:#424242;
+  text-decoration:none;
+  word-wrap:normal;
+  white-space:normal;
+  background-color:#eee;
+  outline:none;
+}
+button,input,select,textarea{
+  font-family:inherit;
+  font-size:inherit;
+  line-height:inherit;
+}
+a{
+  color:#2196f3;
+  text-decoration:none;
+  cursor:pointer;
+}
+a:focus,a:hover{
+  color:#0a6ebd;
+  text-decoration:underline;
+}
+img{
+  vertical-align:middle;
+}
+.sr-only{
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0, 0, 0, 0);
+  border:0;
+}
+.sr-only-focusable:active,.sr-only-focusable:focus{
+  position:static;
+  width:auto;
+  height:auto;
+  margin:0;
+  overflow:visible;
+  clip:auto;
+}
+[role=button]{
+  cursor:pointer;
+}
+.react-container{
+  height:100vh;
+  overflow-y:auto;
+}
 h1{
   font-size:39.0625px;
   line-height:1.15;
