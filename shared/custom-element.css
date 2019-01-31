@@ -254,7 +254,7 @@ p+.form__group{
   font-family:kentico-icons;
   font-style:normal;
   font-weight:400;
-  src:url(//app.kenticocloud.com/kentico-icons-v1.5.1.woff) format("woff");
+  src:url(kentico-icons-v1.6.0.woff) format("woff");
 }
 [class*=" icon-"],[class^=icon-]{
   display:inline-block;
