@@ -155,16 +155,43 @@
 	<h2>Dropdown</h2>
 	<div style="width: 300px;">
 		<h3>Default dropdown</h3>
-		<select class="form__dropdown"><option>First option</option><option>Second option</option><option>Third option with a slightly longer label that may not necessarily fit</option></select>
+		<select class="form__dropdown">
+			<option>First option</option>
+			<option>Second option</option>
+			<option>Third option with a slightly longer label that may not necessarily fit</option>
+		</select>
 		<h3>Disabled dropdown</h3>
-		<select class="form__dropdown" disabled="true"><option>First option</option><option>Second option</option><option>Third option with a slightly longer label that may not necessarily fit</option></select>
+		<select class="form__dropdown" disabled="true">
+			<option>First option</option>
+			<option>Second option</option>
+			<option>Third option with a slightly longer label that may not necessarily fit</option>
+		</select>
 		<h3>Dropdown has error</h3>
-		<select class="form__dropdown form__dropdown--has-error"><option>First option</option><option>Second option</option><option>Third option with a slightly longer label that may not necessarily fit</option></select>
+		<select class="form__dropdown form__dropdown--has-error">
+			<option>First option</option>
+			<option>Second option</option>
+			<option>Third option with a slightly longer label that may not necessarily fit</option>
+		</select>
 	</div>
 
 	<h2>Dropdown menu</h2>
 	<div style="position: relative; height: 200px;">
-	<div class="dropdown-menu" style="max-width: 200px;"><div class="dropdown-menu__item dropdown-menu__item--with-icon"><span class="dropdown-menu__item-name">Link to submenu</span><span class="dropdown-menu__item-icon--right"><i class="icon-forward" aria-hidden="true"></i></span></div><div class="dropdown-menu__item dropdown-menu__item--with-icon"><span class="dropdown-menu__item-name">Long link to submenu</span><span class="dropdown-menu__item-icon--right"><i class="icon-forward" aria-hidden="true"></i></span></div><div class="dropdown-menu__item dropdown-menu__item--is-destructive-action dropdown-menu__item--with-balloon"><span class="dropdown-menu__item-name">Edit</span></div><div class="dropdown-menu__item dropdown-menu__item--is-destructive-action dropdown-menu__item--with-balloon dropdown-menu__item--is-disabled disabled" data-balloon="Disabled action" data-balloon-pos="left"><span class="dropdown-menu__item-name">Delete</span></div></div>
+		<div class="dropdown-menu" style="max-width: 200px;">
+			<div class="dropdown-menu__item dropdown-menu__item--with-icon">
+				<span class="dropdown-menu__item-name">Link to submenu</span>
+				<span class="dropdown-menu__item-icon--right"><i class="icon-forward" aria-hidden="true"></i></span>
+			</div>
+			<div class="dropdown-menu__item dropdown-menu__item--with-icon">
+				<span class="dropdown-menu__item-name">Long link to submenu</span>
+				<span class="dropdown-menu__item-icon--right"><i class="icon-forward" aria-hidden="true"></i></span>
+			</div>
+			<div class="dropdown-menu__item dropdown-menu__item--is-destructive-action dropdown-menu__item--with-balloon">
+				<span class="dropdown-menu__item-name">Edit</span></div>
+			<div class="dropdown-menu__item dropdown-menu__item--is-destructive-action dropdown-menu__item--with-balloon dropdown-menu__item--is-disabled disabled"
+				data-balloon="Disabled action"
+				data-balloon-pos="left"
+			><span class="dropdown-menu__item-name">Delete</span></div>
+		</div>
 	</div>
 
 	<h2>Mutli select</h2>
@@ -177,14 +204,9 @@
 						<div class="multi-select__option-remove-button"><i class="icon-remove-multi-select-option"></i></div>
 					</div>
 				</div>
-				<div class="multi-select__search-field"><span
-					class="multi-select__search-text"
-					contenteditable="true"
-				></span></div>
-				<i
-					class="multi-select__drop-down-icon icon-chevron-down"
-					aria-hidden="true"
-				></i><span class="sr-only">Select options</span></div>
+				<div class="multi-select__search-field"><span class="multi-select__search-text" contenteditable="true"></span></div>
+				<i class="multi-select__drop-down-icon icon-chevron-down" aria-hidden="true"></i>
+				<span class="sr-only">Select options</span></div>
 			<div class="multi-select__dropdown">
 				<div class="multi-select__dropdown-option multi-select__dropdown-option--is-category">
 					<div class="multi-select__dropdown-option-name">Personas</div>
