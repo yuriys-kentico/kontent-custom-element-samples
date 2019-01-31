@@ -17,6 +17,14 @@ Note that Custom elements are only supported in the latest versions of our SDKs.
 # How to create a custom element
 You can find a detailed tutorial on how to create a Custom element in our [documentation](https://developer.kenticocloud.com/docs/integrating-content-editing-features).
 
+## Styling your custom elements
+To make the custom elements visualy consistent with the rest of the Kentico Cloud application we provide a basic set of CSS classes you can use. Simply download the resources from the /shared folder
+- custom-element.css
+- kentico-icons-vXXX.woff
+and link the custom-element.css stylesheet within your custom element. NOTE: the font file (woff) has to be hosted at the same directory as the stylesheet to be properly linked.
+
+See examples.html page for implementation details as well as HTML markup of some basic elements.
+
 # Demo 
 If you plan on using these demo examples in your own production project, we recommend you to clone this repository. This way, you will not be affected by the possible changes made to the Custom elements in the future.
 - ColorPicker - [https://kentico.github.io/custom-element-samples/ColorPicker/color-picker.html](https://kentico.github.io/custom-element-samples/ColorPicker/color-picker.html)
