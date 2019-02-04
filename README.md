@@ -18,12 +18,16 @@ Note that Custom elements are only supported in the latest versions of our SDKs.
 You can find a detailed tutorial on how to create a Custom element in our [documentation](https://developer.kenticocloud.com/docs/integrating-content-editing-features).
 
 ## Styling your custom elements
-To make the custom elements visualy consistent with the rest of the Kentico Cloud application we provide a basic set of CSS classes you can use. Simply download the resources from the /shared folder
-- custom-element.css
-- kentico-icons-vXXX.woff
-and link the custom-element.css stylesheet within your custom element. NOTE: the font file (woff) has to be hosted at the same directory as the stylesheet to be properly linked.
 
-See examples.html page for implementation details as well as HTML markup of some basic elements.
+By including Kentico Cloud default styles, you can make your Custom element look consistent with the rest of the UI.
+
+The [/shared](https://github.com/Kentico/custom-element-samples/tree/master/shared) folder in this GitHub repository contains:
+
+* [custom-element.css](https://github.com/Kentico/custom-element-samples/blob/master/shared/custom-element.css) – a CSS stylesheet
+* [kentico-icons-v1.6.0.woff](https://github.com/Kentico/custom-element-samples/blob/master/shared/kentico-icons-v1.6.0.woff) – a font file
+* [examples.html](https://github.com/Kentico/custom-element-samples/blob/master/shared/examples.html) – An HTML page containing the implementation details and an HTML markup of some of the basic elements
+
+If you prefer to host the files locally, download the CSS stylesheet together with the font file. The `kentico-icons-v1.6.0.woff` file needs to be hosted in the same directory as the CSS stylesheet to be properly linked.
 
 # Demo 
 If you plan on using these demo examples in your own production project, we recommend you to clone this repository. This way, you will not be affected by the possible changes made to the Custom elements in the future.
