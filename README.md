@@ -25,7 +25,7 @@ The [/shared](https://github.com/Kentico/custom-element-samples/tree/master/shar
 
 * [custom-element.css](https://github.com/Kentico/custom-element-samples/blob/master/shared/custom-element.css) – a CSS stylesheet
 * [kentico-icons-v1.6.0.woff](https://github.com/Kentico/custom-element-samples/blob/master/shared/kentico-icons-v1.6.0.woff) – a font file
-* [examples.html](https://github.com/Kentico/custom-element-samples/blob/master/shared/examples.html) – An HTML page containing the implementation details and an HTML markup of some of the basic elements
+* [examples.html](https://github.com/Kentico/custom-element-samples/blob/master/shared/examples.html) – An HTML page containing the implementation details and an HTML markup of some of the basic elements. See also the link in Demo section.
 
 If you prefer to host the files locally, download the CSS stylesheet together with the font file. The `kentico-icons-v1.6.0.woff` file needs to be hosted in the same directory as the CSS stylesheet to be properly linked.
 
@@ -33,6 +33,7 @@ If you prefer to host the files locally, download the CSS stylesheet together wi
 If you plan on using these demo examples in your own production project, we recommend you to clone this repository. This way, you will not be affected by the possible changes made to the Custom elements in the future.
 - ColorPicker - [https://kentico.github.io/custom-element-samples/ColorPicker/color-picker.html](https://kentico.github.io/custom-element-samples/ColorPicker/color-picker.html)
 - Markdown editor - [https://kentico.github.io/custom-element-samples/Markdown/markdown.html](https://kentico.github.io/custom-element-samples/Markdown/markdown.html)
+- CSS usage examples - https://kentico.github.io/custom-element-samples/shared/examples.html(https://kentico.github.io/custom-element-samples/shared/examples.html)
 
 # Feedback & Contributing
 
