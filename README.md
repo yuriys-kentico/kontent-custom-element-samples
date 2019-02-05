@@ -33,7 +33,7 @@ If you prefer to host the files locally, download the CSS stylesheet together wi
 If you plan on using these demo examples in your own production project, we recommend you to clone this repository. This way, you will not be affected by the possible changes made to the Custom elements in the future.
 - ColorPicker - [https://kentico.github.io/custom-element-samples/ColorPicker/color-picker.html](https://kentico.github.io/custom-element-samples/ColorPicker/color-picker.html)
 - Markdown editor - [https://kentico.github.io/custom-element-samples/Markdown/markdown.html](https://kentico.github.io/custom-element-samples/Markdown/markdown.html)
-- CSS usage examples - https://kentico.github.io/custom-element-samples/shared/examples.html(https://kentico.github.io/custom-element-samples/shared/examples.html)
+- CSS usage examples - [https://kentico.github.io/custom-element-samples/shared/examples.html](https://kentico.github.io/custom-element-samples/shared/examples.html)
 
 # Feedback & Contributing
 
