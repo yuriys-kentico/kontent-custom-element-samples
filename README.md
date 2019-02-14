@@ -42,3 +42,36 @@ Check out the [Contributing](https://github.com/Kentico/delivery-sdk-net/blob/ma
 You can also contribute by adding your own Custom element here. Create an HTML web page, include the Custom Elements API in the code, describe what your element does in the Readme file, and send us a pull request.
 
 ![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples?pixel)
+
+# Custom Elements Contest 2019
+
+We all like to play! During the March of 2019 we are hosting the Custom Elements Contest 2019. Do you have what it takes to code an awesome Custom Element and compete with others for $150 Amazon vouchers? Then take a look at these few rules we've put together:
+
+* The contest runs between 1st and 31st of March 2019
+* Every extension submitted between these dates is automatically included in the contest
+* Every extension must comply with all applicable licenses
+* Every extension must be submitted only by its author
+* Every submission (pull request) must follow these rules:
+  * extension is stored within a folder named after it
+  * the folder contains compiled and minimized code of the custom element extension (html, css, js) and markdown file with documentation (how to set it up, etc.)
+  * the documentation must contain a link to the source code repository (if there is any) of the custom element extension
+  * the source code is licensed under MIT
+* Prize for top 10 winning custom element extensions is $150 Amazon voucher
+* Every custom element extension will be evaluated in following areas:
+  * innovation/originality - does the extension use some new concepts, is it somehow different from what we are used to?
+  * usefulness - is it an extension to be used by many users or is meant for a very specific, niche segment?
+  * complexity - is it a prefilled drop-down list vs. complex selection dialog with plenty of JS logic
+  * quality - is it bug-free?
+* Custom element extensions will be evaluated by Kentico internal committee after the end of the contest
+* Ideas for custom element extensions may be optionally picked from our list at https://github.com/Kentico/custom-element-samples/issues
+
+## How to contribute to the repository and be included in the contest?
+
+* Pull requests are to be submitted to https://github.com/Kentico/custom-element-samples
+* Every custom element extension submitted between 1st and 31st of March 2019 is automatically included in the contest
+* If you are working on a custom element extension based on an idea from our list, let us know via GitHub issues and we will assign the issue to you.
+
+## Winners
+If your custom element extension will place in the top 10, we will get in touch with you via GitHub to collect your contact info so that you can receive your prize. Please make sure your GitHub contact info is current.
+
+If you have any questions regarding the Custom Elements Contest 2019, please [get in touch with us](mailto:developerscommunity@kentico.com).
