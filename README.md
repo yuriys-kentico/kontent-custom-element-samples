@@ -35,11 +35,11 @@ If you plan on using these demo examples in your own production project, we reco
 
 # Feedback & Contributing
 
+You can contribute by implementing a Custom Element Extension of your choice or pick one from the [ideas](https://github.com/Kentico/custom-element-samples/issues). Create an HTML web page, include the Custom Elements API in the code, describe what your element does in the Readme file, and send us a pull request. 
+
+We'll also appreciate if you [submit your ideas](https://github.com/Kentico/custom-element-samples/issues) for custom elements or vote for [the existing ones](https://github.com/Kentico/custom-element-samples/issues).
+
 Check out the [Contributing](https://github.com/Kentico/custom-element-samples/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions, and begin contributing.
-
-You can also contribute by adding your own Custom element here. Create an HTML web page, include the Custom Elements API in the code, describe what your element does in the Readme file, and send us a pull request.
-
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples?pixel)
 
 # Custom Elements Contest 2019
 
@@ -73,3 +73,7 @@ We all like to play! During the March of 2019 we are hosting the Custom Elements
 If your custom element extension will place in the top 10, we will get in touch with you via GitHub to collect your contact info so that you can receive your prize. Please make sure your GitHub contact info is current.
 
 If you have any questions regarding the Custom Elements Contest 2019, please [get in touch with us](mailto:developerscommunity@kentico.com).
+
+
+
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples?pixel)
