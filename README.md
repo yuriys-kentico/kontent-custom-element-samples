@@ -54,7 +54,7 @@ We all like to play! During the March of 2019 we are hosting the Custom Elements
   * the folder contains compiled and minimized code of the custom element extension (html, css, js) and markdown file with documentation (how to set it up, etc.)
   * the documentation must contain a link to the source code repository (if there is any) of the custom element extension
   * the source code is licensed under MIT
-* Prize for top 10 winning custom element extensions is $150 Amazon voucher
+* Prize for top 10 winning custom element extensions is $150 Amazon voucher. Winning authors who are non-US residents will be eligible to claim a virtual visa card to the same value.
 * Every custom element extension will be evaluated in following areas:
   * innovation/originality - does the extension use some new concepts, is it somehow different from what we are used to?
   * usefulness - is it an extension to be used by many users or is meant for a very specific, niche segment?
