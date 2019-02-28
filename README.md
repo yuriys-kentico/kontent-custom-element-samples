@@ -15,6 +15,9 @@ Note that Custom elements are only supported in the latest versions of our SDKs.
 # How to create a custom element
 You can find a detailed tutorial on how to create a Custom element in our [documentation](https://developer.kenticocloud.com/docs/integrating-content-editing-features).
 
+## Custom element devkit
+To make development of custom elements as easy as possible, we created a [custom element devkit](https://github.com/Kentico/custom-element-devkit). The devkit includes Kentico Cloud alike wireframe and mocked API to enable seamless debugging experience. It is also capable of minimizing all assets and preparing custom element for production use.
+
 ## Styling your custom elements
 
 By including Kentico Cloud default styles, you can make your Custom element look consistent with the rest of the UI.
