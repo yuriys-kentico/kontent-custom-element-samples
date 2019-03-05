@@ -1,11 +1,9 @@
-# custom-element-samples
-This repository contains two samples of the HTML web pages that can be used in a Custom element (BETA).
+# Examples of Custom Element Extensions for Kentico Cloud
+This repository contains samples of the HTML web pages that can be used as Custom Element (BETA) Extensions in Kentico Cloud.
 
 [Custom elements](https://developer.kenticocloud.com/docs/integrating-content-editing-features) help you with extending the basic functionality of Kentico Cloud UI and thus improving the content editing experience. Custom element is essentially a small HTML application that exists in a sandboxed <iframe> and interacts with the [Kentico Cloud](https://kenticocloud.com/) app via the [Custom Elements API](https://developer.kenticocloud.com/reference#custom-elements-api).
 
 Note that Custom elements are only supported in the latest versions of our SDKs.
-
-[![Forums](https://img.shields.io/badge/chat-on%20forums-orange.svg)](https://forums.kenticocloud.com)
 
 # Custom elements' samples overview
 ## ColorPicker
@@ -16,6 +14,9 @@ Note that Custom elements are only supported in the latest versions of our SDKs.
 
 # How to create a custom element
 You can find a detailed tutorial on how to create a Custom element in our [documentation](https://developer.kenticocloud.com/docs/integrating-content-editing-features).
+
+## Custom element devkit
+To make development of custom elements as easy as possible, we created a [custom element devkit](https://github.com/Kentico/custom-element-devkit). The devkit includes Kentico Cloud alike wireframe and mocked API to enable seamless debugging experience. It is also capable of minimizing all assets and preparing custom element for production use.
 
 ## Styling your custom elements
 
@@ -37,11 +38,11 @@ If you plan on using these demo examples in your own production project, we reco
 
 # Feedback & Contributing
 
-Check out the [Contributing](https://github.com/Kentico/delivery-sdk-net/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions, and begin contributing.
+You can contribute by implementing a Custom Element Extension of your choice or pick one from the [ideas](https://github.com/Kentico/custom-element-samples/issues). Create an HTML web page, include the Custom Elements API in the code, describe what your element does in the Readme file, and send us a pull request. 
 
-You can also contribute by adding your own Custom element here. Create an HTML web page, include the Custom Elements API in the code, describe what your element does in the Readme file, and send us a pull request.
+We'll also appreciate if you [submit your ideas](https://github.com/Kentico/custom-element-samples/issues) for custom elements or vote for [the existing ones](https://github.com/Kentico/custom-element-samples/issues).
 
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples?pixel)
+Check out the [Contributing](https://github.com/Kentico/custom-element-samples/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions, and begin contributing.
 
 # Custom Elements Contest 2019
 
@@ -56,7 +57,7 @@ We all like to play! During the March of 2019 we are hosting the Custom Elements
   * the folder contains compiled and minimized code of the custom element extension (html, css, js) and markdown file with documentation (how to set it up, etc.)
   * the documentation must contain a link to the source code repository (if there is any) of the custom element extension
   * the source code is licensed under MIT
-* Prize for top 10 winning custom element extensions is $150 Amazon voucher
+* Prize for top 10 winning custom element extensions is $150 Amazon voucher. Winning authors who are non-US residents will be eligible to claim a virtual visa card to the same value.
 * Every custom element extension will be evaluated in following areas:
   * innovation/originality - does the extension use some new concepts, is it somehow different from what we are used to?
   * usefulness - is it an extension to be used by many users or is meant for a very specific, niche segment?
@@ -75,3 +76,7 @@ We all like to play! During the March of 2019 we are hosting the Custom Elements
 If your custom element extension will place in the top 10, we will get in touch with you via GitHub to collect your contact info so that you can receive your prize. Please make sure your GitHub contact info is current.
 
 If you have any questions regarding the Custom Elements Contest 2019, please [get in touch with us](mailto:developerscommunity@kentico.com).
+
+
+
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples?pixel)
