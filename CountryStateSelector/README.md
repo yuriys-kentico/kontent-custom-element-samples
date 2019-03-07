@@ -1,6 +1,8 @@
 # Country and State selector
 Country and state selector is a drop down selector which allows users to select country and state (if country has any). When the element is disabled, the dropdown is set to the readonly mode.
 
+![Country State Selector](CountryStateSelector.png)
+
 # Usage
 
 If you want to use the country and state selector in your project in Kentico Cloud, follow these steps:
