@@ -1,7 +1,7 @@
 # Shopify product selector
 Shopify product selector is a selector connected to Shopify Storefront which allows users to search and select a product from Shopify product catalog. When the element is disabled, it only displays the selected product.
 
-![Shopify product selector](Shopify/ShopifyProductSelector.gif)
+![Shopify product selector](ShopifyProductSelector.gif)
 
 # Usage
 
