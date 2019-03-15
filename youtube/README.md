@@ -1,4 +1,4 @@
-# kc_youtube
+# Youtube video preview
 
 This KC custom element allows you to add various types of youtube video url, it extracts the video id for your apps and shows the video.
 
