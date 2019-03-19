@@ -8,7 +8,7 @@ You can test it by configuring https://kentico.github.io/custom-element-samples/
 
 You can specify the Parameters {JSON} part of the configuration to configure the default state or a lable.
 Possible configurations:
-
+```
 (empty)
 
 { "default": true }
@@ -21,3 +21,4 @@ Possible configurations:
     "default": true,
     "label": "Accepted"
 }
+```
