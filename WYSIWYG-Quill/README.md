@@ -8,6 +8,8 @@ You can test it by configuring https://kentico.github.io/custom-element-samples/
 ![screenshot](https://amend.cz/wysiwyg/wysiwyg.png)
 
 For RTL support specify the Parameters {JSON} part of the configuration with:
+```
 {
     "rtl": true
 }
+```
