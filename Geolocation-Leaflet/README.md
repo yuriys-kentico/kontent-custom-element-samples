@@ -15,8 +15,8 @@ You can configure only some or even none of the parameters:
 {
     "width": 800,
     "height": 600,
-    "lat": 46.123,
-    "lng": 16.123,
+    "lat": 46.123456789,
+    "lng": 16.123456789,
     "zoom": 10
 }
 ```
