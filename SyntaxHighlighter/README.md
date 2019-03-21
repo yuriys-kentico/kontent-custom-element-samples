@@ -15,7 +15,7 @@ If you want to use the Syntax Highlighter in your project in Kentico Cloud, foll
 * Use absolute URL of the index.html file hosted on your end as Hosted code URL (HTTPS)
 * Optional: Provide the following JSON parameters for the custom element to configure the initial state of the Syntax Highlighter
 
-```
+```json
 {
     "initTheme": "<THEME CODENAME>",
     "initMode": "<PROGRAMMING LANGUAGE CODENAME>"
