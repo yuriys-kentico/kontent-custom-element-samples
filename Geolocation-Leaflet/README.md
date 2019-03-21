@@ -11,7 +11,7 @@ You can test it by configuring https://kentico.github.io/custom-element-samples/
 You can specify the Parameters {JSON} part of the configuration to configure the default width/height (pixels) of the map, default latitude and longitude and the zoom (0-18) of the map.
 You can configure only some or even none of the parameters:
 
-```
+```json
 {
     "width": 800,
     "height": 600,
