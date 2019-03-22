@@ -40,3 +40,8 @@ You need to parse that value to get a proper object (i.e. in JavaScript with the
 ## Original repository
 
 Syntax Highlighter source code is in the following repository: https://github.com/MilanLund/ace-kenticocloud-customelement
+
+## Licenses
+
+Syntax Highlighter is released under the MIT license.
+The Ace source code that Syntax Highlighter uses is released under the BSD license.
