@@ -13,3 +13,4 @@ For RTL support specify the Parameters {JSON} part of the configuration with:
     "rtl": true
 }
 ```
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-elements-samples/WYSIWYG-Quill?pixel)
