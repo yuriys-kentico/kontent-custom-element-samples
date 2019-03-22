@@ -90,7 +90,6 @@
           </span>
           <span class="ql-formats">
             <button class="ql-link"></button>
-            <button class="ql-image"></button>
             <button class="ql-video"></button>
             <button class="ql-formula"></button>
           </span>
@@ -143,6 +142,7 @@
       if (rtl) {
         $(".ql-editor p").css("direction", "rtl").css("text-align", "right");
       }
+      $(".ql-container").css("min-height","100px");
 
       quill.on('text-change', function (delta, oldDelta, source) {
         if (!isDisabled) {
