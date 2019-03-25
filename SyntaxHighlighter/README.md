@@ -13,6 +13,7 @@ If you want to use the Syntax Highlighter in your project in Kentico Cloud, foll
 * Add **Custom element** content element
 * Open configuration of the content element
 * Use absolute URL of the index.html file hosted on your end as Hosted code URL (HTTPS)
+  * For testing purposes it is possible to use https://kentico.github.io/custom-element-samples/SyntaxHighlighter/index.html
 * Optional: Provide the following JSON parameters for the custom element to configure the initial state of the Syntax Highlighter
 
 ```json
