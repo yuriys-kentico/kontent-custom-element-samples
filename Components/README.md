@@ -10,6 +10,8 @@ You can combine any number of HTML5 inputs -> text, textarea, color, date, time,
 
 ## Configuration
 
+The main `name` parameter is used for identifying the component object. The value of this parameter is also used for buttons like Add or Delete the component.
+
 Your have to configure `name` and `type` parameters for each of your inputs. Other input parameters such as `label` are optional. For radio butons and checkboxes you need to specify a list of `options`.
 
 Following {JSON} parameters show all inputs used just once with all their configuration:
