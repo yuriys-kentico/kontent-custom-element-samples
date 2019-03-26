@@ -132,3 +132,32 @@ Following {JSON} parameters show all inputs used just once with all their config
     ]
 }
 ```
+
+## Examples of use
+
+Components for url links:
+![screenshot](https://amend.cz/components/component_links.png)
+
+```json
+
+[
+   {
+      "url":"http://google.com",
+      "target":[
+         "yes"
+      ]
+   },
+   {
+      "url":"https://kenticocloud.com",
+      "target":[
+
+      ]
+   },
+   {
+      "url":"https://kentico.com",
+      "target":[
+         "yes"
+      ]
+   }
+]
+```
