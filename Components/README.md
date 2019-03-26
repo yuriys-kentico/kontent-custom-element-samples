@@ -8,6 +8,27 @@ You can combine any number of HTML5 inputs -> text, textarea, color, date, time,
 
 ![screenshot](https://amend.cz/components/components_item.png)
 
+This outputs to:
+```json
+[
+   {
+      "username":"administrator",
+      "area":"some text",
+      "color":"#ff80c0",
+      "date":"2019-06-03",
+      "time":"23:04",
+      "number":"100",
+      "animals":"rex",
+      "fish":[
+         "dolphin",
+         "shark"
+      ],
+      "pass":"password",
+      "range":"7"
+   }
+]
+```
+
 ## Configuration
 
 The main `name` parameter is used for identifying the component object. The value of this parameter is also used for buttons like Add or Delete the component.
@@ -111,4 +132,3 @@ Following {JSON} parameters show all inputs used just once with all their config
     ]
 }
 ```
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-elements-samples/Geolocation-Leaflet?pixel)
