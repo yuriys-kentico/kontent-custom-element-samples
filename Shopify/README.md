@@ -16,8 +16,8 @@ If you want to use the Shopify product selector in your project in Kentico Cloud
 
 ```
 {
-    "storeFrontAccessToken": "<YOUR ACCESS TOKEN>",
-    "apiEndpoint": "https://<YOUR STORE NAME>.myshopify.com/api/graphql"
+  "storeFrontAccessToken": "<YOUR ACCESS TOKEN>",
+  "apiEndpoint": "https://<YOUR STORE NAME>.myshopify.com/api/graphql"
 }
 ```
 
