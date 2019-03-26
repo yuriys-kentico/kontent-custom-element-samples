@@ -144,7 +144,7 @@ Components for url links:
    {
       "url":"http://google.com",
       "target":[
-         "yes"
+         "_blank"
       ]
    },
    {
@@ -156,7 +156,7 @@ Components for url links:
    {
       "url":"https://kentico.com",
       "target":[
-         "yes"
+         "_blank"
       ]
    }
 ]
