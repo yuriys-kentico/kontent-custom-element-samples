@@ -138,6 +138,7 @@ Following {JSON} parameters show all inputs used just once with all their config
 Components for url links:
 ![screenshot](https://amend.cz/components/component_links.png)
 
+Response:
 ```json
 
 [
