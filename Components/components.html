@@ -112,7 +112,7 @@
 	function updateSize() {
 		var height = 300;
 		try {
-			height = $("html").height();
+			height = parseInt($("html").height());
 		} catch (err) {
 			console.error(err);
 		}
