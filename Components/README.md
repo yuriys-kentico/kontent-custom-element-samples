@@ -166,7 +166,7 @@ Response:
 ```
 
 Components for code blocks:
-![screenshot](https://amend.cz/components/components_code.png)
+![screenshot](https://amend.cz/components/components_codeblocks.png)
 
 ```json
 [
