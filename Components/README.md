@@ -145,7 +145,7 @@ Response:
       "url":"http://google.com",
       "text":"Google",
       "target":[
-         "yes"
+         "_blank"
       ]
    },
    {
@@ -159,7 +159,7 @@ Response:
       "url":"https://kentico.com",
       "text":"Kentico EMS",
       "target":[
-         "yes"
+         "_blank"
       ]
    }
 ]
