@@ -25,4 +25,4 @@ You can specify other {JSON} parameters as a part of the configuration to set th
     "zoom": 10
 }
 ```
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-elements-samples/Geolocation-Leaflet?pixel)
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/Geolocation-Leaflet?pixel)
