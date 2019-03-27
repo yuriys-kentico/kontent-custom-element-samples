@@ -140,24 +140,26 @@ Components for url links:
 
 Response:
 ```json
-
 [
    {
       "url":"http://google.com",
+      "text":"Google",
       "target":[
-         "_blank"
+         "yes"
       ]
    },
    {
       "url":"https://kenticocloud.com",
+      "text":"Kentico Cloud",
       "target":[
 
       ]
    },
    {
       "url":"https://kentico.com",
+      "text":"Kentico EMS",
       "target":[
-         "_blank"
+         "yes"
       ]
    }
 ]
