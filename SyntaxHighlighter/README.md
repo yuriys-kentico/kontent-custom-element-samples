@@ -46,3 +46,5 @@ Syntax Highlighter source code is in the following repository: https://github.co
 
 Syntax Highlighter is released under the MIT license.
 The Ace source code that Syntax Highlighter uses is released under the BSD license.
+
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/SyntaxHighlighter?pixel)

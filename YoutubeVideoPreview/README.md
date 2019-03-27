@@ -18,4 +18,4 @@ Possible configurations:
 
 ![screenshot](https://amend.cz/youtube/youtube1.png)
 
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-elements-samples/YoutubeVideoPreview?pixel)
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/YoutubeVideoPreview?pixel)
