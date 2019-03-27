@@ -164,3 +164,23 @@ Response:
    }
 ]
 ```
+
+Components for code blocks:
+![screenshot](https://amend.cz/components/components_code.png)
+
+```json
+[
+   {
+      "code":"<html>\n <body>\n  <h1>Title</h1>\n </body>\n</html>",
+      "target":"html"
+   },
+   {
+      "code":"var a = \"Hello world!\";\nalert(a);",
+      "target":"js"
+   },
+   {
+      "code":"h1 {\ncolor: #FFF;\n}",
+      "target":"css"
+   }
+]
+```
