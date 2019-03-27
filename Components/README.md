@@ -135,7 +135,7 @@ Following {JSON} parameters show all inputs used just once with all their config
 
 ## Examples of use
 
-Components for url links:
+### Components for url links:
 ![screenshot](https://amend.cz/components/components_links.png)
 
 Response:
@@ -165,9 +165,10 @@ Response:
 ]
 ```
 
-Components for code blocks:
+### Components for code blocks:
 ![screenshot](https://amend.cz/components/components_codeblocks.png)
 
+Response:
 ```json
 [
    {
