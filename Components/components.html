@@ -110,8 +110,12 @@
 	}
   
 	function updateSize() {
-		// Update the Custom element height in the Kentico Cloud UI
-		const height = $("html").height();
+		var height = 300;
+		try {
+			height = $("html").height();
+		} catch (err) {
+			console.error(err);
+		}
 		CustomElement.setHeight(height);
 	}
   
@@ -163,7 +167,7 @@
 							break;
 						case 'radio':
 							for (var y = 0; y < mainObject[x].options.length; y++) {
-								input += '<input type="'+mainObject[x].type+'" id="'+name+id+'" name="'+name+'" value="'+mainObject[x].options[y][0]+'" '+(value==mainObject[x].options[y][0]?"checked":"")+'/> '+mainObject[x].options[y][1]+'<br />';
+								input += '<input type="'+mainObject[x].type+'" id="'+name+id+'" name="'+name+id+'" radioname="'+name+'" value="'+mainObject[x].options[y][0]+'" '+(value==mainObject[x].options[y][0]?"checked":"")+'/> '+mainObject[x].options[y][1]+'<br />';
 							}
 							break;
 						case 'checkbox':
@@ -227,16 +231,16 @@
 							jsonObject[$(this).attr("name")] = [];
 						}
 						else {
-							jsonObject[$(this).attr("name")] = "";
+							jsonObject[$(this).attr("radioname")] = "";
 						}
-						listName = $(this).attr("name")
+						listName = $(this).attr("name");
 					}
 					if (this.checked) {
 						if ($(this).attr("type")=="checkbox") {							
 							jsonObject[$(this).attr("name")].push($(this).val());
 						}
 						else {
-							jsonObject[$(this).attr("name")] = $(this).val();
+							jsonObject[$(this).attr("radioname")] = $(this).val();
 						}
 						console.log($(this).val());
 					}
