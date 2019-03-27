@@ -136,7 +136,7 @@ Following {JSON} parameters show all inputs used just once with all their config
 ## Examples of use
 
 Components for url links:
-![screenshot](https://amend.cz/components/component_links.png)
+![screenshot](https://amend.cz/components/components_links.png)
 
 Response:
 ```json
