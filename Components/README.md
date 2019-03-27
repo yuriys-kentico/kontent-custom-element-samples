@@ -166,22 +166,22 @@ Response:
 ```
 
 ### Components for code blocks:
-![screenshot](https://amend.cz/components/components_codeblocks.png)
+![screenshot](https://amend.cz/components/components_codeblock.png)
 
 Response:
 ```json
 [
    {
       "code":"<html>\n <body>\n  <h1>Title</h1>\n </body>\n</html>",
-      "target":"html"
+      "type":"html"
    },
    {
       "code":"var a = \"Hello world!\";\nalert(a);",
-      "target":"js"
+      "type":"js"
    },
    {
       "code":"h1 {\ncolor: #FFF;\n}",
-      "target":"css"
+      "type":"css"
    }
 ]
 ```
