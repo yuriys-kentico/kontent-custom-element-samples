@@ -98,7 +98,13 @@
 	function setup(value, name, inputs) {	
 		objectName = name;
 		$('#add_object').text("Add "+objectName);
-		mainObject = inputs;
+		
+		if (checkUniqueNames(inputs)) {
+			mainObject = inputs;
+		}
+		else {
+			showError('Your input configuration contains suplicated names. Please name your inputs uniquely.');  
+		}
 		
 		if (value) {
 			loadObjects(value);
@@ -112,7 +118,7 @@
 	function updateSize() {
 		var height = 300;
 		try {
-			height = parseInt($("html").height());
+			height = parseInt($("html").height());		
 		} catch (err) {
 			console.error(err);
 		}
@@ -152,10 +158,11 @@
 			for (var x = 0; x < mainObject.length; x++) {	
 				var input = '<div class="object-input">';
 				var name = mainObject[x].name;
-				if (name) {
+				var type = mainObject[x].type;
+				if (name && type) {
 					if (mainObject[x].label) input += '<label for="'+name+id+'">'+mainObject[x].label+'</label>';
 					var value = (passedObject?passedObject[name]:"");
-					switch (mainObject[x].type) {
+					switch (type) {
 						case 'text':						
 							input += '<input type="'+mainObject[x].type+'" id="'+name+id+'" name="'+name+'" placeholder="'+(mainObject[x].placeholder?mainObject[x].placeholder:"")+'" '+(value?'value="'+value+'"':"")+' />';
 							break;
@@ -192,10 +199,12 @@
 						case 'time':
 							input += '<input type="'+mainObject[x].type+'" id="'+name+id+'" name="'+name+'" '+(value?'value="'+value+'"':"")+' />';
 							break;
+						default:
+							showError('There is no such an input type. Please check documentation for allowed types.'); 
 					}
 				}
 				else {
-					$("#components_wrapper").html('<span class="item-status item-status--failed">Please specify the "name" parameter for all of your inputs.</span>');        
+					showError('Please specify the "name" and "type" parameters for all of your inputs.');    
 				}
 				output += input + "</div>";
 			}
@@ -242,6 +251,7 @@
 						else {
 							jsonObject[$(this).attr("radioname")] = $(this).val();
 						}
+						console.log($(this).val());
 					}
 				}
 				else {					
@@ -268,8 +278,24 @@
 		});
 	}
 	
+	function checkUniqueNames(inputs) {
+		var names = [];
+		for (var x = 0; x < inputs.length; x++) {
+			if (names.includes(inputs[x].name)) {
+				return false;
+			}
+			names.push(inputs[x].name);
+		}
+		return true;
+	}
+	
 	function generateHash() {
 		return Math.random().toString(36).substring(2) + (new Date()).getTime().toString(36);
+	}
+	
+	function showError(message) {
+		$("#components_wrapper").html('<span class="item-status item-status--failed">'+message+'</span>'); 
+		$("button").hide();
 	}
 
 </script>
