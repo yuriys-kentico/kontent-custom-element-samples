@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Input with Ipsum Generator</title>
+    <meta name="author" content="Jeroen Fürst">
 
     <!-- libs -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-    <script src="lorem.js"></script>
+    <script src="./getlorem.min.js"></script>
 
     <!-- Kentico Custom element CSS-->
-    <link rel="stylesheet" type="text/css" href="https://kentico.github.io/custom-element-samples/shared/custom-element.css">
+    <link rel="stylesheet" type="text/css" href="./custom-element.min.css">
 
     <!-- Kentico Custom elements API-->
     <script src="https://app.kenticocloud.com/js-api/custom-element.js"></script>
@@ -36,11 +37,15 @@
 <body>
     <!-- Custom element HTML -->
     <div class="disabled_overlay"></div>
-    <div style="width: 500px;">
+    <div>
         <div class="text-field">
-            <input class="text-field__input" id="text_input" type="text">
-            <button class="btn btn--primary" id="button_generate_ipsum">Ipsum</button>
+            <textarea rows="5" class="text-field__input" id="text_input" type="text" style="resize: none;">
+            </textarea>
         </div>
+        <button class="btn btn--primary" style="margin: 10px;" data-balloon="Ipsum" data-balloon-pos="up-left"
+                type="button" id="button_generate_ipsum">
+            <span>Generate Lorem Ipsum</span><i class="icon-autogenerate btn__endicon" aria-hidden="true"></i>
+        </button>
     </div>
     <!-- Custom element code -->
     <script>
@@ -56,15 +61,15 @@
             }
         }
 
-        function setup(value, length) {
+        function setup(value, words) {
             const input = document.querySelector('#text_input');
             input.value = value;
 
             $("#button_generate_ipsum").on("click", function () {
-                $("#text_input").lorem(length).trigger("change");
+                $("#text_input").val(getlorem.words(words));
             });
 
-            $("#text_input").on("change", function () {
+            $("#text_input").bind('input propertychange', function () {
                 if (!isDisabled) {
                     // Send updated text to Kentico
                     CustomElement.setValue(input.value);
@@ -81,14 +86,14 @@
         function initCustomElement() {
             try {
                 CustomElement.init((element, _context) => {
-                    var length = 25;
+                    var words = 25;
 
                     if (element.config) {
-                        if (element.config.length) length = element.config.length;
+                        if (element.config.words) words = element.config.words;
                     }
 
                     // Setup with initial value and disabled state
-                    setup(element.value, length);
+                    setup(element.value, words);
                     updateDisabled(element.disabled);
                     updateSize();
                 });

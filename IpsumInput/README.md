@@ -16,7 +16,7 @@ If you want to use the ipsum input in your project in Kentico Cloud, follow thes
 
 ```json
 {
-    "Length": 5 // NUMBER OF WORDS
+    "Words": 5 // NUMBER OF WORDS
 }
 ```
 
