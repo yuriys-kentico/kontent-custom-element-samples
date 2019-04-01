@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Input with Ipsum Generator</title>
-    <meta name="author" content="Jeroen Fürst">
+    <meta name="author" content="Jeroen Fï¿½rst">
 
     <!-- libs -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
@@ -66,10 +66,10 @@
             input.value = value;
 
             $("#button_generate_ipsum").on("click", function () {
-                $("#text_input").val(getlorem.words(words));
+                $("#text_input").val(getlorem.words(words)).trigger("change");
             });
 
-            $("#text_input").bind('input propertychange', function () {
+            $("#text_input").on('change input', function () {
                 if (!isDisabled) {
                     // Send updated text to Kentico
                     CustomElement.setValue(input.value);
