@@ -47,6 +47,11 @@ We'll also appreciate if you [submit your ideas](https://github.com/Kentico/cust
 
 Check out the [Contributing](https://github.com/Kentico/custom-element-samples/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions, and begin contributing.
 
+## Disclaimer
+
+The custom elements in this repository are subject to change. If you wish to use them on a live project, please fork this repository and reference your repository URL in Kentico Cloud custom element configuration.
+Some of the custom elements may require further configuration such as custom API keys or be subject to CORS limitation. In those cases please fork the source code repository and adjust the configuration in your repository according to instructions in the element's README file.
+
 # Custom Elements Contest 2019
 
 **UPDATE: We are pushing the contest deadline to 14th of April! So keep up, finish your elements and create pull requests. Any pull request that makes it till midnight on 14th of April is included!**
