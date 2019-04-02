@@ -1,7 +1,7 @@
 # Ipsum input
 The ipsum input allows you to quickly add ipsum content to your input fields.
 
-![Ipsum Input](IpsumInput.png)
+![Ipsum Input](IpsumInput.PNG)
 
 # Usage
 
@@ -16,7 +16,7 @@ If you want to use the ipsum input in your project in Kentico Cloud, follow thes
 
 ```json
 {
-    "words": 5 // NUMBER OF WORDS
+    "words": 5
 }
 ```
 
