@@ -1,7 +1,7 @@
 # Kentico Cloud Toast UI editor custom element
 
 Toast UI editor is based on [Toast UI Editor](https://ui.toast.com/tui-editor). It is a Markdown WYSIWYG Editor including GFM Standard + Chart & UML Extensible.
-All of the editor [extensions]()https://github.com/nhnent/tui.editor/blob/master/docs/using-extensions.md) are enabled in this custom element.
+All of the editor [extensions](https://github.com/nhnent/tui.editor/blob/master/docs/using-extensions.md) are enabled in this custom element.
 
 ![Toast UI editor](ToastUIEditor.gif)
 
