@@ -9,12 +9,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="custom-element.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
   <script src="https://app.kenticocloud.com/js-api/custom-element.js"></script>
   <script>
-
     function changeSize(size){
       CustomElement.setHeight(size);
     }
@@ -23,9 +23,11 @@
 </head>
 
 <body>
-  <p>Date: <input type="text" id="datepicker" onfocus="changeSize(300)"/></p>
+  <div style="width:270px;"><input style="margin:10px;" class="text-field__input" type="text" id="datepicker" onfocus="changeSize(300)"/></div>
+
   <script>
     $(function () {
+
       
       function setDatePicker(dateFormat) {
         $("#datepicker").datepicker({
@@ -44,11 +46,9 @@
         });
         $("#datepicker").datepicker("setDate", value);
       }
-
       function updateDisabled(disabled) {
         $("#datepicker").datepicker("option", "disabled", disabled);
       }
-
       CustomElement.init((element, context) => {
         value = element.value;
         CustomElement.setHeight(60);
