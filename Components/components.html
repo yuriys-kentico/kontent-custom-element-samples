@@ -134,6 +134,9 @@
 					if (element.config.name) name = element.config.name;
 					if (element.config.inputs) inputs = element.config.inputs;
 				}
+				else {
+					showError('There is no input configuration specified for this component. Please check the documentation.');  
+				}
 				// Setup with initial value and disabled state
 				setup(element.value, name, inputs);  
 				updateDisabled(element.disabled);
