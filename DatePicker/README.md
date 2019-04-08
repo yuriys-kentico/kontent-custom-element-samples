@@ -21,3 +21,4 @@ If you want to use the Date picker in your Kentico Cloud project, follow these s
 }
 ```
 
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/DatePicker?pixel)
