@@ -40,4 +40,4 @@ npm start -- -hw
 
 Browse: https://localhost:3000/custom-elements/KCTuiEditor/wrap
 
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-elements-samples/KCTuiEditor?pixel)
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/KCTuiEditor?pixel)
