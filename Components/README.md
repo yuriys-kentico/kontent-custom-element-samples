@@ -185,3 +185,6 @@ Response:
    }
 ]
 ```
+
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/Components?pixel)
+
