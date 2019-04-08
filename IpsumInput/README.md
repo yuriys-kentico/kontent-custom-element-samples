@@ -20,4 +20,4 @@ If you want to use the ipsum input in your project in Kentico Cloud, follow thes
 }
 ```
 
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-elements-samples/IpsumInput?pixel)
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/IpsumInput?pixel)
