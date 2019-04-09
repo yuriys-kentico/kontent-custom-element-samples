@@ -40,7 +40,9 @@ const request = (queryStringParameters, headers) => {
         headers['Authorization'] = authorizationHeaderValue;
     }
 
+    headers['accept-encoding'] = 'identity';
     headers['Host'] = host;
+    
     requestOptions.headers = headers;
 
     return new Promise((resolve, reject) => {
