@@ -1,4 +1,4 @@
-# WYSIWYG Quill
+# WYSIWYG Summernote
 
 This KC custom element is based on the https://summernote.org/ rich text editor.
 It allows you to switch to the Source code mode to edit or see the HTML markup!
