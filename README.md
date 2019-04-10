@@ -47,11 +47,18 @@ We'll also appreciate if you [submit your ideas](https://github.com/Kentico/cust
 
 Check out the [Contributing](https://github.com/Kentico/custom-element-samples/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions, and begin contributing.
 
+## Disclaimer
+
+The custom elements in this repository are subject to change. If you wish to use them on a live project, please fork this repository and reference your repository URL in Kentico Cloud custom element configuration.
+Some of the custom elements may require further configuration such as custom API keys or be subject to CORS limitation. In those cases please fork the source code repository and adjust the configuration in your repository according to instructions in the element's README file.
+
 # Custom Elements Contest 2019
+
+**UPDATE: We are pushing the contest deadline to 14th of April! So keep up, finish your elements and create pull requests. Any pull request that makes it till midnight on 14th of April is included!**
 
 We all like to play! During the March of 2019 we are hosting the Custom Elements Contest 2019. Do you have what it takes to code an awesome Custom Element and compete with others for $150 Amazon vouchers? Then take a look at these few rules we've put together:
 
-* The contest runs between 1st and 31st of March 2019
+* The contest runs between 1st and 31st of March 2019 (**UPDATE: contest deadline pushed to 14th of April 2019**)
 * Every extension submitted between these dates is automatically included in the contest
 * Every extension must comply with all applicable licenses
 * Every extension must be submitted only by its author
@@ -73,7 +80,7 @@ We all like to play! During the March of 2019 we are hosting the Custom Elements
 
 * Pull requests are to be submitted to https://github.com/Kentico/custom-element-samples
 * Every custom element extension submitted between 1st and 31st of March 2019 is automatically included in the contest
-* If you are working on a custom element extension based on an idea from our list, let us know via GitHub issues and we will assign the issue to you.
+* If you are working on a custom element extension based on an idea from our list, let us know via GitHub issues and we will assign the issue to you. (**UPDATE: contest deadline pushed to 14th of April 2019**)
 
 ## Winners
 If your custom element extension will place in the top 10, we will get in touch with you via GitHub to collect your contact info so that you can receive your prize. Please make sure your GitHub contact info is current.

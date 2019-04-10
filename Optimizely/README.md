@@ -14,12 +14,12 @@ If you want to use the Optimizely audiences selector in your project in Kentico 
 * Use following URL as Hosted code URL (HTTPS): https://kentico.github.io/custom-element-samples/Optimizely/audiences-selector.html
 * Provide the following JSON parameters for the custom element to connect it to your Optimizely project, replace the macros with the actual values from Optimizely admin UI
 
-`
+```json
 {
     "projectId": "<YOUR PROJECT ID>",
     "apiToken": "<YOUR ACCESS TOKEN>"
 }
-`
+```
 
 # Installation
 
@@ -27,4 +27,4 @@ Optimizely audiences selector source code is in following repository: https://gi
 
 If you want to adjust the implementation, first download [Kentico Cloud Custom Elements Devkit](https://github.com/kentico/custom-element-devkit). Source code of this selector needs be positioned within `/client/custom-elements` folder. For further instructions on devkit implementation, please refer to [Custom Element Devkit README](https://github.com/Kentico/custom-element-devkit/blob/master/readme.md).
 
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-elements-samples/Optimizely?pixel)
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/Optimizely?pixel)
