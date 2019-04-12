@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://localhost:3000/js-api/custom-element.js"></script>
+    <style>
+        body {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="frm_0" frameborder="0" height="0"></iframe>
+    <script>
+        var frame = document.getElementById('frm_0');
+        var host = 'youtube';
+        var id = '';
+
+        function setupPreview(host, id) {
+            var src;
+            var height = 0;
+            var width = 0;
+
+            switch (host) {
+                case 'vimeo':
+                    src = 'https://player.vimeo.com/video/' + id + '?title=0&byline=0&portrait=0';
+                    width = 640;
+                    height = 360;
+                    break;
+
+                case 'youtube':
+                    src = 'https://www.youtube.com/embed/' + id;
+                    width = 560;
+                    height = 315;
+                    break;
+            }
+
+            frame.src = src;
+            frame.setAttribute('width', width);
+            frame.setAttribute('height', height);
+
+            CustomElement.setHeight(height);
+        }
+
+        function reload() {
+            if (config.hostElement) {
+                CustomElement.getElementValue(config.hostElement, function (value) {
+                    var hostValues = value || [];
+                    host = hostValues.length && hostValues[0].codename;
+
+                    id = value;
+                    setupPreview(host, id);
+                });
+            }
+
+            CustomElement.getElementValue(config.idElement || 'video_id', function (value) {
+                id = value;
+                setupPreview(host, id);
+            });
+        }
+
+        function initCustomElement() {
+            try {
+                CustomElement.init((element, _context) => {
+                    config = element.config || {};
+
+                    reload();
+
+                    //CustomElement.observeChanges([], reload);
+                });
+            } catch (err) {
+                // Initialization with the Custom elements API failed
+                // (page displayed outside of the Kentico Cloud UI)
+                console.error(err);
+            }
+        }
+
+        initCustomElement();
+    </script>
+</body>
+</html>
