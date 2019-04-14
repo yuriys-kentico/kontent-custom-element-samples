@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Flickr image selector</title>
+    <meta name="author" content="Maarten van den Hooven">
+
+    <!-- libs -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
+    <!-- Kentico Custom element CSS-->
+    <link rel="stylesheet" type="text/css" href="./custom-element.min.css">
+
+    <!-- Kentico Custom elements API-->
+    <script src="https://app.kenticocloud.com/js-api/custom-element.js"></script>
+
+    <!-- Custom elements styles -->
+    <style>
+
+        body {
+            margin: 0;
+        }
+
+        .disabled_overlay {
+            position: fixed;
+            z-index: 10;
+            cursor: not-allowed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+
+        div#flickrImages img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        div.gallery img {
+            cursor: pointer;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+
+            div.gallery:hover {
+                border: 1px solid #777;
+            }
+
+        div.title {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom element HTML -->
+    <div class="disabled_overlay"></div>
+    <div>
+        <div class="text-field">
+            <input class="text-field__input" id="search" type="text" placeholder="search text" style="resize: none;">
+        </div>
+        <button class="btn btn--primary" data-balloon="Image" data-balloon-pos="up-left" id="submit" style="margin: 10px;" type="button">
+            <span>Search image on Flickr</span><i class="icon-autogenerate btn__endicon" aria-hidden="true"></i>
+        </button>
+        <button class="btn btn--primary" data-balloon="Image" data-balloon-pos="up-left" id="clear" style="margin: 10px;" type="button">
+            <span>Clear</span><i class="icon-clear-filter btn__endicon" aria-hidden="true"></i>
+        </button>
+        <div id="flickrImages"></div>
+    </div>
+    <!-- Custom element code -->
+    <script>
+        var isDisabled = false;
+
+        function updateDisabled(disabled) {
+            isDisabled = disabled;
+            if (disabled) {
+                $('.disabled_overlay').show();
+            }
+            else {
+                $('.disabled_overlay').hide();
+            }
+        }
+
+        function setupFlickrImageSelector(value, totalimages, apikey, params) {
+            //Set trigger on enter key on the search field
+            const input = document.querySelector('#search');
+            input.addEventListener("keyup", function (event) {
+                if (event.keyCode === 13) {
+                    event.preventDefault();
+                    $("#submit").click();
+                }
+            });
+
+            //Load image of the current saved value
+            input.value = value;
+            $("#flickrImages").html($("<img>").attr({ "src": value, "onload": "updateSize()" }));
+
+            //Bind method to search on Flickr to the search button
+            $("#submit").on("click", function () {
+                searchFlickr(totalimages, apikey, params);
+            });
+
+            $("#clear").on("click", function () {
+                $("#flickrImages").html("");
+                $("#search").val("");
+                updateSize();
+                CustomElement.setValue("");
+            });
+        }
+
+        function isEmpty(value) {
+            return value == null || value == "";
+        }
+
+        function searchFlickr(totalimages, apikey, params) {
+            $("#flickrImages").html("");
+
+            /*Clean all empty parameters and generate querystring for api call*/
+            for (key in params)
+                if (isEmpty(params[key]))
+                    delete params[key]; 
+            var queryString = $.param(params);
+
+            /*jQuery AJAX Method*/
+            var flickrAPI = `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apikey}&text=${$("#search").val()}&safe_search=1&per_page=${totalimages}&${queryString}`;
+
+            $.getJSON(flickrAPI + "&format=json&jsoncallback=?", function (data) {
+                $.each(data.photos.photo, function (i, item) {
+                    img = `<div class='gallery'><img class='flickrimg' src='https://farm${item.farm}.static.flickr.com/${item.server}/${item.id}_${item.secret}_m.jpg'/>`;
+                    img += `<div class='title'>${item.title}</div></div>`;
+                    $(img).appendTo("#flickrImages");
+                });
+
+                updateSize();
+
+                $(".flickrimg").click(function (e) {
+                    var fileName = $(e.target).closest("img").attr('src');
+                    if (fileName) {
+                        CustomElement.setValue(fileName);
+                        $("#flickrImages").html($("<img>").attr("src", fileName));
+                        $("#search").val(fileName);
+                    }
+                    updateSize();
+                });
+            });
+        }
+
+        function updateSize() {
+            const height = Math.ceil($("html").height());
+            CustomElement.setHeight(height);
+
+            // No images loaded
+            var imagesLoaded = 0;
+            // Count the total number of images on the page when the page has loaded.
+            var totalImages = $('img').length;
+
+            // After an image is loaded, add to the count, and if that count equals the
+            // total number of images, resize now custom element
+            $('img').on('load', function (event) {
+                imagesLoaded++;
+                if (imagesLoaded == totalImages) {
+                    const height = Math.ceil($("html").height());
+                    CustomElement.setHeight(height);
+                }
+            });
+        }
+
+        function initCustomElement() {
+            try {
+                CustomElement.init((element, _context) => {
+                    var totalimages = 25;
+                    var apikey = "";
+                    var params = {
+                        user_id: "",
+                        min_upload_date: "",
+                        max_upload_date: "",
+                        min_taken_date: "",
+                        max_taken_date: "",
+                        sort: "",
+                        privacy_filter: "",
+                        safe_search: "",
+                        content_type: "",
+                        geo_context: ""
+                    };
+
+                    if (element.config) {
+                        if (element.config.totalimages) totalimages = element.config.totalimages;
+                        if (element.config.apikey) apikey = element.config.apikey;
+                        if (element.config.userid) params["user_id"] = element.config.userid;
+                        if (element.config.min_upload_date) params["min_upload_date"] = element.config.min_upload_date;
+                        if (element.config.max_upload_date) params["max_upload_date"] = element.config.max_upload_date;
+                        if (element.config.min_taken_date) params["min_taken_date"] = element.config.min_taken_date;
+                        if (element.config.max_taken_date) params["max_taken_date"] = element.config.max_taken_date;
+                        if (element.config.sort) params["sort"] = element.config.sort;
+                        if (element.config.privacy_filter) params["privacy_filter"] = element.config.privacy_filter;
+                        if (element.config.safe_search) params["safe_search"] = element.config.safe_search;
+                        if (element.config.content_type) params["content_type"] = element.config.content_type;
+                        if (element.config.geo_context) params["geo_context"] = element.config.geo_context;
+                    }
+                    // Setup with initial value and disabled state
+                    updateDisabled(element.disabled);
+                    setupFlickrImageSelector(element.value, totalimages, apikey, params);
+                    updateSize();
+                });
+                // React on disabled changed (e.g. when publishing the item)
+                CustomElement.onDisabledChanged(updateDisabled);
+            } catch (err) {
+                // Initialization with Kentico Custom element API failed (page displayed outside of the Kentico UI)
+                console.error(err);
+                updateDisabled(true);
+            }
+        }
+
+        initCustomElement();
+    </script>
+</body>
+</html>
