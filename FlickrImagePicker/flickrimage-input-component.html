@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Search Flickr image selector</title>
@@ -16,7 +17,6 @@
 
     <!-- Custom elements styles -->
     <style>
-
         body {
             margin: 0;
         }
@@ -35,6 +35,7 @@
         div#flickrImages img {
             max-width: 100%;
             height: auto;
+            margin: 5px;
         }
 
         div.gallery img {
@@ -48,9 +49,9 @@
             width: 180px;
         }
 
-            div.gallery:hover {
-                border: 1px solid #777;
-            }
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
 
         div.title {
             padding: 15px;
@@ -63,17 +64,19 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Custom element HTML -->
-    <div class="disabled_overlay"></div>
     <div>
         <div class="text-field">
             <input class="text-field__input" id="search" type="text" placeholder="search text" style="resize: none;">
         </div>
-        <button class="btn btn--primary" data-balloon="Image" data-balloon-pos="up-left" id="submit" style="margin: 10px;" type="button">
+        <button class="btn btn--primary" data-balloon="Image" data-balloon-pos="up-left" id="submit"
+            style="margin: 10px;" type="button">
             <span>Search image on Flickr</span><i class="icon-autogenerate btn__endicon" aria-hidden="true"></i>
         </button>
-        <button class="btn btn--primary" data-balloon="Image" data-balloon-pos="up-left" id="clear" style="margin: 10px;" type="button">
+        <button class="btn btn--primary" data-balloon="Image" data-balloon-pos="up-left" id="clear"
+            style="margin: 10px;" type="button">
             <span>Clear</span><i class="icon-clear-filter btn__endicon" aria-hidden="true"></i>
         </button>
         <div id="flickrImages"></div>
@@ -84,12 +87,10 @@
 
         function updateDisabled(disabled) {
             isDisabled = disabled;
-            if (disabled) {
-                $('.disabled_overlay').show();
-            }
-            else {
-                $('.disabled_overlay').hide();
-            }
+
+            $('#search').attr('readonly', disabled);
+            $('#submit').attr('disabled', disabled);
+            $('#clear').attr('disabled', disabled);
         }
 
         function setupFlickrImageSelector(value, totalimages, apikey, params) {
@@ -233,4 +234,5 @@
         initCustomElement();
     </script>
 </body>
+
 </html>
