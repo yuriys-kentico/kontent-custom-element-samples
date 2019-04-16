@@ -35,6 +35,7 @@
         div#GiphyImages img {
             max-width: 100%;
             height: auto;
+            margin: 5px;
         }
 
         div.gallery img {
@@ -48,9 +49,9 @@
             width: 180px;
         }
 
-            div.gallery:hover {
-                border: 1px solid #777;
-            }
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
 
         div.title {
             padding: 15px;
@@ -65,7 +66,6 @@
 </head>
 <body>
     <!-- Custom element HTML -->
-    <div class="disabled_overlay"></div>
     <div>
         <div class="text-field">
             <input class="text-field__input" id="search" type="text" placeholder="search text" style="resize: none;">
@@ -84,12 +84,10 @@
 
         function updateDisabled(disabled) {
             isDisabled = disabled;
-            if (disabled) {
-                $('.disabled_overlay').show();
-            }
-            else {
-                $('.disabled_overlay').hide();
-            }
+
+            $('#search').attr('readonly', disabled);
+            $('#submit').attr('disabled', disabled);
+            $('#clear').attr('disabled', disabled);
         }
 
         function setupGiphyImageSelector(value, params) {
