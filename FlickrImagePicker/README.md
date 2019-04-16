@@ -12,12 +12,13 @@ If you want to use the Flickr image picker in your project in Kentico Cloud, fol
 * Add the **Custom element** content element
 * Configure the content element
 * Use the following URL as Hosted code URL (HTTPS): https://kentico.github.io/custom-element-samples/FlickrImagePicker/flickrimage-input-component.html
-* Create API key for Flickr: https://www.flickr.com/services/developer/api/
-* Provide JSON parameters for the custom element to configure the API Key:
+* Create API key and Secret for Flickr: https://www.flickr.com/services/developer/api/
+* Provide JSON parameters for the custom element to configure the API Key and secret:
 
 ```json
 {
     "apikey": "[YOUR API KEY]"
+	"secret": "[YOUR SECRET]"
 }
 ```
 * You can add more parameters, see here for all options: https://www.flickr.com/services/api/flickr.photos.search.html

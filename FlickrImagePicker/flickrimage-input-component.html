@@ -135,6 +135,8 @@
                     img = `<div class='gallery'><img class='flickrimg' src='https://farm${item.farm}.static.flickr.com/${item.server}/${item.id}_${item.secret}_m.jpg'/>`;
                     img += `<div class='title'>${item.title}</div></div>`;
                     $(img).appendTo("#flickrImages");
+                }).error(function() {
+                    $(img).appendTo("Page cannot be loaded");
                 });
 
                 updateSize();
