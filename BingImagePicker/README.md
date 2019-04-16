@@ -39,7 +39,7 @@ A filter used to filter results for adult content. Options are "Off", "Moderate"
 
 ## Example output
 
-The element will save a value containing the URL of the image to Kentico cloud.
+The element will save a value [contentUrl] containing the URL of the image to Kentico cloud.
 
 ```
 {
