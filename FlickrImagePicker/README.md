@@ -26,7 +26,7 @@ The following options are supported: user_id, min_upload_date, max_upload_date, 
 
 ## Example output
 
-The element will save a value containing the URL of the image to Kentico cloud like //Image URL format https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg
+The element will save a value containing the URL of the image to Kentico cloud like : https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg
 
 ```
 { 
