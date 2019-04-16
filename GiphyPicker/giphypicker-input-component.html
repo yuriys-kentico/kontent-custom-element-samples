@@ -56,6 +56,11 @@
             padding: 15px;
             text-align: center;
         }
+
+        div.error {
+            color: red;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -135,11 +140,18 @@
             var giphyAPI = `https://api.giphy.com/v1/gifs/search?${queryString}`;
 
             $.getJSON(giphyAPI, function (data) {
-                $.each(data.data, function (i, item) {
-                    var giphyURL = item.images.fixed_height.url;
-                    img = `<div class='gallery'><img class='giphyimg' src='${giphyURL}'/>`;
-                    $(img).appendTo("#GiphyImages");
-                });
+                try {
+                    $.each(data.data, function (i, item) {
+                        var giphyURL = item.images.fixed_height.url;
+                        img = `<div class='gallery'><img class='giphyimg' src='${giphyURL}'/>`;
+                        $(img).appendTo("#GiphyImages");
+                    });
+                } catch (err) {
+                    // Initialization with Kentico Custom element API failed (page displayed outside of the Kentico UI)
+                    console.error(err);
+                    $("<div class='error'><strong>Images cannot be loaded</strong><br/>Check if you're API key and secret are correct.</div>").appendTo("#flickrImages");
+                    updateSize();
+                }
 
                 updateSize();
 
