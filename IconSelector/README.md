@@ -8,9 +8,10 @@ You can test it by configuring https://kentico.github.io/custom-element-samples/
 
 You can provide an array of options to be displayed with their icon (source file location)), label and value. The value returned is of type `string` with the value of a single option.
 
-![screenshot](https://https://kentico.github.io/custom-element-samples/IconSelector/demo/icon-selector-ui.jpg)
+![screenshot](demo/icon-selector-ui.jpg)
 
 This outputs to:
+
 ```plain
 projectManager
 ```
@@ -56,4 +57,6 @@ Following {JSON} parameters show five options specified:
 }
 ```
 
-![screenshot](https://https://kentico.github.io/custom-element-samples/IconSelector/demo/icon-selector-config.jpg)
+![screenshot](demo/icon-selector-config.jpg)
+
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/IconSelector?pixel)
