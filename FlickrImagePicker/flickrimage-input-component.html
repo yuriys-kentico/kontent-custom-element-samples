@@ -56,6 +56,11 @@
             padding: 15px;
             text-align: center;
         }
+
+        div.error {
+            color: red;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -124,20 +129,26 @@
             /*Clean all empty parameters and generate querystring for api call*/
             for (key in params)
                 if (isEmpty(params[key]))
-                    delete params[key]; 
+                    delete params[key];
             var queryString = $.param(params);
 
             /*jQuery AJAX Method*/
             var flickrAPI = `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apikey}&text=${$("#search").val()}&safe_search=1&per_page=${totalimages}&${queryString}`;
 
             $.getJSON(flickrAPI + "&format=json&jsoncallback=?", function (data) {
-                $.each(data.photos.photo, function (i, item) {
-                    img = `<div class='gallery'><img class='flickrimg' src='https://farm${item.farm}.static.flickr.com/${item.server}/${item.id}_${item.secret}_m.jpg'/>`;
-                    img += `<div class='title'>${item.title}</div></div>`;
-                    $(img).appendTo("#flickrImages");
-                }).error(function() {
-                    $(img).appendTo("Page cannot be loaded");
-                });
+                try {
+                    $.each(data.photos.photo, function (i, item) {
+                        //Image URL format https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg
+                        img = `<div class='gallery'><img class='flickrimg' src='https://farm${item.farm}.staticflickr.com/${item.server}/${item.id}_${item.secret}.jpg'/>`;
+                        img += `<div class='title'>${item.title}</div></div>`;
+                        $(img).appendTo("#flickrImages");
+                    });
+                } catch (err) {
+                    // Initialization with Kentico Custom element API failed (page displayed outside of the Kentico UI)
+                    console.error(err);
+                    $("<div class='error'><strong>Images cannot be loaded</strong><br/>Check if you're API key is correct and the JSON has a valid format.</div>").appendTo("#flickrImages");
+                    updateSize();
+                }
 
                 updateSize();
 
