@@ -56,6 +56,11 @@
             padding: 15px;
             text-align: center;
         }
+
+        div.error {
+            color: red;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -139,11 +144,18 @@
                     type: "GET"
                 })
                 .done(function(data) {
-                    $.each(data.value, function (i, item) {
-                        img = `<div class='gallery'><img class='Bingimg' src='${item.contentUrl}'/>`;
-                        img += `<div class='title'>${item.name}</div></div>`;
-                        $(img).appendTo("#BingImages");
-                    });
+                    try {
+                        $.each(data.value, function (i, item) {
+                            img = `<div class='gallery'><img class='Bingimg' src='${item.contentUrl}'/>`;
+                            img += `<div class='title'>${item.name}</div></div>`;
+                            $(img).appendTo("#BingImages");
+                        });
+                    } catch (err) {
+                        // Initialization with Kentico Custom element API failed (page displayed outside of the Kentico UI)
+                        console.error(err);
+                        $("<div class='error'><strong>Images cannot be loaded</strong><br/>Check if you're API key and secret are correct.</div>").appendTo("#flickrImages");
+                        updateSize();
+                    }
 
                     updateSize();
 
