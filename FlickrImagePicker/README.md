@@ -23,4 +23,34 @@ If you want to use the Flickr image picker in your project in Kentico Cloud, fol
 * You can add more parameters, see here for all options: https://www.flickr.com/services/api/flickr.photos.search.html
 The following options are supported: user_id, min_upload_date, max_upload_date, min_taken_date, max_taken_date, sort, privacy_filter, safe_search, content_type, geo_context. 
 * NOTE : Use parameter "per_page" for how many images you want to see, by default this are 25. There is no pager added so "page" is absolute
+
+## Example output
+
+The element will save a value containing the URL of the image to Kentico cloud like //Image URL format https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg
+
+```
+{ 
+	"photos": { 
+		...
+		"page": 1, 
+		"pages": "1396186", 
+		"perpage": 1, 
+		"total": "1396186", 
+		"photo": [{ 
+			...
+			"id": "46707213175", 
+			"owner": "57712732@N04", 
+			"secret": "3d79fd0112", 
+			"server": "65535", 
+			"farm": 66, "title": "Holland - Moerdijk bridges (2007)", 
+			"ispublic": 1, 
+			"isfriend": 0, 
+			"isfamily": 0 
+		}]
+		...
+	}, "stat": "ok" 
+	...
+}
+```
+
 ![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-elements-samples/FlickrImagePicker?pixel)
