@@ -162,6 +162,10 @@
                     }
                     updateSize();
                 });
+            }).fail(function () {
+                console.error("error");
+                $("<div class='error'><strong>Images cannot be loaded</strong><br/>Check if you're API key and secret are correct.</div>").appendTo("#GiphyImages");
+                updateSize();
             });
         }
 
