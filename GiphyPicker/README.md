@@ -20,7 +20,7 @@ If you want to use the Giphy image picker in your project in Kentico Cloud, foll
     "apikey": "[YOUR API KEY]"
 }
 ```
-* You can add more parameters
+* The following parameters are supported:
   
 limit (optional) number  
 The number of image results to return in the response. The actual number delivered may be less than requested.  
@@ -32,7 +32,21 @@ rating (optional) string
 Filter result by rating, possible options are : Y, G, PG, PG-13, R
   
 lang(optional) string    
-Specify default country for regional content.
+Specify default language for regional content; use a 2-letter ISO 639-1 language code. See list of supported languages : https://developers.giphy.com/docs/#language-support
+
+For example:
+
+```json
+{
+    "apikey": "[YOUR API KEY]",
+    "limit": "30",
+    "offset": "5",
+    "rating": "R",
+    "lang": "es"
+}
+```
+
+See for documentation about the parameters on Giphy : https://developers.giphy.com/docs/#operation--gifs-search-get
 
 ## Example output
 
