@@ -12,7 +12,7 @@ If you want to use the Bing image picker in your project in Kentico Cloud, follo
 * Add the **Custom element** content element
 * Configure the content element
 * Use the following URL as Hosted code URL (HTTPS): https://kentico.github.io/custom-element-samples/BingImagePicker/bingimage-input-component.html
-* Get API key for MS Cognitive Services: https://azure.microsoft.com/en-us/try/cognitive-services/
+* Get API key for MS Cognitive Services "Bing Search APIs v7": https://azure.microsoft.com/en-us/try/cognitive-services/
 * Provide JSON parameters for the custom element to configure the API Key:
 
 ```json
