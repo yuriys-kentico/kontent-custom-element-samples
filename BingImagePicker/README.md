@@ -977,4 +977,4 @@ The element will save a value [contentUrl] containing the URL of the image to Ke
 }
 ```
 
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-elements-samples/BingImagePicker?pixel)
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/BingImagePicker?pixel)

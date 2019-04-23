@@ -288,4 +288,4 @@ The element will save a value [images.fixed_height.url] containing the URL of th
 }
 ```
 
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-elements-samples/GiphyPicker?pixel)
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/GiphyPicker?pixel)

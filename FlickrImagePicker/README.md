@@ -53,4 +53,4 @@ The element will save a value containing the URL of the image to Kentico cloud l
 }
 ```
 
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-elements-samples/FlickrImagePicker?pixel)
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/FlickrImagePicker?pixel)
