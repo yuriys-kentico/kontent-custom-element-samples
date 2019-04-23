@@ -49,3 +49,5 @@ The element will save a value containing the video title and id to Kentico cloud
   ...
 }
 ```
+
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/Youtube?pixel)
