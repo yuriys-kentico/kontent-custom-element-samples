@@ -83,3 +83,6 @@ The JSON object returned from the Deliver API matches that of a single photo sea
 1. Go to <https://unsplash.com/oauth/applications>
 1. Create a new application
 1. Open the application and scroll down to find the keys
+
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/UnsplashSelector?pixel)
+
