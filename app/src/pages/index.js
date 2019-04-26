@@ -1,7 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import Bio from '../components/bio';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { rhythm } from '../utils/typography';
@@ -10,10 +9,15 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props;
     const siteTitle = data.site.siteMetadata.title;
+    const siteDescription = data.site.siteMetadata.description;
     const elements = data.allElementsJson.edges;
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout
+        location={this.props.location}
+        title={siteTitle}
+        description={siteDescription}
+      >
         <SEO
           title="Custom element list"
           keywords={[
@@ -24,6 +28,7 @@ class BlogIndex extends React.Component {
             `custom elements`,
           ]}
         />
+        <h2>Marketplace</h2>
         {elements.map(({ node }) => {
           return (
             <div key={node.id}>
@@ -42,7 +47,6 @@ class BlogIndex extends React.Component {
             </div>
           );
         })}
-        <Bio />
       </Layout>
     );
   }
@@ -55,6 +59,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        description
       }
     }
 

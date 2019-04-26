@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+import Bio from './bio';
+
 import { rhythm, scale } from '../utils/typography';
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props;
+    const { location, title, description, children } = this.props;
     const rootPath = `${__PATH_PREFIX__}/`;
     let header;
 
@@ -60,9 +62,14 @@ class Layout extends React.Component {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
-        <header>{header}</header>
+        <header>
+          {header}
+          <p>{description}</p>
+        </header>
+
         <main>{children}</main>
         <footer>
+          <Bio />
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>

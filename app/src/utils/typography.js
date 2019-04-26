@@ -6,6 +6,10 @@ Wordpress2016.overrideThemeStyles = () => {
     'a.gatsby-resp-image-link': {
       boxShadow: `none`,
     },
+    'header p': {
+      color: `grey`,
+      fontStyle: `italic`,
+    }
   };
 };
 
