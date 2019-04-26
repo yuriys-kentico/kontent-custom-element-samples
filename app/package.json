@@ -1,11 +1,10 @@
 {
-  "name": "gatsby-starter-blog",
-  "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "name": "custom-elements-samples-marketplace",
+  "description": "A marketplace listing the samples of custom element for Kentico Cloud.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Ondřej Chrastina <chrastina.ondra@gmail.com> (https://github.com/Simply007)",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/Kentico/custom-element-samples/issues"
   },
   "dependencies": {
     "gatsby": "^2.3.29",
@@ -33,7 +32,7 @@
     "cpx": "^1.5.0",
     "prettier": "^1.17.0"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/Kentico/custom-element-samples#readme",
   "keywords": [
     "gatsby"
   ],
@@ -41,7 +40,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/Kentico/custom-element-samples.git"
   },
   "scripts": {
     "build": "gatsby build && cpx -v \"public/**/*\" ../marketplace",
