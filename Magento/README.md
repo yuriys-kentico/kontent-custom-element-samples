@@ -1,5 +1,5 @@
 # Magento product selector
-Magento product selector is a selector connected to Magento instance which allows users to search and select a product from Shopify product catalog. When the element is disabled, it only displays the selected product.
+Magento product selector is a selector connected to Magento instance which allows users to search and select a product from Magento product catalog. When the element is disabled, it only displays the selected product.
 
 ![Magento product selector](MagentoProductSelector.gif)
 
