@@ -32,13 +32,15 @@ class BlogIndex extends React.Component {
         {elements.map(({ node }) => {
           return (
             <div key={node.id}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                {node.title}
-              </h3>
+              <a href={node.readmeUrl}>
+                <h3
+                  style={{
+                    marginBottom: rhythm(1 / 4),
+                  }}
+                >
+                  {node.title}
+                </h3>
+              </a>
               <p>{node.description}</p>
               <img
                 src={node.thumbnailUrl}
@@ -70,6 +72,7 @@ export const pageQuery = graphql`
           title
           description
           thumbnailUrl
+          readmeUrl
         }
       }
     }

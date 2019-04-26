@@ -1,5 +1,6 @@
 {
   "title": "Color Picker",
-  "description": "Simple color picker",
-  "thumbnailUrl": "https://files.readme.io/4f023b9-custom.gif"
+  "description": "Color picker allowing user to choose a color from palette and sets it as a HEX string, e.g. '#ff0000' for red color, '#00ff00' for green, and so on. ",
+  "thumbnailUrl": "https://files.readme.io/4f023b9-custom.gif",
+  "readmeUrl": "https://kentico.github.io/custom-element-samples/ColorPicker"
 }
