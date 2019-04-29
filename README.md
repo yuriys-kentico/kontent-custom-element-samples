@@ -10,7 +10,7 @@ Note that Custom elements are only supported in the latest versions of our SDKs.
 
 ## Custom elements' samples overview
 
-All of the samples are listed in the [Custom Element Marketplace](/marketplace/index.html). The source code it stored in the [/app](/app) folder.
+All of the samples are listed in the [Custom Element Marketplace](https://kentico.github.io/custom-element-samples/marketplace/index.html). The source code it stored in the [/app](/app) folder.
 
 ## How to create a custom element
 
