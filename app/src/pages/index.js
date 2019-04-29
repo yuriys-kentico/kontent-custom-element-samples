@@ -65,7 +65,7 @@ export const pageQuery = graphql`
       }
     }
 
-    allElementsJson {
+    allElementsJson(sort: {fields: title}) {
       edges {
         node {
           id
