@@ -43,7 +43,7 @@
     "url": "git+https://github.com/Kentico/custom-element-samples.git"
   },
   "scripts": {
-    "build": "gatsby build && cpx -v \"public/**/*\" ../marketplace",
+    "build": "gatsby build --prefix-paths && cpx -v \"public/**/*\" ../marketplace",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",

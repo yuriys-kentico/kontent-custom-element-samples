@@ -8,6 +8,7 @@ module.exports = {
       twitter: `ChrastinaOndrej`,
     },
   },
+  pathPrefix: `/custom-element-samples/marketplace`,
   plugins: [
     {
       resolve: `gatsby-transformer-json`,
