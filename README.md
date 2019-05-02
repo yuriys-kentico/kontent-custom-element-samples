@@ -10,7 +10,7 @@ Note that Custom elements are only supported in the latest versions of our SDKs.
 
 ## Custom elements' samples overview
 
-All of the samples are listed in the [Custom Element Marketplace](https://kentico.github.io/custom-element-samples/marketplace/index.html). The source code it stored in the [/app](/app) folder.
+All of the samples are listed in the [Custom Element Marketplace](https://kentico.github.io/custom-element-samples/marketplace/index.html). The source code it stored in the [/marketplace-src](/marketplace-src) folder.
 
 ## How to create a custom element
 
@@ -52,7 +52,7 @@ The pull request should include:
   * Configuration description example
   * Example of the output in the Delivery Response
 
-If you want to list a custom element to the [Marketplace](/marketplace/index.html), include a JSON file named by the custom element (preferably in Pascal Case) placed to [/app/content/elements](https://github.com/Kentico/custom-element-samples/tree/master/app/content/elements) folder in the following format:
+If you want to list a custom element to the [Marketplace](/marketplace/index.html), include a JSON file named by the custom element (preferably in Pascal Case) placed to [/marketplace-src/content/elements](https://github.com/Kentico/custom-element-samples/tree/master/marketplace-src/content/elements) folder in the following format:
 
 ```json
 {
