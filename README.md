@@ -1,5 +1,6 @@
 # Examples of Custom Element Extensions for Kentico Cloud
 
+[![Marketplace](https://img.shields.io/badge/-Marketplace-brightgreen.svg)](https://kentico.github.io/custom-element-samples/marketplace/)
 [![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-ASK%20NOW-FE7A16.svg?logo=stackoverflow&logoColor=white)](https://stackoverflow.com/tags/kentico-cloud)
 
 This repository contains samples of the HTML web pages that can be used as Custom Element (BETA) Extensions in Kentico Cloud.
