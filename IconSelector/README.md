@@ -1,6 +1,6 @@
 # Icon Selector
 
-In Kentico Cloud, an icon selector can be specified by using the `Multiple Choice` content element. But this lacks in usablility as the content author has to guess what icon will be displayed when a particular choice is made. The icon selector hopes to make the life of the content editor easier with an easy to use dropdown of icons.
+In Kentico Cloud, an icon selector can be specified by using the `Multiple Choice` content element. But this lacks in usablity as the content author has to guess what icon will be displayed when a particular choice is made. The icon selector hopes to make the life of the content editor easier with an easy to use dropdown of icons.
 
 The icon selector allows the developer to specify in the configuration what labels are displays for particular icons and what values are to saved in the content element.
 
