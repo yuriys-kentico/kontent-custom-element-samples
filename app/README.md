@@ -26,7 +26,7 @@ Custom element marketplace used to be showcasing all the custom elements in the 
 ## Scripts
 
 1. `npm run develop`/`npm  start` - run development environment
-1. `npm run format` - fun prettier and format all documents
+1. `npm run format` - run prettier and format all documents
 1. `npm run build` - build application to the `/public` folder and copy all its content to `/marketplace` folder
 1. `npm run serve` - start web server serving files in the `/public` folder
 
