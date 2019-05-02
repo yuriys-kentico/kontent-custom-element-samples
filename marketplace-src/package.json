@@ -1,7 +1,7 @@
 {
   "name": "custom-elements-samples-marketplace",
   "description": "A marketplace listing the samples of custom element for Kentico Cloud.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Ondřej Chrastina <chrastina.ondra@gmail.com> (https://github.com/Simply007)",
   "bugs": {
     "url": "https://github.com/Kentico/custom-element-samples/issues"
