@@ -4,10 +4,10 @@ Custom element marketplace demonstrates all the custom elements in the repositor
 
 ## 🚀 Quick start
 
-1. Open the appropriate folder and install the packages
+1. Open the `marketplace-src` folder and install the packages
 
     ```sh
-    cd app
+    cd marketplace-src
     npm install
     ```
 
