@@ -5,7 +5,7 @@ module.exports = {
     description: `Samples of the HTML web pages that can be used as Custom Element (BETA) Extensions in Kentico Cloud. Custom elements help you with extending the basic functionality of Kentico Cloud UI and thus improving the content editing experience. Custom element is essentially a small HTML application that exists in a sandboxed <iframe> and interacts with the Kentico Cloud app via the Custom Elements API.`,
     siteUrl: `https://kentico.github.io/custom-element-samples/marketplace`,
     social: {
-      twitter: `Simply007`,
+      twitter: `ChrastinaOndrej`,
     },
   },
   plugins: [
