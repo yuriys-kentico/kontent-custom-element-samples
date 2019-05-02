@@ -27,3 +27,5 @@ Example environment variable key-value pair (without quotation marks):
 "USERNAME" : "makma"
 "PASSWORD" : "easterEgg"
 ```
+
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/RequestRepeater?pixel)

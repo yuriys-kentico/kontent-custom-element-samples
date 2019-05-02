@@ -1,6 +1,6 @@
 # Youtube video preview
 
-This KC custom element allows you to add various types of youtube video url, it extracts the video id for your apps and shows the video.
+This KC custom element allows you to add various types of Youtube video url, it extracts the video id for your apps and shows the video.
 
 You can test it by configuring https://kentico.github.io/custom-element-samples/YoutubeVideoPreview/youtube.html url for your custom element.
 
