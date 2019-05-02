@@ -1,6 +1,6 @@
 # Custom Elements Marketplace
 
-Custom element marketplace used to be showcasing all the custom elements in the repository.
+Custom element marketplace demonstrates all the custom elements in the repository.
 
 ## 🚀 Quick start
 
