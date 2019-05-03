@@ -107,6 +107,11 @@ exports.handler = (event, context, callback) => {
                     sendError(error);
                 });
             break;
+        case 'OPTIONS':
+            callback(null, {
+                statusCode: '200',
+                headers: corsHeaders,
+            });
         default:
             sendError(new Error(`Unsupported method "${event.httpMethod}"`));
     }
