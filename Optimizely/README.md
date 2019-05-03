@@ -25,7 +25,7 @@ If you want to use the Optimizely audiences selector in your project in Kentico 
 
 The element will save a value containing the array of the selected audiences. 
 
-```
+```json
 [
   {
     "id": 14075630105,

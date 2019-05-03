@@ -14,7 +14,7 @@ If you want to use the Shopify product selector in your project in Kentico Cloud
 * Use following URL as Hosted code URL (HTTPS): https://kentico.github.io/custom-element-samples/Shopify/product-selector.html
 * Provide the following JSON parameters for the custom element to connect it to your store, replace the macros with the actual values from Shopify admin UI
 
-```
+```json
 {
   "storeFrontAccessToken": "<YOUR ACCESS TOKEN>",
   "apiEndpoint": "https://<YOUR STORE NAME>.myshopify.com/api/graphql"
@@ -25,7 +25,7 @@ If you want to use the Shopify product selector in your project in Kentico Cloud
 
 The element will save a value containing the selected product together with its metadata. 
 
-```
+```json
 {
   "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzE3MzQ0NjA2MzcyMTg=",
   "handle": "aeropress",

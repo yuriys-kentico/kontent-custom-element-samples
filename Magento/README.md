@@ -14,7 +14,7 @@ If you want to use the Magento product selector in your project in Kentico Cloud
 * Use following URL as Hosted code URL (HTTPS): https://kentico.github.io/custom-element-samples/Magento/product-selector.html
 * Provide the following JSON parameters for the custom element to connect it to your store, replace the macros with the actual values for your setup
 
-```
+```json
 {
   "endpointUrl": "<PRODUCTS ENDPOINT URL>",
   "mediaRootUrl": "https://<YOUR MAGENTO DOMAIN>/pub/media/catalog/product",
@@ -28,7 +28,7 @@ Note that **urlKeyAtttribute** is optional, if not provided, it will be automati
 
 The element will save a value containing the selected product together with its metadata. 
 
-```
+```json
 {
   "id": 37,
   "title": "Endurance Watch",
