@@ -14,7 +14,7 @@ If you want to use the Bynder image selector in your project in Kentico Cloud, f
 * Use following URL as Hosted code URL (HTTPS): https://kentico.github.io/custom-element-samples/Bynder/image-selector.html
 * Optionally provide the following JSON parameters for the custom element
 
-```
+```json
 {
   "bynderUrl": "<YOUR BYNDER URL>",
   "previewDerivative": "webimage",
@@ -30,7 +30,7 @@ The derivative parameters can be used to alter which of the [defined image deriv
 
 The element will save a value containing the array of the selected images together with their metadata. 
 
-```
+```json
 [
   {
     "id": "AABE02D0-CD6D-4973-A5251B1C238A25CD",
