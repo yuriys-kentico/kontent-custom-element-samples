@@ -21,6 +21,23 @@ If you want to use the Optimizely audiences selector in your project in Kentico 
 }
 ```
 
+## Example output
+
+The element will save a value containing the array of the selected audiences. 
+
+```
+[
+  {
+    "id": 14075630105,
+    "name": "Caffeine addict"
+  },
+  {
+    "id": 14097300687,
+    "name": "Regular drinker"
+  }
+]
+```
+
 # Installation
 
 Optimizely audiences selector source code is in following repository: https://github.com/kenticomartinh/kc-optimizely

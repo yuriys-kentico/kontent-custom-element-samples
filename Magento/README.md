@@ -24,6 +24,20 @@ If you want to use the Magento product selector in your project in Kentico Cloud
 
 Note that **urlKeyAtttribute** is optional, if not provided, it will be automatically generated with the value shown above.
 
+## Example output
+
+The element will save a value containing the selected product together with its metadata. 
+
+```
+{
+  "id": 37,
+  "title": "Endurance Watch",
+  "previewUrl": "https://demo1-m2.mage.direct/pub/media/catalog/product/m/g/mg01-bk-0.jpg",
+  "sku": "24-MG01",
+  "urlKey": "endurance-watch"
+}
+```
+
 # Installation
 
 Magento product selector source code is in following repository: https://github.com/kenticomartinh/kc-magento

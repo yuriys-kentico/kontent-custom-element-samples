@@ -21,6 +21,20 @@ If you want to use the Shopify product selector in your project in Kentico Cloud
 }
 ```
 
+## Example output
+
+The element will save a value containing the selected product together with its metadata. 
+
+```
+{
+  "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzE3MzQ0NjA2MzcyMTg=",
+  "handle": "aeropress",
+  "title": "AeroPress",
+  "previewUrl": "https://cdn.shopify.com/s/files/1/0048/8679/0178/products/aeropress.jpg?v=1551277741",
+  "sku": "BR-01"
+}
+```
+
 # Installation
 
 Shopify product selector source code is in following repository: https://github.com/kenticomartinh/kc-shopify
