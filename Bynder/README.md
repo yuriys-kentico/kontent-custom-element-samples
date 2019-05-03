@@ -24,7 +24,22 @@ If you want to use the Bynder image selector in your project in Kentico Cloud, f
 
 If you don't provide bynder URL, the selector will prompt for it while logging in.
 
-The derivative parameters can be used to alter which of the defined image derivatives will be used by the selector and output. By default the web image URL is used. 
+The derivative parameters can be used to alter which of the [defined image derivatives](https://help.bynder.com/modules/asset-library/derivatives-knowhow.htm) will be used by the selector and output. By default the web image URL is used. 
+
+## Example output
+
+The element will save a value containing the array of the selected images together with their metadata. 
+
+```
+[
+  {
+    "id": "AABE02D0-CD6D-4973-A5251B1C238A25CD",
+    "previewUrl": "https://d2csxpduxe849s.cloudfront.net/media/final/e187906e-f579-4e10-800f-d01cb9ae5cda/webimage-5946F15F-3902-4F73-80EB4B83664960FB.png",
+    "webUrl": "https://d2csxpduxe849s.cloudfront.net/media/final/e187906e-f579-4e10-800f-d01cb9ae5cda/webimage-5946F15F-3902-4F73-80EB4B83664960FB.png",
+    "title": "which-brewing-fits-you-1080px"
+  }
+]
+```
 
 # Installation
 
