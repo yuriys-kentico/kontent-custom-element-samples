@@ -1,6 +1,6 @@
 {
   "title": "Switch",
-  "description": "The Bing image picker allows to search images on Bing and use them in your website.",
+  "description": "This KC custom element is just a simple switch -> on/off.",
   "thumbnailUrl": "https://amend.cz/inputs/switch.png",
   "readmeUrl": "https://kentico.github.io/custom-element-samples/Switch"
 }
