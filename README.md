@@ -1,9 +1,9 @@
 # Examples of Custom Element Extensions for Kentico Cloud
 
-[![Marketplace](https://img.shields.io/badge/-Marketplace-brightgreen.svg)](https://kentico.github.io/custom-element-samples/marketplace/)
+[![Gallery](https://img.shields.io/badge/-Gallery-brightgreen.svg)](https://kentico.github.io/custom-element-samples/gallery/)
 [![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-ASK%20NOW-FE7A16.svg?logo=stackoverflow&logoColor=white)](https://stackoverflow.com/tags/kentico-cloud)
 
-This repository contains samples of the HTML web pages that can be used as Custom Element (BETA) Extensions in Kentico Cloud.
+This repository contains samples of the HTML web pages that can be used as Custom Element Extensions in Kentico Cloud.
 
 [Custom elements](https://developer.kenticocloud.com/docs/integrating-content-editing-features) help you with extending the basic functionality of Kentico Cloud UI and thus improving the content editing experience. Custom element is essentially a small HTML application that exists in a sandboxed `<iframe>` and interacts with the [Kentico Cloud](https://kenticocloud.com/) app via the [Custom Elements API](https://developer.kenticocloud.com/reference#custom-elements-api).
 
@@ -11,7 +11,7 @@ Note that Custom elements are only supported in the latest versions of our SDKs.
 
 ## Custom elements' samples overview
 
-All of the samples are listed in the [Custom Element Marketplace](https://kentico.github.io/custom-element-samples/marketplace/). The source code it stored in the [/marketplace-src](/marketplace-src) folder.
+All of the samples are listed in the [Custom Element Gallery](https://kentico.github.io/custom-element-samples/gallery/). The source code it stored in the [/gallery-src](/gallery-src) folder.
 
 ## How to create a custom element
 
@@ -53,7 +53,7 @@ The pull request should include:
   * Configuration description example
   * Example of the output in the Delivery Response
 
-If you want to list a custom element to the [Marketplace](/marketplace/index.html), include a JSON file named by the custom element (preferably in Pascal Case) placed to [/marketplace-src/content/elements](https://github.com/Kentico/custom-element-samples/tree/master/marketplace-src/content/elements) folder in the following format:
+If you want to list a custom element to the [Gallery](/gallery/index.html), include a JSON file named by the custom element (preferably in Pascal Case) placed to [/gallery-src/content/elements](https://github.com/Kentico/custom-element-samples/tree/master/gallery-src/content/elements) folder in the following format:
 
 ```json
 {
