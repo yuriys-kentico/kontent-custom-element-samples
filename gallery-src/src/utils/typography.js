@@ -9,6 +9,13 @@ Wordpress2016.overrideThemeStyles = () => {
     'header p': {
       color: `grey`,
       fontStyle: `italic`,
+    },
+    '.navigation ul': {
+      listStyle: `none`,
+      padding: `10px 0`
+    },
+    '.navigation ul li': {
+      marginBottom: `0`
     }
   };
 };
