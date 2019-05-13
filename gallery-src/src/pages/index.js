@@ -43,32 +43,32 @@ class BlogIndex extends React.Component {
           </ul>
         </details>
         {elements.map(({ node }) => (
-                <div key={node.id} id={createAnchor(node.title)}>
-                  <a href={node.readmeUrl}>
-                    <h3
-                      style={{
-                        marginBottom: rhythm(1 / 4),
-                      }}
-                    >
-                      {node.title}
-                    </h3>
-                  </a>
-                  <p>{node.description}</p>
-                  <img
-                    src={node.thumbnailUrl}
-                    alt={`${node.title} custom element`}
-                  />
-                </div>
-              )
-              )}
+          <div key={node.id} id={createAnchor(node.title)}>
+            <a href={node.readmeUrl}>
+              <h3
+                style={{
+                  marginBottom: rhythm(1 / 4),
+                }}
+              >
+                {node.title}
+              </h3>
+            </a>
+            <p>{node.description}</p>
+            <img
+              src={node.thumbnailUrl}
+              alt={`${node.title} custom element`}
+            />
+          </div>
+        )
+        )}
       </Layout>
-          );
-        }
-      }
-      
-      export default BlogIndex;
-      
-      export const pageQuery = graphql`
+    );
+  }
+}
+
+export default BlogIndex;
+
+export const pageQuery = graphql`
   query {
             site {
           siteMetadata {
