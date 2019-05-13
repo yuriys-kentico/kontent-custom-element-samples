@@ -5,6 +5,11 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { rhythm } from '../utils/typography';
 
+const createAnchor = (input) => {
+  return input.toLowerCase().trim().split(' ').join('-');
+}
+
+
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props;
@@ -29,46 +34,53 @@ class BlogIndex extends React.Component {
           ]}
         />
         <h2>Gallery</h2>
-        {elements.map(({ node }) => {
-          return (
-            <div key={node.id}>
-              <a href={node.readmeUrl}>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
-                  {node.title}
-                </h3>
-              </a>
-              <p>{node.description}</p>
-              <img
-                src={node.thumbnailUrl}
-                alt={`${node.title} custom element`}
-              />
-            </div>
-          );
-        })}
+        <details className="navigation">
+          <summary>Show navigation</summary>
+          <ul>
+            {elements.map(({ node }) => (
+              <li key={node.id}><a href={`#${createAnchor(node.title)}`}>{node.title}</a></li>
+            ))}
+          </ul>
+        </details>
+        {elements.map(({ node }) => (
+                <div key={node.id} id={createAnchor(node.title)}>
+                  <a href={node.readmeUrl}>
+                    <h3
+                      style={{
+                        marginBottom: rhythm(1 / 4),
+                      }}
+                    >
+                      {node.title}
+                    </h3>
+                  </a>
+                  <p>{node.description}</p>
+                  <img
+                    src={node.thumbnailUrl}
+                    alt={`${node.title} custom element`}
+                  />
+                </div>
+              )
+              )}
       </Layout>
-    );
-  }
-}
-
-export default BlogIndex;
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-        description
+          );
+        }
       }
-    }
-
+      
+      export default BlogIndex;
+      
+      export const pageQuery = graphql`
+  query {
+            site {
+          siteMetadata {
+            title
+        description
+          }
+        }
+    
     allElementsJson(sort: {fields: title}) {
-      edges {
-        node {
-          id
+            edges {
+          node {
+            id
           title
           description
           thumbnailUrl
