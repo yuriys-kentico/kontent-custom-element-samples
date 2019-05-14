@@ -54,10 +54,12 @@ class BlogIndex extends React.Component {
               </h3>
             </a>
             <p>{node.description}</p>
-            <img
-              src={node.thumbnailUrl}
-              alt={`${node.title} custom element`}
-            />
+            <a href={node.readmeUrl}>
+              <img
+                src={node.thumbnailUrl}
+                alt={`${node.title} custom element`}
+              />
+            </a>
           </div>
         )
         )}
