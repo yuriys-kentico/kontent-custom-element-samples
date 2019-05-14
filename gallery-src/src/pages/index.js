@@ -69,24 +69,24 @@ class BlogIndex extends React.Component {
 export default BlogIndex;
 
 export const pageQuery = graphql`
-  query {
-            site {
-          siteMetadata {
-            title
-        description
-          }
-        }
+query {
+  site {
+    siteMetadata {
+      title
+  description
+    }
+  }
     
-    allElementsJson(sort: {fields: title}) {
-            edges {
-          node {
-            id
-          title
-          description
-          thumbnailUrl
-          readmeUrl
-        }
+  allElementsJson(sort: {fields: title}) {
+    edges {
+      node {
+        id
+        title
+        description
+        thumbnailUrl
+        readmeUrl
       }
     }
   }
+}
 `;
