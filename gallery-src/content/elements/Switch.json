@@ -2,5 +2,5 @@
   "title": "Switch",
   "description": "This KC custom element is just a simple switch -> on/off.",
   "thumbnailUrl": "https://amend.cz/inputs/switch.png",
-  "readmeUrl": "https://kentico.github.io/custom-element-samples/Switch"
+  "readmeUrl": "https://github.com/Kentico/custom-element-samples/tree/master/Switch"
 }

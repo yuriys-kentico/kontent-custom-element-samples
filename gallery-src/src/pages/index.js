@@ -54,10 +54,12 @@ class BlogIndex extends React.Component {
               </h3>
             </a>
             <p>{node.description}</p>
-            <img
-              src={node.thumbnailUrl}
-              alt={`${node.title} custom element`}
-            />
+            <a href={node.readmeUrl}>
+              <img
+                src={node.thumbnailUrl}
+                alt={`${node.title} custom element`}
+              />
+            </a>
           </div>
         )
         )}
@@ -69,24 +71,24 @@ class BlogIndex extends React.Component {
 export default BlogIndex;
 
 export const pageQuery = graphql`
-  query {
-            site {
-          siteMetadata {
-            title
-        description
-          }
-        }
+query {
+  site {
+    siteMetadata {
+      title
+  description
+    }
+  }
     
-    allElementsJson(sort: {fields: title}) {
-            edges {
-          node {
-            id
-          title
-          description
-          thumbnailUrl
-          readmeUrl
-        }
+  allElementsJson(sort: {fields: title}) {
+    edges {
+      node {
+        id
+        title
+        description
+        thumbnailUrl
+        readmeUrl
       }
     }
   }
+}
 `;
