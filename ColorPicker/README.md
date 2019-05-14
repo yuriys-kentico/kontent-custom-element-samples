@@ -24,7 +24,7 @@ If you want to use the Color Picker selector in your project in Kentico Cloud, f
 * Open / create a content model to which you want to add the Color Picker selector
 * Add **Custom element** content element
 * Open configuration of the content element
-* Use following URL as Hosted code URL (HTTPS): https://kentico.github.io/custom-element-samples/ColorPicker/index.html
+* Use following URL as Hosted code URL (HTTPS): https://kentico.github.io/custom-element-samples/ColorPicker/color-picker.html
 
 ![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/ColorPicker?pixel)
 
