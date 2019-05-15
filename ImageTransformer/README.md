@@ -16,7 +16,7 @@ In action:
 1. Create or use an existing content type.
 1. Drag in **Custom element** from the tray on the right.
 1. In the element configuration, provide these values:
-   - **Hosted code URL (HTTPS)**: `https://kentico.github.io/custom-element-samples/TransformedImagesElement/element.html`
+   - **Hosted code URL (HTTPS)**: `https://kentico.github.io/custom-element-samples/ImageTransformer/element.html`
    - **Parameters {JSON}**:
      ```
      {
