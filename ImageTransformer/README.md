@@ -107,3 +107,5 @@ That can be parsed into this JSON:
 
 ## Want to see the source?
 Here it is: [TransformedImagesElement](https://github.com/yuriys-kentico/TransformedImagesElement)
+
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/ImageTransformer?pixel)
