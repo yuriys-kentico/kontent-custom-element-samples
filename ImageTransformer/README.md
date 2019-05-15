@@ -1,4 +1,4 @@
-﻿# Transformed Images Element
+﻿# Image transformer
 
 ## What this is
 This custom element functions similarly to the **Asset** element, but allows an editor to apply the Image Transformation API to any selected image.
