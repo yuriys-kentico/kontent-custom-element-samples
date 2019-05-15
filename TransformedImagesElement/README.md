@@ -36,5 +36,74 @@ In action:
 1. Create a new item using this content type.
 1. Start transforming some images!
 
+## Example of the output in the Delivery Response
+
+The response is a string like this:
+```
+[{\"name\":\"pexels-photo-2006745.jpeg\",\"type\":\"image/jpeg\",\"size\":30912,\"description\":\"\",\"url\":\"https://assets-us-01.kc-usercontent.com/6c23b870-1246-4b4e-97d0-5b03935ab613/484ddb39-1c23-4083-9e99-e83b549ec6c3/pexels-photo-2006745.jpeg?rect=89,173,330,377&fit=clip&w=0.616&h=0.816&fm=webp&q=1\",\"id\":\"8bb98a41-d97f-48c8-b4d6-a071df9f6963\",\"transforms\":{\"crop\":{\"type\":\"box\",\"frame\":{\"wFloat\":0.701,\"hFloat\":0.7228},\"box\":{\"xFloat\":0.178,\"yFloat\":0.231,\"wFloat\":0.6604,\"hFloat\":0.5027},\"zoom\":{\"xFloat\":-1,\"yFloat\":-1,\"zFloat\":-1}},\"resize\":{\"type\":\"fit\",\"scale\":{\"wFloat\":null,\"hFloat\":null},\"fit\":{\"wFloat\":0.616,\"hFloat\":0.816},\"devicePixelRatio\":-1},\"background\":{\"color\":{\"internalRgba\":{\"a\":0,\"r\":0,\"g\":0,\"b\":0}}},\"format\":{\"format\":\"WEBP\",\"autoWebp\":false,\"lossless\":null,\"quality\":1}}}]
+```
+
+That can be parsed into this JSON:
+```json
+[
+  {
+    "name": "pexels-photo-2006745.jpeg",
+    "type": "image/jpeg",
+    "size": 30912,
+    "description": "",
+    "url": "https://assets-us-01.kc-usercontent.com/6c23b870-1246-4b4e-97d0-5b03935ab613/484ddb39-1c23-4083-9e99-e83b549ec6c3/pexels-photo-2006745.jpeg?rect=89,173,330,377&fit=clip&w=0.616&h=0.816&fm=webp&q=1",
+    "id": "8bb98a41-d97f-48c8-b4d6-a071df9f6963",
+    "transforms": {
+      "crop": {
+        "type": "box",
+        "frame": {
+          "wFloat": 0.701,
+          "hFloat": 0.7228
+        },
+        "box": {
+          "xFloat": 0.178,
+          "yFloat": 0.231,
+          "wFloat": 0.6604,
+          "hFloat": 0.5027
+        },
+        "zoom": {
+          "xFloat": -1,
+          "yFloat": -1,
+          "zFloat": -1
+        }
+      },
+      "resize": {
+        "type": "fit",
+        "scale": {
+          "wFloat": null,
+          "hFloat": null
+        },
+        "fit": {
+          "wFloat": 0.616,
+          "hFloat": 0.816
+        },
+        "devicePixelRatio": -1
+      },
+      "background": {
+        "color": {
+          "internalRgba": {
+            "a": 0,
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        }
+      },
+      "format": {
+        "format": "WEBP",
+        "autoWebp": false,
+        "lossless": null,
+        "quality": 1
+      }
+    }
+  }
+]
+```
+
 ## Want to see the source?
 Here it is: [TransformedImagesElement](https://github.com/yuriys-kentico/TransformedImagesElement)
