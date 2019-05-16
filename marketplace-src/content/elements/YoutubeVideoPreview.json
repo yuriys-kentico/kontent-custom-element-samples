@@ -1,6 +1,0 @@
-{
-  "title": "Youtube Video Preview",
-  "description": "This KC custom element allows you to add various types of Youtube video URL, it extracts the video id for your apps and shows the video.",
-  "thumbnailUrl": "https://amend.cz/youtube/youtube2.png",
-  "readmeUrl": "https://kentico.github.io/custom-element-samples/YoutubeVideoPreview"
-}

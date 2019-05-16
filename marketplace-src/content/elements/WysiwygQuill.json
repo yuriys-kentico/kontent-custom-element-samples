@@ -1,6 +1,0 @@
-{
-  "title": "WYSIWYG Quill",
-  "description": "This KC custom element is based on the Quill rich text editor. It stores content in JSON format, so it's omni-channel friendly.",
-  "thumbnailUrl": "https://amend.cz/wysiwyg/wysiwyg.png",
-  "readmeUrl": "https://kentico.github.io/custom-element-samples/WYSIWYG-Quill"
-}
