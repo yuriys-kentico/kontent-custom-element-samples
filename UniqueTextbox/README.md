@@ -37,10 +37,10 @@ This outputs to:
 You need to specify both `codename` parameter for the element code name you want to check for unique values and you need to link your repeater in the `request_repeater` parameter.
 
 To set up `request_repeater` above, please follow [Working with sensitive data in custom elements](https://docs.kenticocloud.com/tutorials/develop-apps/integrate/working-with-sensitive-data-in-custom-elements).
-     - In **Step 2: Configuring your Lambda function**, use the following keys and values in the **Environment variables** section:
-       - `BEARER_TOKEN`: `<Preview Delivery API key>`
-       - `HOST`: `preview-deliver.kenticocloud.com`
-       - `PATH`: `/<Project ID>/items`
+In **Step 2: Configuring your Lambda function**, use the following keys and values in the **Environment variables** section:
+  - `BEARER_TOKEN`: `<Preview Delivery API key>`
+  - `HOST`: `preview-deliver.kenticocloud.com`
+  - `PATH`: `/<Project ID>/items`
 
 Please update the code of the lambda function above (line 36) where you replace requestOptions.path with path:
 ```javascript
