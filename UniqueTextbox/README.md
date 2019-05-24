@@ -4,27 +4,6 @@ This custom element check whether your entered value is unique across all items 
 
 ![screenshot](https://amend.cz/unique_element.gif)
 
-This outputs to:
-```json
-[
-   {
-      "username":"administrator",
-      "area":"some text",
-      "color":"#ff80c0",
-      "date":"2019-06-03",
-      "time":"23:04",
-      "number":"100",
-      "animals":"rex",
-      "fish":[
-         "dolphin",
-         "shark"
-      ],
-      "pass":"password",
-      "range":"7"
-   }
-]
-```
-
 ## Configuration
 
 ```json
