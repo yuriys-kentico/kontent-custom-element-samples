@@ -47,6 +47,8 @@ Please update the code of the lambda function above (line 36) where you replace 
 requestOptions.path = `${path}?${querystring.stringify(queryStringParameters)}`;
 ```
 
+## Output
+
 The JSON output of such an element would look like this:
 
 ```json
