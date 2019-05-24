@@ -47,6 +47,8 @@ Please update the code of the lambda function above (line 36) where you replace 
 requestOptions.path = `${path}?${querystring.stringify(queryStringParameters)}`;
 ```
 
+You can test it by configuring https://kentico.github.io/custom-element-samples/UniqueTextbox/unique_text.html url for your custom element.
+
 ## Output
 
 The JSON output of such an element would look like this:
