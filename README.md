@@ -53,7 +53,7 @@ The pull request should include:
   * Configuration description example
   * Example of the output in the Delivery Response
 
-If you want to list a custom element to the [Gallery](/gallery/index.html), include a JSON file named by the custom element (preferably in Pascal Case) placed to [/gallery-src/content/elements](https://github.com/Kentico/custom-element-samples/tree/master/gallery-src/content/elements) folder in the following format:
+If you want to list a custom element to the [Gallery](https://kentico.github.io/custom-element-samples/gallery/index.html), include a JSON file named by the custom element (preferably in Pascal Case) placed to [/gallery-src/content/elements](https://github.com/Kentico/custom-element-samples/tree/master/gallery-src/content/elements) folder in the following format:
 
 ```json
 {
