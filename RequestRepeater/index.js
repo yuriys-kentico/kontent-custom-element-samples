@@ -23,15 +23,15 @@ if (bearerToken || (username && password)) {
         `Basic ${new Buffer(username + ":" + password).toString('base64')}`;
 }
 
-let requestOptions = {
-    host: host,
-    path: path,
-    port: 443,
-    method: 'GET',
-};
-
 const request = (queryStringParameters, headers) => {
 
+    const requestOptions = {
+        host: host,
+        path: path,
+        port: 443,
+        method: 'GET',
+    };
+    
     if (queryStringParameters) {
         requestOptions.path = `${requestOptions.path}?${querystring.stringify(queryStringParameters)}`;
     }
