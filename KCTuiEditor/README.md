@@ -15,6 +15,24 @@ If you want to use the Toast UI editor in your project in Kentico Cloud, follow 
 * Open configuration of the content element
 * Use following URL as Hosted code URL (HTTPS): https://kentico.github.io/custom-element-samples/KCTuiEditor/index.html
 
+### Output
+
+```json
+{
+  "item": {
+    "system": {  },
+    "elements": {
+      "toast": {
+        "type": "custom",
+        "name": "Toast",
+        "value": "Hi @Kentico/global-collaborators!\n\nWe bring you another batch of Kentico developer news.\n\n## Bynder integration tutorial\n\nThere is a [new tutorial](https://docs.kenticocloud.com/tutorials/develop-apps/integrate/integrating-dam-bynder) descibing how to integrate Kentico Cloud with Digital Asset Management platform (DAM). In this case it is a [Bynder](https://www.bynder.com/en/)."
+      }
+    }
+  },
+  "modular_content": {}
+}
+```
+
 ## Installation
 
 Toast UI editor is in repository: https://github.com/Simply007/kc-tui-editor-custom-element.
