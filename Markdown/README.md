@@ -23,7 +23,7 @@ If you want to use the Markdown in your project in Kentico Cloud, follow these s
 * Open / create a content model to which you want to add the Markdown
 * Add **Custom element** content element
 * Open configuration of the content element
-* Use following URL as Hosted code URL (HTTPS): https://kentico.github.io/custom-element-samples/MarkDown/markdown.html
+* Use following URL as Hosted code URL (HTTPS): https://kentico.github.io/custom-element-samples/Markdown/markdown.html
 
 ![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/MarkDown?pixel)
 
