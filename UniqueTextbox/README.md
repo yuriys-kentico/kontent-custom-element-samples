@@ -21,11 +21,6 @@ In **Step 2: Configuring your Lambda function**, use the following keys and valu
   - `HOST`: `preview-deliver.kenticocloud.com`
   - `PATH`: `/<Project ID>/items`
 
-Please update the code of the lambda function above (line 36) where you replace requestOptions.path with path:
-```javascript
-requestOptions.path = `${path}?${querystring.stringify(queryStringParameters)}`;
-```
-
 You can test it by configuring https://kentico.github.io/custom-element-samples/UniqueTextbox/unique_text.html url for your custom element.
 
 ## Output
