@@ -59,11 +59,11 @@ Prerequisites:
 ```
 git clone https://github.com/Kentico/custom-element-devkit.git
 cd custom-element-devkit
-git clone https://github.com/kenticomartinh/kc-google-analytics-experiments.git ./client/custom-elements/kc-google-analytics-experiments
+git clone https://github.com/Kentico/cloud-custom-element-sample-ga-experiments.git ./client/custom-elements/cloud-custom-element-sample-ga-experiments
 npm install --save react@^16.8.6 react-dom@^16.8.6 react-select@^2.4.3
 npm start -- -hw
 ```
 
-Browse: https://localhost:3000/custom-elements/kc-google-analytics-experiments/wrap
+Browse: https://localhost:3000/custom-elements/cloud-custom-element-sample-ga-experiments/wrap
 
 ![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/GoogleAnalyticsExperiments?pixel)
