@@ -37,7 +37,7 @@ The element will save a value containing the selected product together with its 
 
 # Installation
 
-Shopify product selector source code is in following repository: https://github.com/kenticomartinh/kc-shopify
+Shopify product selector source code is in following repository: https://github.com/Kentico/cloud-custom-element-sample-shopify
 
 If you want to adjust the implementation, first download [Kentico Cloud Custom Elements Devkit](https://github.com/kentico/custom-element-devkit). Source code of this selector needs be positioned within `/client/custom-elements` folder. For further instructions on devkit implementation, please refer to [Custom Element Devkit README](https://github.com/Kentico/custom-element-devkit/blob/master/readme.md).
 

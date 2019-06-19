@@ -40,7 +40,7 @@ The element will save a value containing the array of the selected audiences.
 
 # Installation
 
-Optimizely audiences selector source code is in following repository: https://github.com/kenticomartinh/kc-optimizely
+Optimizely audiences selector source code is in following repository: https://github.com/Kentico/cloud-custom-element-sample-optimizely
 
 If you want to adjust the implementation, first download [Kentico Cloud Custom Elements Devkit](https://github.com/kentico/custom-element-devkit). Source code of this selector needs be positioned within `/client/custom-elements` folder. For further instructions on devkit implementation, please refer to [Custom Element Devkit README](https://github.com/Kentico/custom-element-devkit/blob/master/readme.md).
 
