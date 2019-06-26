@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tiny MCE Element</title>
+    <!-- libs -->
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <!-- Kentico Custom elements API-->
+    <script src="https://app.kenticocloud.com/js-api/custom-element.js"></script>
+
+    <!-- Custom elements styles -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Custom element HTML -->
+    <textarea id="editor"></textarea>
+
+    <!-- Custom element code -->
+    <script type="text/javascript">
+        
+        var config = {
+            heightInPx: 500
+        };
+
+        var isDisabled = false;
+        var editor = null;
+
+        function updateDisabled(disabled) {
+            if (tinymce) {
+                if (disabled) {
+                    tinymce.activeEditor.setMode('readonly');
+                } else {
+                    tinymce.activeEditor.setMode('design');
+                }
+            }
+            isDisabled = disabled;
+        }
+
+        function initializeEditor(initialValue, isDisabled) {
+            document.getElementById('editor').value = initialValue;
+
+            // Setup SimpleMDE
+            editor = tinymce.init({
+                selector: '#editor',
+                height: config.heightInPx + "px",
+                menubar: false,
+                plugins: [
+                    'advlist autolink lists link image charmap print preview anchor textcolor',
+                    'searchreplace visualblocks code fullscreen',
+                    'insertdatetime media table paste code help wordcount'
+                ],
+                toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help',
+                tinycomments_mode: 'embedded',
+                setup: function (editor) {
+                    // updates Kentico Cloud element value on certain actions
+                    editor.on('Paste Change input Undo Redo', function () {
+                        setValue(editor.getContent());
+                        updateSize(editor.editorContainer.clientHeight);
+                    });
+                    // update size & disabled mode once editor is loaded
+                    editor.on('init', function (args) {
+                        updateSize(editor.editorContainer.clientHeight);
+                        updateDisabled(isDisabled);
+                    });
+                }
+            });
+
+            // React on window resize to adjust the height
+            window.addEventListener('resize', updateSize);
+        }
+
+        function updateSize(height) {
+            // Update the custom element height in the Kentico UI.
+            CustomElement.setHeight(height);
+        }
+
+        function setValue(value) {
+            // Send updated value to Kentico (send null in case of the empty string => element will not meet required condition).
+            CustomElement.setValue(value || null);
+        }
+
+        function initCustomElement() {
+            try {
+                CustomElement.init((element, _context) => {
+                    // Setup with initial value and disabled state
+                    initializeEditor(element.value, element.disabled);
+                });
+
+                // React on disabled changed (e.g. when publishing the item)
+                CustomElement.onDisabledChanged(updateDisabled);
+            } catch (err) {
+                // Initialization with Kentico Custom element API failed (page displayed outside of the Kentico UI)
+                console.error(err);
+                initializeEditor(err.toString());
+            }
+        }
+
+        initCustomElement();
+
+    </script>
+</body>
+
+</html>
