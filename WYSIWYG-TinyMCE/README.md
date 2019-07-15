@@ -19,7 +19,7 @@ Example output (html):
 
 ## Configuration
 
-For production use, Tiny requires you to create an account and allow specific domains. You can create free account at https://www.tiny.cloud/
+For production use, Tiny requires you to create an account and allow specific domains. You can create free account at [https://www.tiny.cloud/](https://www.tiny.cloud/)
 
 Once you have the account, generate your own script and use it instead of
 
@@ -27,6 +27,6 @@ Once you have the account, generate your own script and use it instead of
 <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 ```
 
-You can adjust the tiny's configuration function as you see fit inside `initializeEditor` function. For a list of configuration options refer to https://www.tiny.cloud/docs/configure/integration-and-setup/
+You can adjust the tiny's configuration function as you see fit inside `initializeEditor` function. For a list of configuration options refer to [https://www.tiny.cloud/docs/configure/integration-and-setup/](https://www.tiny.cloud/docs/configure/integration-and-setup/)
 
 ![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/WYSIWYG-TinyMCE?pixel)
