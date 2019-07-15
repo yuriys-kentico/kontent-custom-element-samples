@@ -23,7 +23,7 @@ For production use, Tiny requires you to create an account and allow specific do
 
 Once you have the account, generate your own script and use it instead of
 
-```javascript
+```html
 <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 ```
 
