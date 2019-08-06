@@ -1,0 +1,35 @@
+# Item selector
+
+This custom element offers items from another project to be linked with your item
+
+![screenshot](https://amend.cz/item-selector.png)
+
+## Configuration
+
+```json
+{
+    "projectid": "302946ce-a441-00e5-3dba-ec6ccc479168",
+    "filter": "system.type=article"
+}
+```
+
+You need to specify the `projectid` parameter in order to make the element work. The optional `filter` parameter is for filtering just subitems of your project and you can use any filtering described in our documentation (separated by &):
+
+https://developer.kenticocloud.com/reference#content-filtering
+
+You can test this element by configuring https://kentico.github.io/custom-element-samples/Item-selector/item-selector.html url for your custom element.
+
+## Output
+
+The JSON output of such an element would look like this:
+
+```json
+"item_selector": {
+        "type": "custom",
+        "name": "item selector",
+        "value": "[
+                   {\"codename\":\"article_1\",\"name\":\"Article 1\",\"type\":\"article\"},
+                   {\"codename\":\"url1\",\"name\":\"url1\",\"type\":\"video_item__url_\"}
+                 ]"
+      }
+```
