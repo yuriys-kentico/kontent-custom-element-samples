@@ -15,8 +15,7 @@ All of the samples are listed in the [Custom Element Gallery](https://kentico.gi
 
 ## How to create a custom element
 
-You can find a detailed tutorial on ho
-w to create a Custom element in our [documentation](https://developer.kenticocloud.com/docs/integrating-content-editing-features).
+You can find a detailed tutorial on how to create a Custom element in our [documentation](https://developer.kenticocloud.com/docs/integrating-content-editing-features).
 
 ### Custom element DevKit
 
