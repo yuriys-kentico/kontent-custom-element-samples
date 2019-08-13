@@ -3,7 +3,7 @@ import Wordpress2016 from 'typography-theme-wordpress-2016';
 
 Wordpress2016.overrideThemeStyles = () => {
   return {
-    'a' : {
+    'a': {
       boxShadow: `none`
     },
     'a.gatsby-resp-image-link': {
@@ -19,6 +19,31 @@ Wordpress2016.overrideThemeStyles = () => {
     },
     '.navigation ul li': {
       marginBottom: `0`
+    },
+    '.btn': {
+      display: `inline-flex`,
+      alignItems: `center`,
+      justifyContent: `center`,
+      padding: `6px 8px`,
+      fontSize: `16px`,
+      borderRadius: `2px`,
+      minWidth: `64px`,
+      marginBottom: `0`,
+      fontWeight: `400`,
+      textAlign: `center`,
+      whiteSpace: `nowrap`,
+      verticalAlign: `middle`,
+      touchAction: `manipulation`,
+      cursor: `pointer`,
+      backgroundImage: `none`,
+      border: `1px solid transparent`,
+      transition: `all .25s cubic-bezier(.23, 1, .32, 1) 50ms`,
+      userSelect: `none`
+    },
+    '.btn-primary': {
+      color: `#fff`,
+      backgroundColor: `#2196f3`,
+      borderColor: `transparent`
     }
   };
 };

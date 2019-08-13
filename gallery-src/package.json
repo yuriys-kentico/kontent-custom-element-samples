@@ -1,7 +1,7 @@
 {
   "name": "custom-elements-samples-gallery",
   "description": "A gallery listing the samples of custom elements for Kentico Cloud.",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "author": "Ondřej Chrastina <chrastina.ondra@gmail.com> (https://github.com/Simply007)",
   "bugs": {
     "url": "https://github.com/Kentico/custom-element-samples/issues"
