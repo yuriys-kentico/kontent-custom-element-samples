@@ -17,6 +17,8 @@ You need to specify the `projectid` parameter in order to make the element work.
 
 https://developer.kenticocloud.com/reference#content-filtering
 
+Within the filter you can also specify what language of your items you want to retrieve (a default language is returned ootb) - https://docs.kenticocloud.com/tutorials/develop-apps/get-content/getting-localized-content#a-ignoring-language-fallbacks
+
 You can test this element by configuring https://kentico.github.io/custom-element-samples/Item-selector/item-selector.html url for your custom element.
 
 ## Output
