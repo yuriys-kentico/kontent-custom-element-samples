@@ -30,8 +30,8 @@ The JSON output of such an element would look like this:
         "type": "custom",
         "name": "item selector",
         "value": "[
-                   {\"codename\":\"article_1\",\"name\":\"Article 1\",\"type\":\"article\"},
-                   {\"codename\":\"url1\",\"name\":\"url1\",\"type\":\"video_item__url_\"}
+                   {\"codename\":\"article_1\",\"name\":\"Article 1\",\"language\":\"en-US\",\"type\":\"article\"},
+                   {\"codename\":\"url1\",\"name\":\"url1\",\"language\":\"en-US\",\"type\":\"video_item__url_\"}
                  ]"
       }
 ```
