@@ -146,7 +146,7 @@
 			return false;
 		  },
 		  select: function( event, ui ) {
-		    addItem(ui.item.value, ui.item.label, ui.item.type);
+		    addItem(ui.item.value, ui.item.label, ui.item.lang, ui.item.type);
 			updateSize();				
 			return false;
 		  }
@@ -164,12 +164,13 @@
 			items.push({
 				value: data[i].system.codename,
 				label: data[i].system.name,
+				lang: data[i].system.language,
 				type: data[i].system.type
 			});
 		}
 	}
 	
-	function addItem(codename, name, type) {		
+	function addItem(codename, name, lang, type) {		
 		if (!checkItems(codename)) {
 			$( "#selectedItems" ).append("<div class='external-item selected' id='"+ codename +"'><div class='item-name' title='Item name'>" + name + "</div><div class='item-type' title='Content type'>" + type + "</div><div codename='"+ codename +"' class='bar-item__action bar-item__action--is-destructive remove-item'><i aria-hidden='true' class='icon-remove'></i></div></div>");			
 			$( "#selectItem" ).val("");
@@ -180,6 +181,7 @@
 			selectedItems.push({
 				codename: codename,
 				name: name,
+				language: lang,
 				type: type
 			});
 			CustomElement.setValue(JSON.stringify(selectedItems));
