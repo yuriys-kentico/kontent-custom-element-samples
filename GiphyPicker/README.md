@@ -5,9 +5,9 @@ The Giphy picker allows to search images on Giphy and use them in your website.
 
 # Usage
 
-If you want to use the Giphy image picker in your project in Kentico Cloud, follow these steps:
+If you want to use the Giphy image picker in your project in Kentico Kontent, follow these steps:
 
-* In Kentico Cloud open the Content types tab
+* In Kentico Kontent open the Content types tab
 * Create or edit a content model to which you want to add the Giphy picker
 * Add the **Custom element** content element
 * Configure the content element
@@ -21,17 +21,17 @@ If you want to use the Giphy image picker in your project in Kentico Cloud, foll
 }
 ```
 * The following parameters are supported:
-  
-limit (optional) number  
-The number of image results to return in the response. The actual number delivered may be less than requested.  
-  
-offset (optional) number  
-The zero-based offset that indicates the number of image results to skip before returning results.  
-  
-rating (optional) string  
+
+limit (optional) number
+The number of image results to return in the response. The actual number delivered may be less than requested.
+
+offset (optional) number
+The zero-based offset that indicates the number of image results to skip before returning results.
+
+rating (optional) string
 Filter result by rating, possible options are : Y, G, PG, PG-13, R
-  
-lang(optional) string    
+
+lang(optional) string
 Specify default language for regional content; use a 2-letter ISO 639-1 language code. See list of supported languages : https://developers.giphy.com/docs/#language-support
 
 For example:
@@ -50,7 +50,7 @@ See for documentation about the parameters on Giphy : https://developers.giphy.c
 
 ## Example output
 
-The element will save a value [images.fixed_height.url] containing the URL of the image to Kentico cloud.
+The element will save a value [images.fixed_height.url] containing the URL of the image to Kentico Kontent.
 
 ```
 {

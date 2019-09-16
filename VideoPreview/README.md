@@ -1,14 +1,14 @@
 # Video preview
 Video is a custom element which allows users to display preview of a video configured in other elements.
-This custom element is built specifically for the Hosted video content type in [Kentico Cloud](https://www.kenticocloud.com) DancingGoat sample site. 
+This custom element is built specifically for the Hosted video content type in [Kentico Kontent](https://www.kenticocloud.com) DancingGoat sample site.
 
 ![Video preview](VideoPreview.png)
 
 # Usage
 
-If you want to use the Video preview in your project in Kentico Cloud, follow these steps:
+If you want to use the Video preview in your project in Kentico Kontent, follow these steps:
 
-* In Kentico Cloud open Content types tab
+* In Kentico Kontent open Content types tab
 * Open / create a content model to which you want to add the Shopify product selector
 * Add **Custom element** content element
 * Open configuration of the content element

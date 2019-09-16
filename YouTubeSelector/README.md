@@ -6,9 +6,9 @@ YouTube video selector allows users to search and select videos from YouTube.
 
 ## Usage
 
-To use the YouTube video selector in your Kentico Cloud project:
+To use the YouTube video selector in your Kentico Kontent project:
 
-* In Kentico Cloud open Content types tab
+* In Kentico Kontent open Content types tab
 * Open / create a content model to which you want to add the YouTube video selector
 * Add **Custom element** content element
 * Open configuration of the content element
@@ -30,7 +30,7 @@ If you want to customize the element please follow the instructions in [source c
 
 ## Example output
 
-The element will save a value containing the video title and id to Kentico cloud.
+The element will save a value containing the video title and id to Kentico Kontent.
 
 ```
 {

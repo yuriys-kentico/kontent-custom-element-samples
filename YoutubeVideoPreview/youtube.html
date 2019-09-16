@@ -87,7 +87,7 @@
         }
 
         function updateSize() {
-            // Update the Custom element height in the Kentico Cloud UI
+            // Update the Custom element height in the Kentico Kontent UI
             const height = parseInt($("html").height());
             CustomElement.setHeight(height);
         }
@@ -106,7 +106,7 @@
                 CustomElement.onDisabledChanged(updateDisabled);
             } catch (err) {
                 // Initialization with the Custom elements API failed
-                // (page displayed outside of the Kentico Cloud UI)
+                // (page displayed outside of the Kentico Kontent UI)
                 console.error(err);
                 updateDisabled(true);
             }

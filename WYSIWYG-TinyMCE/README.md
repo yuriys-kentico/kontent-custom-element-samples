@@ -1,12 +1,12 @@
 # WYSIWYG TinyMCE
 
-This Kentico Cloud custom element is based on the [TinyMCE](https://www.tiny.cloud/) WYSIWYG text editor.
+This Kentico Kontent custom element is based on the [TinyMCE](https://www.tiny.cloud/) WYSIWYG text editor.
 
 You can test it by configuring https://kentico.github.io/custom-element-samples/WYSIWYG-TinyMCE/tiny-source.html url for your custom element.
 
 ![Tiny preview](tiny-preview.png)
 
-Example output (html): 
+Example output (html):
 ```json
  "elements": {
       "tiny": {

@@ -4,7 +4,7 @@
 This custom element functions similarly to the **Asset** element, but allows an editor to apply the Image Transformation API to any selected image.
 
 Confused?
-- What is Kentico Cloud: [Get started with Kentico Cloud](https://docs.kenticocloud.com/tutorials/get-started-with-kentico-cloud)
+- What is Kentico Kontent: [Get started with Kentico Kontent](https://docs.kenticocloud.com/tutorials/get-started-with-kentico-cloud)
 - What is a custom element: [Integrating your own content editing features](https://developer.kenticocloud.com/docs/integrating-content-editing-features)
 
 In action:

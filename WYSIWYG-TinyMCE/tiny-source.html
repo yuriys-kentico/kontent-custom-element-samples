@@ -61,7 +61,7 @@
                 toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help',
                 tinycomments_mode: 'embedded',
                 setup: function (editor) {
-                    // updates Kentico Cloud element value on certain actions
+                    // updates Kentico Kontent element value on certain actions
                     editor.on('Paste Change input Undo Redo', function () {
                         setValue(editor.getContent());
                     });

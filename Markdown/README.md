@@ -17,9 +17,9 @@ This outputs to:
 
 ## Usage
 
-If you want to use the Markdown in your project in Kentico Cloud, follow these steps:
+If you want to use the Markdown in your project in Kentico Kontent, follow these steps:
 
-* In Kentico Cloud open Content types tab
+* In Kentico Kontent open Content types tab
 * Open / create a content model to which you want to add the Markdown
 * Add **Custom element** content element
 * Open configuration of the content element

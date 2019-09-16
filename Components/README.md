@@ -1,6 +1,6 @@
 # Components element
 
-In Kentico Cloud there is linked items element as well as linked items as a part of the rich text. Then there are components as a part of the rich text, but there are components missing as a stand-alone element so editors can't create as many components as they need with no related items created.
+In Kentico Kontent there is linked items element as well as linked items as a part of the rich text. Then there are components as a part of the rich text, but there are components missing as a stand-alone element so editors can't create as many components as they need with no related items created.
 
 You can test it by configuring https://kentico.github.io/custom-element-samples/Components/components.html url for your custom element.
 
@@ -150,7 +150,7 @@ Response:
    },
    {
       "url":"https://kenticocloud.com",
-      "text":"Kentico Cloud",
+      "text":"Kentico Kontent",
       "target":[
 
       ]

@@ -5,9 +5,9 @@ The ipsum input allows you to quickly add ipsum content to your input fields.
 
 # Usage
 
-If you want to use the ipsum input in your project in Kentico Cloud, follow these steps:
+If you want to use the ipsum input in your project in Kentico Kontent, follow these steps:
 
-* In Kentico Cloud open the Content types tab
+* In Kentico Kontent open the Content types tab
 * Create or edit a content model to which you want to add the ipsum input
 * Add the **Custom element** content element
 * Configure the content element

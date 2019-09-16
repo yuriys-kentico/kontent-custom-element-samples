@@ -5,10 +5,10 @@ Syntax Highlighter is an editable text area enhanced by the [Ace Code Editor](ht
 
 ## Usage
 
-If you want to use the Syntax Highlighter in your project in Kentico Cloud, follow these steps:
+If you want to use the Syntax Highlighter in your project in Kentico Kontent, follow these steps:
 
 * Host the Syntax Highlighter code on you end considering [the Kentico recommendations](https://developer.kenticocloud.com/docs/integrating-content-editing-features)
-* In Kentico Cloud open Content types tab
+* In Kentico Kontent open Content types tab
 * Open / create a content model to which you want to add the Syntax Highlighter
 * Add **Custom element** content element
 * Open configuration of the content element
@@ -28,11 +28,11 @@ If you want to use the Syntax Highlighter in your project in Kentico Cloud, foll
 
 ## Obtaining value
 
-The value contains data about language and code. As Kentico Cloud custom elements can contain only `string` values or `null`, the value is stored as a stringified object. That means the value has to be explicitly parsed. 
+The value contains data about language and code. As Kentico Kontent custom elements can contain only `string` values or `null`, the value is stored as a stringified object. That means the value has to be explicitly parsed.
 
 ### Example
 
-The value contains the following string when obtained from Kentico Cloud:
+The value contains the following string when obtained from Kentico Kontent:
 ```
 "{\"language\":\"javascript\",\"code\":\"var text = 'Hello world';\"}"
 ```
