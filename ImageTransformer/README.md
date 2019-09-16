@@ -30,7 +30,7 @@ In action:
    * To set up `listAssetsEndpoint` above, please follow [Working with sensitive data in custom elements](https://docs.kontent.ai/tutorials/develop-apps/integrate/working-with-sensitive-data-in-custom-elements).
      - In **Step 2: Configuring your Lambda function**, use the following keys and values in the **Environment variables** section:
        - `BEARER_TOKEN`: `<Content Management API key from your project (Project settings > API keys)>`
-       - `HOST`: `manage.kenticocloud.com`
+       - `HOST`: `manage.kontent.ai`
        - `PATH`: `/v2/projects/<Project ID from your project (Project settings > API keys)>/assets`
 1. Make sure to have some image assets.
 1. Create a new item using this content type.

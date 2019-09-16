@@ -46,7 +46,7 @@ module.exports = {
         background_color: `#1E88E5`,
         theme_color: `#1E88E5`,
         display: `minimal-ui`,
-        icon: `content/assets/kenticocloud-icon.png`,
+        icon: `content/assets/kenticokontent-icon.png`,
       },
     },
     `gatsby-plugin-offline`,

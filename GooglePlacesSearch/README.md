@@ -1,6 +1,6 @@
 # Google Places Geo-location Selector Kentico Kontent Custom Element
 
-This is a [custom element](https://developer.kenticocloud.com/docs/integrating-content-editing-features) for [Kentico Kontent](https://kontent.ai) that allows users to easily get the geo-coordinates for a location using the Google Places API.
+This is a [custom element](https://docs.kontent.ai/tutorials/develop-apps/integrate/integrating-your-own-content-editing-features) for [Kentico Kontent](https://kontent.ai) that allows users to easily get the geo-coordinates for a location using the Google Places API.
 
 ![Screenshot](screenshot.png)
 
@@ -9,7 +9,7 @@ This is a [custom element](https://developer.kenticocloud.com/docs/integrating-c
 You can get started quickly using the currently version currently deployed to GitHub Pages. I do not recommend using this for anything other than **quick testing only**.
 
 1. [Get Google API keys](#getting-api-keys)
-1. Follow the instructions in the [Kentico Kontent documentation](https://developer.kenticocloud.com/docs/integrating-content-editing-features#section-3-displaying-a-custom-element-in-kentico-cloud) to add the element to a content model using <https://kentico.github.io/kontent-custom-element-samples/GooglePlacesSearch/> as the `Hosted code URL` and pass your configuration details via [JSON Parameters configuration](#json-parameters).
+1. Follow the instructions in the [Kentico Kontent documentation](https://docs.kontent.ai/tutorials/develop-apps/integrate/integrating-your-own-content-editing-features#a-3--displaying-a-custom-element-in-kentico-kontent) to add the element to a content model using <https://kentico.github.io/kontent-custom-element-samples/GooglePlacesSearch/> as the `Hosted code URL` and pass your configuration details via [JSON Parameters configuration](#json-parameters).
 
 ## JSON Parameters
 

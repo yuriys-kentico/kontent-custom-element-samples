@@ -18,7 +18,7 @@ You need to specify both `codename` parameter for the element code name you want
 To set up `request_repeater` above, please follow [Working with sensitive data in custom elements](https://docs.kontent.ai/tutorials/develop-apps/integrate/working-with-sensitive-data-in-custom-elements).
 In **Step 2: Configuring your Lambda function**, use the following keys and values in the **Environment variables** section:
   - `BEARER_TOKEN`: `<Preview Delivery API key>`
-  - `HOST`: `preview-deliver.kenticocloud.com`
+  - `HOST`: `preview-delivery.kontent.ai`
   - `PATH`: `/<Project ID>/items`
 
 You can test it by configuring https://kentico.github.io/kontent-custom-element-samples/UniqueTextbox/unique_text.html url for your custom element.
