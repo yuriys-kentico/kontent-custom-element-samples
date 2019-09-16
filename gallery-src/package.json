@@ -32,7 +32,7 @@
     "cpx": "^1.5.0",
     "prettier": "^1.17.0"
   },
-  "homepage": "https://github.com/Kentico/custom-element-samples#readme",
+  "homepage": "https://github.com/Kentico/kontent-custom-element-samples#readme",
   "keywords": [
     "gatsby"
   ],
@@ -40,7 +40,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kentico/custom-element-samples.git"
+    "url": "git+https://github.com/Kentico/kontent-custom-element-samples.git"
   },
   "scripts": {
     "build": "gatsby build --prefix-paths && cpx -v \"public/**/*\" ../gallery",
