@@ -13,7 +13,7 @@ If you want to use the Toast UI editor in your project in Kentico Kontent, follo
 * Open / create a content model to which you want to add the Toast UI Editor
 * Add **Custom element** content element
 * Open configuration of the content element
-* Use following URL as Hosted code URL (HTTPS): https://kentico.github.io/custom-element-samples/KCTuiEditor/index.html
+* Use following URL as Hosted code URL (HTTPS): https://kentico.github.io/kontent-custom-element-samples/KCTuiEditor/index.html
 
 ### Output
 
@@ -25,7 +25,7 @@ If you want to use the Toast UI editor in your project in Kentico Kontent, follo
       "toast": {
         "type": "custom",
         "name": "Toast",
-        "value": "Hi @Kentico/global-collaborators!\n\nWe bring you another batch of Kentico developer news.\n\n## Bynder integration tutorial\n\nThere is a [new tutorial](https://docs.kenticocloud.com/tutorials/develop-apps/integrate/integrating-dam-bynder) descibing how to integrate Kentico Kontent with Digital Asset Management platform (DAM). In this case it is a [Bynder](https://www.bynder.com/en/)."
+        "value": "Hi @Kentico/global-collaborators!\n\nWe bring you another batch of Kentico developer news.\n\n## Bynder integration tutorial\n\nThere is a new tutorial describing how to integrate Kentico Kontent with Digital Asset Management platform (DAM). In this case it is a [Bynder](https://www.bynder.com/en/)."
       }
     }
   },
@@ -58,4 +58,4 @@ npm start -- -hw
 
 Browse: https://localhost:3000/custom-elements/KCTuiEditor/wrap
 
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/KCTuiEditor?pixel)
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/kontent-custom-element-samples/KCTuiEditor?pixel)

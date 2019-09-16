@@ -1,17 +1,17 @@
 # Examples of Custom Element Extensions for Kentico Kontent
 
-[![Gallery](https://img.shields.io/badge/-Gallery-brightgreen.svg)](https://kentico.github.io/custom-element-samples/gallery/)
+[![Gallery](https://img.shields.io/badge/-Gallery-brightgreen.svg)](https://kentico.github.io/kontent-custom-element-samples/gallery/)
 [![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-ASK%20NOW-FE7A16.svg?logo=stackoverflow&logoColor=white)](https://stackoverflow.com/tags/kentico-cloud)
 
 This repository contains samples of the HTML web pages that can be used as Custom Element Extensions in Kentico Kontent.
 
-[Custom elements](https://developer.kenticocloud.com/docs/integrating-content-editing-features) help you with extending the basic functionality of Kentico Kontent UI and thus improving the content editing experience. Custom element is essentially a small HTML application that exists in a sandboxed `<iframe>` and interacts with the [Kentico Kontent](https://kenticocloud.com/) app via the [Custom Elements API](https://developer.kenticocloud.com/reference#custom-elements-api).
+[Custom elements](https://developer.kenticocloud.com/docs/integrating-content-editing-features) help you with extending the basic functionality of Kentico Kontent UI and thus improving the content editing experience. Custom element is essentially a small HTML application that exists in a sandboxed `<iframe>` and interacts with the [Kentico Kontent](https://kontent.ai/) app via the [Custom Elements API](https://developer.kenticocloud.com/reference#custom-elements-api).
 
 Note that Custom elements are only supported in the latest versions of our SDKs.
 
 ## Custom elements' samples overview
 
-All of the samples are listed in the [Custom Element Gallery](https://kentico.github.io/custom-element-samples/gallery/index.html). The source code it stored in the [/gallery-src](/gallery-src) folder.
+All of the samples are listed in the [Custom Element Gallery](https://kentico.github.io/kontent-custom-element-samples/gallery/index.html). The source code it stored in the [/gallery-src](/gallery-src) folder.
 
 ## How to create a custom element
 
@@ -25,18 +25,18 @@ To make development of custom elements as easy as possible, we created a [custom
 
 By including Kentico Kontent default styles, you can make your Custom element look consistent with the rest of the UI.
 
-The [/shared](https://github.com/Kentico/custom-element-samples/tree/master/shared) folder in this GitHub repository contains:
+The [/shared](https://github.com/Kentico/kontent-custom-element-samples/tree/master/shared) folder in this GitHub repository contains:
 
-* [custom-element.css](https://github.com/Kentico/custom-element-samples/blob/master/shared/custom-element.css) – a CSS stylesheet
-* [kentico-icons-v1.6.0.woff](https://github.com/Kentico/custom-element-samples/blob/master/shared/kentico-icons-v1.6.0.woff) – a font file
-* [examples.html](https://github.com/Kentico/custom-element-samples/blob/master/shared/examples.html) – An HTML page containing the implementation details and an HTML markup of some of the basic elements. See also the link in Demo section.
-  * showcase: [https://kentico.github.io/custom-element-samples/shared/examples.html](https://kentico.github.io/custom-element-samples/shared/examples.html)
+* [custom-element.css](https://github.com/Kentico/kontent-custom-element-samples/blob/master/shared/custom-element.css) – a CSS stylesheet
+* [kentico-icons-v1.6.0.woff](https://github.com/Kentico/kontent-custom-element-samples/blob/master/shared/kentico-icons-v1.6.0.woff) – a font file
+* [examples.html](https://github.com/Kentico/kontent-custom-element-samples/blob/master/shared/examples.html) – An HTML page containing the implementation details and an HTML markup of some of the basic elements. See also the link in Demo section.
+  * showcase: [https://kentico.github.io/kontent-custom-element-samples/shared/examples.html](https://kentico.github.io/kontent-custom-element-samples/shared/examples.html)
 
 We recommend you clone the files and host them locally yourself. The `kentico-icons-v1.6.0.woff` file needs to be hosted in the same directory as the CSS stylesheet to be properly linked.
 
 ## Feedback & Contributing
 
-You can contribute by implementing a Custom Element Extension of your choice or pick one from the [ideas](https://github.com/Kentico/custom-element-samples/issues). Create an HTML web page, include the Custom Elements API in the code, describe what your element does in the Readme file, and send us a pull request.
+You can contribute by implementing a Custom Element Extension of your choice or pick one from the [ideas](https://github.com/Kentico/kontent-custom-element-samples/issues). Create an HTML web page, include the Custom Elements API in the code, describe what your element does in the Readme file, and send us a pull request.
 
 ### Pull request
 
@@ -52,7 +52,7 @@ The pull request should include:
   * Configuration description example
   * Example of the output in the Delivery Response
 
-If you want to list a custom element to the [Gallery](https://kentico.github.io/custom-element-samples/gallery/index.html), include a JSON file named by the custom element (preferably in Pascal Case) placed to [/gallery-src/content/elements](https://github.com/Kentico/custom-element-samples/tree/master/gallery-src/content/elements) folder in the following format:
+If you want to list a custom element to the [Gallery](https://kentico.github.io/kontent-custom-element-samples/gallery/index.html), include a JSON file named by the custom element (preferably in Pascal Case) placed to [/gallery-src/content/elements](https://github.com/Kentico/kontent-custom-element-samples/tree/master/gallery-src/content/elements) folder in the following format:
 
 ```json
 {
@@ -65,9 +65,9 @@ If you want to list a custom element to the [Gallery](https://kentico.github.io/
 
 ### Ideas
 
-We'll also appreciate if you [submit your ideas](https://github.com/Kentico/custom-element-samples/issues) for custom elements or vote for [the existing ones](https://github.com/Kentico/custom-element-samples/issues).
+We'll also appreciate if you [submit your ideas](https://github.com/Kentico/kontent-custom-element-samples/issues) for custom elements or vote for [the existing ones](https://github.com/Kentico/kontent-custom-element-samples/issues).
 
-Check out the [Contributing](https://github.com/Kentico/custom-element-samples/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions, and begin contributing.
+Check out the [Contributing](https://github.com/Kentico/kontent-custom-element-samples/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions, and begin contributing.
 
 ## Disclaimer
 

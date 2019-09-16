@@ -11,7 +11,7 @@ If you want to use the Bynder image selector in your project in Kentico Kontent,
 * Open / create a content model to which you want to add the Bynder image selector
 * Add **Custom element** content element
 * Open configuration of the content element
-* Use following URL as Hosted code URL (HTTPS): https://kentico.github.io/custom-element-samples/Bynder/image-selector.html
+* Use following URL as Hosted code URL (HTTPS): https://kentico.github.io/kontent-custom-element-samples/Bynder/image-selector.html
 * Optionally provide the following JSON parameters for the custom element
 
 ```json
@@ -47,4 +47,4 @@ Bynder image selector source code is in following repository: https://github.com
 
 If you want to adjust the implementation, first download [Kentico Kontent Custom Elements Devkit](https://github.com/kentico/custom-element-devkit). Source code of this selector needs be positioned within `/client/custom-elements` folder. For further instructions on devkit implementation, please refer to [Custom Element Devkit README](https://github.com/Kentico/custom-element-devkit/blob/master/readme.md).
 
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/Bynder?pixel)
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/kontent-custom-element-samples/Bynder?pixel)

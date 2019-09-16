@@ -12,7 +12,7 @@ To use the YouTube video selector in your Kentico Kontent project:
 * Open / create a content model to which you want to add the YouTube video selector
 * Add **Custom element** content element
 * Open configuration of the content element
-* Use following URL as Hosted code URL (HTTPS): https://kentico.github.io/custom-element-samples/YouTubeSelector/index.html
+* Use following URL as Hosted code URL (HTTPS): https://kentico.github.io/kontent-custom-element-samples/YouTubeSelector/index.html
 * Provide the following JSON parameters for the custom element,
  to get an API key for the YouTube API visit https://developers.google.com/youtube/v3/getting-started
 
@@ -50,4 +50,4 @@ The element will save a value containing the video title and id to Kentico Konte
 }
 ```
 
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/Youtube?pixel)
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/kontent-custom-element-samples/Youtube?pixel)

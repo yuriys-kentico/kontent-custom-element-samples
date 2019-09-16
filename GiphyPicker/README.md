@@ -11,7 +11,7 @@ If you want to use the Giphy image picker in your project in Kentico Kontent, fo
 * Create or edit a content model to which you want to add the Giphy picker
 * Add the **Custom element** content element
 * Configure the content element
-* Use the following URL as Hosted code URL (HTTPS): https://kentico.github.io/custom-element-samples/GiphyPicker/giphypicker-input-component.html
+* Use the following URL as Hosted code URL (HTTPS): https://kentico.github.io/kontent-custom-element-samples/GiphyPicker/giphypicker-input-component.html
 * Get API key from Giphy: https://developers.giphy.com/
 * Provide JSON parameters for the custom element to configure the API Key:
 
@@ -288,4 +288,4 @@ The element will save a value [images.fixed_height.url] containing the URL of th
 }
 ```
 
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/GiphyPicker?pixel)
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/kontent-custom-element-samples/GiphyPicker?pixel)

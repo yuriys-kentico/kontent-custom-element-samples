@@ -4,7 +4,7 @@
   "version": "1.0.9",
   "author": "Ondřej Chrastina <chrastina.ondra@gmail.com> (https://github.com/Simply007)",
   "bugs": {
-    "url": "https://github.com/Kentico/custom-element-samples/issues"
+    "url": "https://github.com/Kentico/kontent-custom-element-samples/issues"
   },
   "dependencies": {
     "gatsby": "^2.3.29",

@@ -11,7 +11,7 @@ If you want to use the Flickr image picker in your project in Kentico Kontent, f
 * Create or edit a content model to which you want to add the Flickr image picker
 * Add the **Custom element** content element
 * Configure the content element
-* Use the following URL as Hosted code URL (HTTPS): https://kentico.github.io/custom-element-samples/FlickrImagePicker/flickrimage-input-component.html
+* Use the following URL as Hosted code URL (HTTPS): https://kentico.github.io/kontent-custom-element-samples/FlickrImagePicker/flickrimage-input-component.html
 * Create API key for Flickr: https://www.flickr.com/services/developer/api/
 * Provide JSON parameters for the custom element to configure the API Key:
 
@@ -53,4 +53,4 @@ The element will save a value containing the URL of the image to Kentico Kontent
 }
 ```
 
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples/FlickrImagePicker?pixel)
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/kontent-custom-element-samples/FlickrImagePicker?pixel)
