@@ -19,7 +19,7 @@ You need to specify the `projectid` parameter in order to make the element work.
 
 Within the filter you can also specify what language of your items you want to retrieve (a default language is returned OOTB) - [https://docs.kontent.ai/tutorials/develop-apps/get-content/getting-localized-content#a-ignoring-language-fallbacks](https://docs.kontent.ai/tutorials/develop-apps/get-content/getting-localized-content#a-ignoring-language-fallbacks)
 
-You can test this element by configuring https://kentico.github.io/custom-element-samples/Item-selector/item-selector.html url for your custom element.
+You can test this element by configuring https://kentico.github.io/kontent-custom-element-samples/Item-selector/item-selector.html url for your custom element.
 
 ## Output
 
