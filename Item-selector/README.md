@@ -15,7 +15,7 @@ This custom element offers items from another project to be linked with your ite
 
 You need to specify the `projectid` parameter in order to make the element work. The optional `filter` parameter is for filtering just subitems of your project and you can use any filtering described in our documentation (separated by &):
 
-https://developer.kenticocloud.com/reference#content-filtering
+[Content filtering documentation](https://developer.kenticocloud.com/reference#content-filtering)
 
 Within the filter you can also specify what language of your items you want to retrieve (a default language is returned ootb) - https://docs.kenticocloud.com/tutorials/develop-apps/get-content/getting-localized-content#a-ignoring-language-fallbacks
 
