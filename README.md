@@ -13,6 +13,11 @@ Note that Custom elements are only supported in the latest versions of our SDKs.
 
 All of the samples are listed in the [Custom Element Gallery](https://kentico.github.io/kontent-custom-element-samples/gallery/index.html). The source code it stored in the [/gallery-src](/gallery-src) folder.
 
+| :warning: Disclaimer |
+| ---- |
+| Custom elements in this repository should be used **for demonstration purposes only**.<br><br>If you wish to use them in a production project, you should perform a code review and fork/deploy the source code on your own as the custom elements in this repository are subject to change.<br><br>**NOTE:** Some of the custom elements may require further configuration such as custom API keys or be subject to CORS limitation. In those cases please fork the source code repository and adjust the configuration in your repository according to instructions in the element's README file. |
+
+
 ## How to create a custom element
 
 You can find a detailed tutorial on how to create a Custom element in our [documentation](https://docs.kontent.ai/tutorials/develop-apps/integrate/integrating-your-own-content-editing-features).
@@ -68,13 +73,5 @@ If you want to list a custom element to the [Gallery](https://kentico.github.io/
 We'll also appreciate if you [submit your ideas](https://github.com/Kentico/kontent-custom-element-samples/issues) for custom elements or vote for [the existing ones](https://github.com/Kentico/kontent-custom-element-samples/issues).
 
 Check out the [Contributing](https://github.com/Kentico/kontent-custom-element-samples/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions, and begin contributing.
-
-## Disclaimer
-
-> Custom elements in this repository should be used for showcasing the Custom Element Extensions capabilities. If you wish to use them in production project, perform a code review before any usage.
-
-The custom elements in this repository are subject to change. If you wish to use them on a live project, please fork this repository and reference your repository URL in Kentico Kontent custom element configuration.
-
-Some of the custom elements may require further configuration such as custom API keys or be subject to CORS limitation. In those cases please fork the source code repository and adjust the configuration in your repository according to instructions in the element's README file.
 
 ![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples?pixel)
