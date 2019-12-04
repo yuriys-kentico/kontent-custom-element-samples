@@ -56,6 +56,10 @@ The pull request should include:
   * Step by step instructions how to add custom element to the Kentico Kontent UI
   * Configuration description example
   * Example of the output in the Delivery Response
+* Licensing requirements
+  * Any code you submit to this repo must be releasable under the MIT license.
+  * You may add your own license for your code provided that license is compatible with MIT (i.e. permissive)
+  * Any used third-party libraries must include their licenses and be compatible with the MIT license (i.e. permissive)
 
 If you want to list a custom element to the [Gallery](https://kentico.github.io/kontent-custom-element-samples/gallery/index.html), include a JSON file named by the custom element (preferably in Pascal Case) placed to [/gallery-src/content/elements](https://github.com/Kentico/kontent-custom-element-samples/tree/master/gallery-src/content/elements) folder in the following format:
 
