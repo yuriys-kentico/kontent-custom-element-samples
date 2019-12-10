@@ -1,4 +1,9 @@
-# Google Analytics Experiments selector
+#  DEPRECATED - Google Analytics Experiments selector
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
+> <h2 align="center">:warning:<br><br>Deprecation Notice</h2>
+> This repository is no longer being maintained. Google Analytics Content Experiments has been <a href="https://support.google.com/analytics/answer/9366791?hl=en">deprecated by Google</a>.
+
 Google Analytics Experiments selector is a selector connected to Google Analytics instance which allows users to select an experiment and its variant.
 
 ![Google Analytics Experiment selector](ExperimentSelector.gif)
