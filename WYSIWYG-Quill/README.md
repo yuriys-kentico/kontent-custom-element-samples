@@ -1,6 +1,6 @@
 # WYSIWYG Quill
 
-This KC custom element is based on the https://quilljs.com/ rich text editor.
+This Kentico Kontent custom element is based on the https://quilljs.com/ rich text editor.
 It stores content in JSON format, so it's omni-channel friendly :smiley:
 
 You can test it by configuring https://kentico.github.io/kontent-custom-element-samples/WYSIWYG-Quill/wysiwyg.html url for your custom element.
