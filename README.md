@@ -11,7 +11,7 @@ Note that Custom elements are only supported in the latest versions of our SDKs.
 
 ## Custom elements' samples overview
 
-All of the samples are listed in the [Custom Element Gallery](https://kentico.github.io/kontent-custom-element-samples/gallery/index.html). The source code it stored in the [/gallery-src](/gallery-src) folder.
+All of the samples are listed in the [Custom Element Gallery](https://kentico.github.io/kontent-custom-element-samples/gallery/index.html). The source code is stored in the [/gallery-src](/gallery-src) folder.
 
 | :warning: Disclaimer |
 | ---- |
@@ -24,7 +24,7 @@ You can find a detailed tutorial on how to create a Custom element in our [docum
 
 ### Custom element DevKit
 
-To make development of custom elements as easy as possible, we created a [custom element devkit](https://github.com/Kentico/custom-element-devkit). The devkit includes Kentico Kontent alike wireframe and mocked API to enable seamless debugging experience. It is also capable of minimizing all assets and preparing custom element for production use.
+To make the development of custom elements as easy as possible, we created a [custom element devkit](https://github.com/Kentico/custom-element-devkit). The devkit includes Kentico Kontent alike wireframe and mocked API to enable seamless debugging experience. It is also capable of minimizing all assets and preparing custom element for production use.
 
 ### Styling your custom elements
 
