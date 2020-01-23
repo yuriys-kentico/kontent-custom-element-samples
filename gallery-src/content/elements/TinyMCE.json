@@ -1,0 +1,6 @@
+{
+  "title": "TinyMCE Rich Text Editor",
+  "description": "This custom element is based on the TinyMCE WYSIWYG text editor.",
+  "thumbnailUrl": "TinyMCE.png",
+  "readmeUrl": "https://github.com/Enngage/custom-element-samples/tree/master/WYSIWYG-TinyMCE"
+}
