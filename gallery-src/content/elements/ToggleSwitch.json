@@ -1,0 +1,6 @@
+{
+  "title": "Switch",
+  "description": "This Ketnico Kontent custom element is just a simple switch -> on/off.",
+  "thumbnailUrl": "ToggleSwitch.png",
+  "readmeUrl": "https://github.com/hzik/kc_inputs"
+}
