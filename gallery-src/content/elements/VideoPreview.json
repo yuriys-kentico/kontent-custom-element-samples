@@ -1,0 +1,6 @@
+{
+  "title": "Video Preview",
+  "description": "This custom element allows allows users to display preview of a video configured in other elements. This custom element is built specifically for the Hosted video content type in Kentico Kontent DancingGoat sample site.",
+  "thumbnailUrl": "VideoPreview.png",
+  "readmeUrl": "https://github.com/kenticomartinh/kontent-custom-element-samples/tree/master/VideoPreview"
+}
