@@ -1,6 +1,6 @@
 {
   "title": "Toggle Switch",
-  "description": "This Kentico Kontent custom element is just a simple on/off toggle switch.",
+  "description": "This custom element is just a simple on/off toggle switch.",
   "thumbnailUrl": "ToggleSwitch.png",
   "readmeUrl": "https://github.com/hzik/kc_inputs"
 }

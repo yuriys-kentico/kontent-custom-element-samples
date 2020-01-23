@@ -1,6 +1,6 @@
 {
   "title": "Toast UI Editor",
-  "description": "Toast UI editor is based on Toast UI Editor. It is a Markdown WYSIWYG Editor including GFM Standard + Chart & UML Extensible.",
+  "description": "This cusotm element is based on Toast UI Editor. It is a Markdown WYSIWYG Editor including GFM Standard + Chart & UML Extensible.",
   "thumbnailUrl": "ToastUIEditor.gif",
   "readmeUrl": "https://github.com/Simply007/kc-tui-editor-custom-element"
 }
