@@ -1,0 +1,6 @@
+{
+  "title": "Quill Rich Text Editor",
+  "description": "This custom element is based on the Quill rich text editor. It stores content in JSON format, so it's omni-channel friendly.",
+  "thumbnailUrl": "QuillRichTextEditor.png",
+  "readmeUrl": "https://github.com/hzik/kc_wysiwyg"
+}
