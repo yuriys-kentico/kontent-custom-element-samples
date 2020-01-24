@@ -1,6 +1,6 @@
 {
   "title": "Flickr Image Picker",
   "description": "The Flickr image picker allows to search images on Flickr and use them in your website.",
-  "thumbnailUrl": "FlickrImagePicker.gif",
+  "thumbnailUrl": "../assets/FlickrImagePicker.gif",
   "readmeUrl": "https://github.com/maartenvdh/custom-element-samples/tree/master/FlickrImagePicker"
 }

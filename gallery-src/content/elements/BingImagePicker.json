@@ -1,6 +1,6 @@
 {
   "title": "Bing Image Picker",
   "description": "The Bing image picker allows to search images on Bing and use them in your website.",
-  "thumbnailUrl": "BingImagePicker.gif",
+  "thumbnailUrl": "../assets/BingImagePicker.gif",
   "readmeUrl": "https://github.com/maartenvdh/custom-element-samples/tree/master/BingImagePicker"
 }

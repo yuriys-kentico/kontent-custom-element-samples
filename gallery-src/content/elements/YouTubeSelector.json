@@ -1,6 +1,6 @@
 {
   "title": "YouTube Selector",
   "description": "YouTube selector allows users to search and select videos from YouTube.",
-  "thumbnailUrl": "YouTubeSelector.gif",
+  "thumbnailUrl": "../assets/YouTubeSelector.gif",
   "readmeUrl": "https://github.com/Bassetts/kc-youtube"
 }

@@ -1,6 +1,6 @@
 {
   "title": "Item selector",
   "description": "This element offers items from another project to be linked with your item",
-  "thumbnailUrl": "ItemSelector.png",
+  "thumbnailUrl": "../assets/ItemSelector.png",
   "readmeUrl": "https://github.com/Kentico/kontent-custom-element-samples/tree/master/Item-selector"
 }

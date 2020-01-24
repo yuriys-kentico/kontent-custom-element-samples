@@ -1,6 +1,6 @@
 {
   "title": "Ipsum Input",
   "description": "The ipsum input allows you to quickly add ipsum content to your input fields.",
-  "thumbnailUrl": "IpsumInput.png",
+  "thumbnailUrl": "../assets/IpsumInput.png",
   "readmeUrl": "https://github.com/jeroenfurst/custom-element-samples/tree/master/IpsumInput"
 }

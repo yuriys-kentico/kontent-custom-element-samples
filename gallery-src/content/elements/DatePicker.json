@@ -1,6 +1,6 @@
 {
   "title": "Date Picker",
   "description": "This is a simple calendar control based on jQuery UI DatePicker which lets you pick a date.",
-  "thumbnailUrl": "DatePicker.gif",
+  "thumbnailUrl": "../assets/DatePicker.gif",
   "readmeUrl": "https://github.com/matus666/custom-element-samples/tree/master/DatePicker"
 }
