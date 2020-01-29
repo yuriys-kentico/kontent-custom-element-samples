@@ -9,13 +9,15 @@ Note that Custom elements are only supported in the latest versions of our SDKs.
 
 [![View Gallery](ViewGalleryButton.png)](https://kentico.github.io/kontent-custom-element-samples/gallery)
 
-## Custom elements' samples overview
+## ⚠ Disclaimer
 
-All of the samples are listed in the [Custom Element Gallery](https://kentico.github.io/kontent-custom-element-samples/gallery/index.html). The source code is stored in the [/gallery-src](/gallery-src) folder.
+Any URLs provided in the repos should not be used in production. You should follow the steps provided in the custom element's repository to deploy it yourself for testing.
 
-| :warning: Disclaimer |
-| ---- |
-| Custom elements referenced in this repository should be used **for demonstration purposes only**.<br><br>If you wish to use them in a production project, you should perform a code review and fork/deploy the source code on your own as the custom elements in this repository are subject to change.<br><br>**NOTE:** Some of the custom elements may require further configuration such as custom API keys or be subject to CORS limitation. In those cases please fork the source code repository and adjust the configuration in your repository according to instructions in the element's README file. |
+If a custom element is missing deploy instructions, or you're having trouble with them, please log an issue in the custom element's repository.
+
+If you wish to use them in a production project, you should perform a code review and fork/deploy the source code on your own as the custom elements in this repository are subject to change without notice.
+
+**NOTE:** Some of the custom elements may require further configuration such as custom API keys or be subject to CORS limitation. In those cases you will need to fork the source repository and adjust the configuration in your copy repository according to instructions in the element's README file.
 
 ## How to create a custom element
 
