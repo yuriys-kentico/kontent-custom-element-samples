@@ -58,6 +58,7 @@ The pull request should include:
   * Step by step instructions how to add custom element to the Kentico Kontent UI
   * Configuration description example
   * Example of the output in the Delivery Response
+  * If possible, a "Deploy to Netlify" button to make it easy to get started ([e.g. Deploying section of SimpleMDE Markdown Editor](https://github.com/Kentico/kontent-custom-element-simplemde-markdown-editor#deploying))
 * We no longer accept code submitted to this repository. It is only intended to act as a guidepost or collection of references to other codebases
 
 #### Sample element JSON
