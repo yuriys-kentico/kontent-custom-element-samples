@@ -1,6 +1,6 @@
 {
-  "title": "Flickr Image Picker",
-  "description": "The Flickr image picker allows to search images on Flickr and use them in your website.",
-  "thumbnailUrl": "../assets/FlickrImagePicker.gif",
-  "readmeUrl": "https://github.com/maartenvdh/custom-element-samples/tree/master/FlickrImagePicker"
+  "title": "Flickr Image Selector",
+  "description": "The Flickr image selector allows you to search images on Flickr and select one. NOTE: Selected image may be subject to copyright and/or usage restrictions.",
+  "thumbnailUrl": "../assets/FlickrImageSelector.gif",
+  "readmeUrl": "https://github.com/Kentico/kontent-custom-element-flickr-image-selector"
 }
