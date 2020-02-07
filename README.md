@@ -3,7 +3,7 @@
 [![Gallery](https://img.shields.io/badge/-Gallery-brightgreen.svg)](https://kentico.github.io/kontent-custom-element-samples/gallery/)
 [![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-ASK%20NOW-FE7A16.svg?logo=stackoverflow&logoColor=white)](https://stackoverflow.com/tags/kentico-kontent)
 
-[Custom elements](https://docs.kontent.ai/tutorials/develop-apps/integrate/integrating-your-own-content-editing-features) help you with extending the basic functionality of Kentico Kontent UI and thus improving the content editing experience. Custom element is essentially a small HTML application that exists in a sandboxed `<iframe>` and interacts with the [Kentico Kontent](https://kontent.ai/) app via the [Custom Elements API](https://developer.kenticocloud.com/reference#custom-elements-api).
+[Custom elements](https://docs.kontent.ai/tutorials/develop-apps/integrate/integrating-your-own-content-editing-features) help you with extending the basic functionality of Kentico Kontent UI and thus improving the content editing experience. Custom element is essentially a small HTML application that exists in a sandboxed `<iframe>` and interacts with the [Kentico Kontent](https://kontent.ai/) app via the [Custom Elements API](https://docs.kontent.ai/reference/custom-elements-js-api).
 
 Note that Custom elements are only supported in the latest versions of our SDKs.
 
