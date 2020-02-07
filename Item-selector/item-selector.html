@@ -5,9 +5,9 @@
     <title>Item selector</title>
     <!-- Include jQuery library -->
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script>	
+	<script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.css" />
-	
+
     <!-- Include the Custom Elements API-->
     <script src="https://app.kenticocloud.com/js-api/custom-element/v1/custom-element.min.js"></script>
 	<link rel="stylesheet" href="./custom-element.css" />
@@ -49,8 +49,8 @@
 			padding:8px;
 		}
 		.select-item {
-			width: calc(100vw - 20px);			
-		} 
+			width: calc(100vw - 20px);
+		}
 		.bar-item__action, .bar-item__status-icon {
 			display: -webkit-box;
 			display: flex;
@@ -94,17 +94,33 @@
 </head>
 <body>
 	<div class="disabled_overlay"></div>
+	<div
+      style="z-index:11;position:relative;border-left:4px solid;background:#fff5e6;color:rgb(100, 82, 30);border-color:#ff9800;padding:12px 15px 15px;margin: 0 auto"
+    >
+      <h3 style="margin-top:1em">⚠ WARNING ⚠</h3>
+      <p>
+        This URL will stop working sometime after February 29th.
+      </p>
+      <p>
+        You can continue using this custom element by
+        <a
+          href="https://github.com/Kentico/kontent-custom-element-item-selector#deploying"
+          target="_blank"
+          >following the deploying instructions on GitHub</a
+        >.
+      </p>
+    </div>
 	<div id="selectedItems"></div>
 	<div id="item-selector" class="item-selector">
-		<input id="selectItem" class="select-item" placeholder="Search for an item here...">		
+		<input id="selectItem" class="select-item" placeholder="Search for an item here...">
 		<div id="item"></div>
 	</div>
-<script>	
+<script>
 	var projectid = '';
 	var filter = '';
 	var items = [];
 	var selectedItems = [];
-	
+
 	function updateDisabled(disabled) {
 		if (disabled) {
 			$('.disabled_overlay').show();
@@ -113,9 +129,9 @@
 			$('.disabled_overlay').hide();
 		}
 	}
-	
-	function setup(value) {	 
-		var urlfindItems = 'https://deliver.kenticocloud.com/'+projectid+'/items?depth=0&elements=null';	
+
+	function setup(value) {
+		var urlfindItems = 'https://deliver.kenticocloud.com/'+projectid+'/items?depth=0&elements=null';
 		if (filter) {
 			urlfindItems += '&'+filter;
 		}
@@ -135,9 +151,9 @@
 			}
 		});
 	}
-	
+
 	function loadSelector(value) {
-		var storedItems = JSON.parse(value);	
+		var storedItems = JSON.parse(value);
 		loadItems(storedItems);
 		$( "#selectItem" ).autocomplete({
 		  minLength: 1,
@@ -147,7 +163,7 @@
 		  },
 		  select: function( event, ui ) {
 		    addItem(ui.item.value, ui.item.label, ui.item.lang, ui.item.type);
-			updateSize();				
+			updateSize();
 			return false;
 		  }
 		})
@@ -158,7 +174,7 @@
 		};
 		updateSize();
 	}
-	
+
 	function processItems(data) {
 		for (var i = 0; i < data.length; i++) {
 			items.push({
@@ -169,15 +185,15 @@
 			});
 		}
 	}
-	
-	function addItem(codename, name, lang, type) {		
+
+	function addItem(codename, name, lang, type) {
 		if (!checkItems(codename)) {
-			$( "#selectedItems" ).append("<div class='external-item selected' id='"+ codename +"'><div class='item-name' title='Item name'>" + name + "</div><div class='item-type' title='Content type'>" + type + "</div><div codename='"+ codename +"' class='bar-item__action bar-item__action--is-destructive remove-item'><i aria-hidden='true' class='icon-remove'></i></div></div>");			
+			$( "#selectedItems" ).append("<div class='external-item selected' id='"+ codename +"'><div class='item-name' title='Item name'>" + name + "</div><div class='item-type' title='Content type'>" + type + "</div><div codename='"+ codename +"' class='bar-item__action bar-item__action--is-destructive remove-item'><i aria-hidden='true' class='icon-remove'></i></div></div>");
 			$( "#selectItem" ).val("");
 			$(".remove-iteme").off();
 			$(".remove-item").click(function(e) {
-				removeItem($(this).attr("codename"));				
-			});	
+				removeItem($(this).attr("codename"));
+			});
 			selectedItems.push({
 				codename: codename,
 				name: name,
@@ -190,26 +206,26 @@
 			highlightItem(codename);
 		}
 	}
-	
+
 	function removeItem(codename) {
 		for (var i = 0; i < selectedItems.length; i++) {
 			if (selectedItems[i].codename==codename) {
-				
-				selectedItems.splice(i, 1); 
+
+				selectedItems.splice(i, 1);
 			}
 		}
 		CustomElement.setValue(JSON.stringify(selectedItems));
 		$( "#"+codename ).fadeOut(200);
 		updateSize();
 	}
-	
-	function loadItems(storedItems) {		
+
+	function loadItems(storedItems) {
 		for (var i = 0; i < storedItems.length; i++) {
 			addItem(storedItems[i].codename, storedItems[i].name, storedItems[i].language, storedItems[i].type);
 		}
 	}
-	
-	function checkItems(codename) {		
+
+	function checkItems(codename) {
 		for (var i = 0; i < selectedItems.length; i++) {
 			if (selectedItems[i].codename==codename) {
 				return true;
@@ -217,21 +233,21 @@
 		}
 		return false;
 	}
-	
-	function highlightItem(codename) {		
+
+	function highlightItem(codename) {
 		$( "#"+codename ).effect("highlight", {color:"#e3f2fe"}, 2000);;
 	}
-  
+
 	function updateSize() {
 		var height = 500;
 		try {
-			height = parseInt($("html").height())+300;		
+			height = parseInt($("html").height())+300;
 		} catch (err) {
 			console.error(err);
 		}
 		CustomElement.setHeight(height);
 	}
-  
+
 	function initCustomElement() {
 		try {
 			CustomElement.init((element, _context) => {
@@ -249,36 +265,36 @@
 				}
 				if (!configError) {
 					if (element.value) {
-						setup(element.value);		
-					}	
-					else {						
+						setup(element.value);
+					}
+					else {
 						setup("[]");
 					}
 				}
 				else {
 					showError("Your configuration doesn't contain the projectid value. Please check the documentation of this element.");
 				}
-				
+
 				updateDisabled(element.disabled);
 				updateSize();
 			});
 			// React when the disabled state changes (e.g. when publishing the item)
 			CustomElement.onDisabledChanged(updateDisabled);
 		} catch (err) {
-			// Initialization with the Custom elements API failed 
+			// Initialization with the Custom elements API failed
 			// (page displayed outside of the Kentico Cloud UI)
 			console.error(err);
 			updateDisabled(true);
 		}
 	}
-  
-	initCustomElement();	
-	
+
+	initCustomElement();
+
 	function showError(message) {
 		$("#item-selector").html("<span class=\"item-status item-status--failed\">"+message+"</span>");
 	}
 
-        	
+
 </script>
 
 </body>
