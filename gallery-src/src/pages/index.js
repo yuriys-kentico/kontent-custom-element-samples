@@ -4,7 +4,6 @@ import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { rhythm } from '../utils/typography';
-import Disclaimer from '../components/disclaimer';
 
 const createAnchor = (input) => {
   return input.toLowerCase().trim().split(' ').join('-');
@@ -34,7 +33,6 @@ class BlogIndex extends React.Component {
             `custom elements`,
           ]}
         />
-        <Disclaimer />
         <h2>Gallery</h2>
         <details className="navigation">
           <summary>Show navigation</summary>
