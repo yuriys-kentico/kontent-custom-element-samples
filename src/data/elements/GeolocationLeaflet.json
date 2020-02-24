@@ -2,5 +2,8 @@
   "title": "Geolocation Leaflet",
   "description": "This custom element allows you to put a marker on a map and it automatically gets converted to latitude and longitude geo locations.",
   "thumbnailUrl": "../assets/GeolocationLeaflet.png",
-  "readmeUrl": "https://github.com/hzik/kc_geolocation"
+  "readmeUrl": "https://github.com/hzik/kc_geolocation",
+  "categories": [
+    "Geolocation"
+  ]
 }

@@ -2,5 +2,9 @@
   "title": "TinyMCE Rich Text Editor",
   "description": "This custom element is based on the TinyMCE WYSIWYG text editor.",
   "thumbnailUrl": "../assets/TinyMCE.png",
-  "readmeUrl": "https://github.com/Kentico/kontent-custom-element-tinymce"
+  "readmeUrl": "https://github.com/Kentico/kontent-custom-element-tinymce",
+  "categories": [
+    "WYSIWYG Editor",
+    "HTML"
+  ]
 }
