@@ -14,10 +14,21 @@ import "./style-critical.css"
 const Layout = ({ children }) => {
   return (
     <>
-      <main id="main" className="overflow-hidden main">
-        { children }
+      <main id="main" className="overflow-hidden main"
+      style={{
+        "padding-top": "24px"
+      }}>
+        {children}
       </main>
-      <footer>© 2004-{new Date().getFullYear()} Kentico</footer>
+      <footer
+        className="grid"
+        style={{
+          margin: "24px auto",
+          "text-align":"right"
+        }}
+      >
+        © 2004-{new Date().getFullYear()} Kentico
+      </footer>
     </>
   )
 }

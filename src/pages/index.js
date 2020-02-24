@@ -68,13 +68,13 @@ const IndexPage = () => {
             <div className="js-pagination-list">
               <div className="heading heading--h2 heading--center heading--indent-content">
                 <h2>
-                  Available custom elements
+                  Custom element sample gallery
                   <strong className="highlight">.</strong>
                 </h2>
               </div>
               <div className="grid__row">
                 <div className="grid__col grid__col--12 grid__col--md-3 grid__col--lg-span-2 grid__col--lg-2 js-integrations-filter-wrapper">
-                  <div className="js-integrations-filter position-fixed">
+                  <div className="js-integrations-filter">
                     <FilterList
                       title="Category"
                       categories={categories}
