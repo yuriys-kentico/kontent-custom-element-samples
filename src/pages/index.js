@@ -4,8 +4,8 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import FilterList from "../components/FilterList"
-import CustomElementCardList from "../components/CustomElementCardList"
+import FilterList from "../components/filterList"
+import CustomElementCardList from "../components/customElementCardList"
 
 const IndexPage = () => {
   const data = useStaticQuery(
