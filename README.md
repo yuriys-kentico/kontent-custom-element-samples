@@ -46,10 +46,10 @@ The pull request should include:
 
 * A screenshot file (animated or static)
   * Must be named using PascalCase (e.g. `YourComponentName.gif`)
-  * Must be added to the [`gallery-src/content/assets` folder](gallery-src/content/assets)
+  * Must be added to the [`src/data/assets` folder](src/data/assets)
 * An element information json file
   * Must be named using PascalCase (e.g. `YourComponentName.json`)
-  * Must be added to the [`gallery-src/content/elements` folder](gallery-src/content/elements)
+  * Must be added to the [`src/data/elements` folder](src/data/elements)
   * Includes a brief description of the custom element functionality
   * Links to your repository
 * Your repository should include a `README.md` file containing
@@ -63,7 +63,7 @@ The pull request should include:
 
 #### Sample element JSON
 
-The element information JSON file named after your element's name in PascalCase (e.g. `YourComonentName.json`) must be placed in the [`/gallery-src/content/elements` folder](/gallery-src/content/elements) with the following format:
+The element information JSON file named after your element's name in PascalCase (e.g. `YourComonentName.json`) must be placed in the [`/src/data/elements` folder](/src/data/elements) with the following format:
 
 ```json
 {
