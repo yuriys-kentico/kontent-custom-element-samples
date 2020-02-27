@@ -4,7 +4,6 @@
   "thumbnailUrl": "../assets/YouTubePreview.png",
   "readmeUrl": "https://github.com/Kentico/kontent-custom-element-youtube-preview",
   "categories": [
-    "Preview",
     "Video"
   ]
 }

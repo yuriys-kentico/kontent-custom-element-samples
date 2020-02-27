@@ -4,7 +4,6 @@
   "thumbnailUrl": "../assets/ShopifyProductSelector.gif",
   "readmeUrl": "https://github.com/Kentico/kontent-custom-element-shopify",
   "categories": [
-    "eCommerce",
-    "Product Selector"
+    "eCommerce"
   ]
 }

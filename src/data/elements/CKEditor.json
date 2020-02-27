@@ -4,7 +4,8 @@
   "thumbnailUrl": "../assets/CKEditor.png",
   "readmeUrl": "https://github.com/Kentico/kontent-custom-element-ckeditor",
   "categories": [
-    "WYSIWYG Editor",
-    "HTML"
+    "WYSIWYG",
+    "HTML",
+    "Text"
   ]
 }

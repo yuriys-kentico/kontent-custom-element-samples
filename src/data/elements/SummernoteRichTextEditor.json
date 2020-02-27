@@ -4,7 +4,8 @@
   "thumbnailUrl": "../assets/SummernoteRichTextEditor.gif",
   "readmeUrl": "https://github.com/hzik/kontent-custom-element-summernote",
   "categories": [
-    "WYSIWYG Editor",
-    "HTML"
+    "WYSIWYG",
+    "HTML",
+    "Text"
   ]
 }

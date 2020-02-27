@@ -31,10 +31,12 @@ const IndexPage = () => {
       }
     `
   )
-  const initialCategories = data.categories.distinct.map(category => ({
-    title: category,
-    selected: false,
-  }))
+  const initialCategories = data.categories.distinct
+    .map(category => ({
+      title: category,
+      selected: false,
+    }))
+    .sort((a, b) => a.title.toLowerCase().localeCompare(b.title.toLowerCase()))
 
   const [categories, setCategories] = useState(initialCategories)
 

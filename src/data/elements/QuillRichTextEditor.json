@@ -4,7 +4,7 @@
   "thumbnailUrl": "../assets/QuillRichTextEditor.png",
   "readmeUrl": "https://github.com/hzik/kc_wysiwyg",
   "categories": [
-    "WYSIWYG Editor",
-    "JSON"
+    "WYSIWYG",
+    "Text"
   ]
 }

@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
     <>
       <main id="main" className="overflow-hidden main"
       style={{
-        "padding-top": "24px"
+        paddingTop: "24px"
       }}>
         {children}
       </main>
@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
         className="grid"
         style={{
           margin: "24px auto",
-          "text-align":"right"
+          textAlign:"right"
         }}
       >
         © 2004-{new Date().getFullYear()} Kentico

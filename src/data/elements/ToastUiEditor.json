@@ -4,7 +4,8 @@
   "thumbnailUrl": "../assets/ToastUIEditor.gif",
   "readmeUrl": "https://github.com/Simply007/kc-tui-editor-custom-element",
   "categories": [
-    "WYSIWYG Editor",
-    "Markdown"
+    "WYSIWYG",
+    "Markdown",
+    "Text"
   ]
 }

@@ -4,7 +4,8 @@
   "thumbnailUrl": "../assets/SimpleMDEMarkdownEditor.gif",
   "readmeUrl": "https://github.com/Kentico/kontent-custom-element-simplemde-markdown-editor",
   "categories": [
-    "WYSIWYG Editor",
-    "Markdown"
+    "WYSIWYG",
+    "Markdown",
+    "Text"
   ]
 }
