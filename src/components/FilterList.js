@@ -28,14 +28,14 @@ function FilterList({
           name="search"
           id="search"
           required=""
-          maxlength="100"
+          maxLength="100"
           value={searchText}
           onChange={e => {
             onChangeSearchText(e.target.value)
             setSearchText(e.target.value)
           }}
         />
-        <label for="search" className="label ">
+        <label htmlFor="search" className="label ">
           Search
         </label>
       </div>
