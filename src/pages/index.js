@@ -119,7 +119,6 @@ function satisfiesSearchTextFilter(element, searchText) {
     const titleHasMatch = textHasMatch(element.title, searchText)
     const descriptionHasMatch = textHasMatch(element.description, searchText)
     const categories = element.categories.join(" ")
-    console.log(element.categories)
     const categoriesHasMatch = textHasMatch(categories, searchText)
     return titleHasMatch || descriptionHasMatch || categoriesHasMatch
   }
