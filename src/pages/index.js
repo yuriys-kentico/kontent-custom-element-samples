@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-// import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
@@ -49,16 +48,23 @@ const IndexPage = () => {
     setCategories(newCategories)
   }
 
+  const [searchText, setSearchText] = useState("")
+
   const activeCategories = categories.filter(c => c.selected).map(c => c.title)
 
   const allElements = data.elements.edges.map(e => e.node)
+
   const visibleElements = allElements.filter(element => {
-    if (activeCategories.length < 1) {
-      return true
-    } else if (!element.categories) {
-      return false
-    }
-    return element.categories.some(c => activeCategories.includes(c))
+    const matchesCategoryFilter = satisfiesCategoryFilters(
+      element,
+      activeCategories
+    )
+    const matchesSearchTextFilter = satisfiesSearchTextFilter(
+      element,
+      searchText
+    )
+
+    return matchesCategoryFilter && matchesSearchTextFilter
   })
 
   return (
@@ -81,6 +87,7 @@ const IndexPage = () => {
                       title="Category"
                       categories={categories}
                       onToggleCategory={c => toggleCategory(c)}
+                      onChangeSearchText={t => setSearchText(t)}
                     />
                   </div>
                 </div>
@@ -93,6 +100,42 @@ const IndexPage = () => {
         </div>
       </section>
     </Layout>
+  )
+}
+
+function satisfiesCategoryFilters(element, activeCategories) {
+  if (activeCategories.length < 1) {
+    return true
+  } else if (!element.categories) {
+    return false
+  }
+  return element.categories.some(c => activeCategories.includes(c))
+}
+
+function satisfiesSearchTextFilter(element, searchText) {
+  const minLength = 3
+
+  if (searchText && searchText.length >= minLength) {
+    const titleHasMatch = textHasMatch(element.title, searchText)
+    const descriptionHasMatch = textHasMatch(element.description, searchText)
+    return titleHasMatch || descriptionHasMatch
+  }
+  return true
+}
+
+function cleanText(text) {
+  const ignoredCharsRegex = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g
+  return text.toLowerCase().replace(ignoredCharsRegex, "")
+}
+
+function textHasMatch(text, searchText) {
+  const searchTextCleanStartsWith = cleanText(searchText)
+  const searchTextCleanIncludes = ` ${searchTextCleanStartsWith}`
+
+  const textCleaned = cleanText(text)
+  return (
+    textCleaned.startsWith(searchTextCleanStartsWith) ||
+    textCleaned.includes(searchTextCleanIncludes)
   )
 }
 

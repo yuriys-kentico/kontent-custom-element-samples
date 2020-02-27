@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 
 import "./style.css"
 import "./style-critical.css"
+import "./cesg.css"
 
 const Layout = ({ children }) => {
   return (
