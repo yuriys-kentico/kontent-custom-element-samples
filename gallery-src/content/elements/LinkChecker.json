@@ -1,6 +1,6 @@
 {
   "title": "Link checker",
   "description": "This custom element gets all links from all rich text elements on your item and checks whether they are live or not.",
-  "thumbnailUrl": "http://amend.cz/link_checker.gif",
+  "thumbnailUrl": "/src/data/assets/LinkChecker.gif",
   "readmeUrl": "https://github.com/hzik/LinkChecker"
 }
