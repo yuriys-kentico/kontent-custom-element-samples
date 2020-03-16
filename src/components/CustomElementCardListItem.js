@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 
 function CustomElementCardListItem({ customElement }) {
   return (
@@ -9,6 +10,13 @@ function CustomElementCardListItem({ customElement }) {
         className="card__link-outer"
         target="_blank"
         rel="noopener noreferrer"
+        onClick={e=>{
+          trackCustomEvent({
+            category: "CESG",
+            action: "Click Detail",
+            label: customElement.title
+          })
+        }}
       ></a>
       <div className="card__content">
         <div className="card__heading  card__heading--small">
