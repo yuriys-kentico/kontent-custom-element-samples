@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
@@ -30,13 +30,10 @@ const IndexPage = () => {
       }
     `
   )
-  const initialCategories = data.categories.distinct
-    .map(category => ({
-      title: category,
-      selected: false,
-    }))
-    .sort((a, b) => a.title.toLowerCase().localeCompare(b.title.toLowerCase()))
 
+  const [searchText, setSearchText] = useState("")
+
+  const initialCategories = getInitialCategories(data.categories.distinct)
   const [categories, setCategories] = useState(initialCategories)
 
   const toggleCategory = category => {
@@ -48,24 +45,43 @@ const IndexPage = () => {
     setCategories(newCategories)
   }
 
-  const [searchText, setSearchText] = useState("")
-
-  const activeCategories = categories.filter(c => c.selected).map(c => c.title)
-
   const allElements = data.elements.edges.map(e => e.node)
+  const [elements, setElements] = useState(allElements)
+  const [filteredElements, setFilteredElements] = useState(allElements)
 
-  const visibleElements = allElements.filter(element => {
-    const matchesCategoryFilter = satisfiesCategoryFilters(
-      element,
-      activeCategories
-    )
-    const matchesSearchTextFilter = satisfiesSearchTextFilter(
-      element,
-      searchText
-    )
+  // const logSearch = () => {
+  //   console.log({ searchText, activeCategories })
 
-    return matchesCategoryFilter && matchesSearchTextFilter
-  })
+  //   // onClick={e=>{
+  //   //   trackCustomEvent({
+  //   //     category: "CESG",
+  //   //     action: "Click Detail",
+  //   //     label: customElement.title
+  //   //   })
+  //   // }}
+  // }
+
+
+  useEffect(() => {
+    const activeCategories = categories.filter(c => c.selected).map(c => c.title)
+    const visibleElements = allElements.filter(element => {
+      const matchesCategoryFilter = satisfiesCategoryFilters(
+        element,
+        activeCategories
+      )
+      const matchesSearchTextFilter = satisfiesSearchTextFilter(
+        element,
+        searchText
+      )
+
+      return matchesCategoryFilter && matchesSearchTextFilter
+    })
+
+    setFilteredElements(visibleElements)
+
+    //console.log({ searchText, categories: categories.filter(c=>c.selected).map(c=>c.title).join(", ") })
+
+  }, [elements, searchText, categories])
 
   return (
     <Layout>
@@ -92,7 +108,7 @@ const IndexPage = () => {
                   </div>
                 </div>
                 <div className="grid__col grid__col--12 grid__col--md-9 grid__col--lg-7">
-                  <CustomElementCardList customElements={visibleElements} />
+                  <CustomElementCardList customElements={filteredElements} />
                 </div>
               </div>
             </div>
@@ -101,6 +117,15 @@ const IndexPage = () => {
       </section>
     </Layout>
   )
+}
+
+function getInitialCategories(data) {
+  return data
+    .map(category => ({
+      title: category,
+      selected: false,
+    }))
+    .sort((a, b) => a.title.toLowerCase().localeCompare(b.title.toLowerCase()))
 }
 
 function satisfiesCategoryFilters(element, activeCategories) {
