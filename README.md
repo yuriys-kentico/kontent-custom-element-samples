@@ -52,6 +52,7 @@ The pull request should include:
   * Must be added to the [`src/data/elements` folder](src/data/elements)
   * Includes a brief description of the custom element functionality
   * Links to your repository
+  * Use existing categories if possible
 * Your repository should include a `README.md` file containing
   * A description of the custom element functionality
   * A screenshot/gif showcasing the custom element
@@ -70,7 +71,10 @@ The element information JSON file named after your element's name in PascalCase 
   "title": "Your Component Name",
   "description": "Short description of your element's purpose and functionality.",
   "thumbnailUrl": "../assets/YourComponentName.(gif|png|jpg)",
-  "readmeUrl": "https://github.com/<YourGitHub>/<YourCustomElementRepoName>"
+  "readmeUrl": "https://github.com/<YourGitHub>/<YourCustomElementRepoName>",
+  "categories": [
+    "Other"
+  ]
 }
 ```
 
