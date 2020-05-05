@@ -1,6 +1,0 @@
-{
-  "title": "Item synchronizer",
-  "description": "This custom element allows you to synchronize an item across multiple projects/environments.",
-  "thumbnailUrl": "http://amend.cz/syncItems2.gif",
-  "readmeUrl": "https://github.com/Kentico/kontent-custom-element-samples/tree/master/ItemSynchronizer"
-}
