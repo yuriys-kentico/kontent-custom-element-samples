@@ -5,7 +5,7 @@ node_js:
 before_script:
 - npm install
 script:
-- npm run build -- --prefix-paths
+- npm run deploy
 deploy:
   provider: pages
   skip_cleanup: true
