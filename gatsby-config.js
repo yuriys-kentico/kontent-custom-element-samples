@@ -48,13 +48,12 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Didact Gothic`
-          },
+          `didact gothic`
         ],
+        display: `swap`
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
