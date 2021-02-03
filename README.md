@@ -3,7 +3,7 @@
 [![Gallery](https://img.shields.io/badge/-Gallery-brightgreen.svg)](https://kentico.github.io/kontent-custom-element-samples/gallery/)
 [![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-ASK%20NOW-FE7A16.svg?logo=stackoverflow&logoColor=white)](https://stackoverflow.com/tags/kentico-kontent)
 
-[![Build Status](https://api.travis-ci.com/Kentico/kontent-custom-element-samples.svg?branch=master)](https://travis-ci.com/Kentico/kontent-custom-element-samples)
+![CI deployment](https://github.com/Kentico/kontent-custom-element-samples/workflows/CI%20deployment/badge.svg)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a7e07037-df60-476f-81ec-628ab95130bf/deploy-status)](https://app.netlify.com/sites/kontent-custom-element-samples/deploys)
 
 
